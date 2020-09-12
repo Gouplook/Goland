@@ -1,3 +1,8 @@
-ssss
-ejlajfls
-wefl
+package main
+
+import "fmt"
+
+func main() {
+
+	fmt.Println("xxxxxx")
+}
