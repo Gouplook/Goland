@@ -1,16 +1,13 @@
 /******************************************
 
 @Author :yinjinlin<yinjinlin_uplook@163.com>
-@Time : 2020/11/23 下午3:24
+@Time : 2020/11/25 上午11:28
 
 *******************************************/
-package main
+package tool
 
-import "fmt"
+import "testing"
 
-// 搭建框架的整体思路。
-func main() {
-
-	fmt.Println("==========")
-
+func TestBasicTime(t *testing.T) {
+	BasicTime()
 }

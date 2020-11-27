@@ -1,16 +1,13 @@
 /******************************************
 
 @Author :yinjinlin<yinjinlin_uplook@163.com>
-@Time : 2020/11/23 下午3:24
+@Time : 2020/11/24 上午10:44
 
 *******************************************/
-package main
+package yaml
 
-import "fmt"
+import "testing"
 
-// 搭建框架的整体思路。
-func main() {
-
-	fmt.Println("==========")
-
+func TestYamlConf(t *testing.T) {
+	YamlConfTest()
 }
