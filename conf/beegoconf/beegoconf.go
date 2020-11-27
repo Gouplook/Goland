@@ -13,7 +13,6 @@ import (
 
 func BeeGoConf(){
 
-
 }
 // beego 默认解析ini 配置文件   key通过 section::key 的方式获取
 func GetIniFileConf(){
