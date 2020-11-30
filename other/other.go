@@ -36,6 +36,7 @@ func ChannelIsData(){
 		if !ok {
 			break // 通道 已关闭 且 没有数据，则跳出循环
 		}
+
 		fmt.Println(x)
 	}
 }
