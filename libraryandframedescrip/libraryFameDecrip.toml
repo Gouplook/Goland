@@ -19,3 +19,10 @@
 
     #--- golang 监控日志框架
     #  https://github.com/alibaba/sentinel-golang
+
+    #---golang 编码库 encod
+    # go get golang.org/x/net/html
+
+    #--goland 编码转换包
+    # go get golang.org/x/text/transform
+

@@ -6,7 +6,9 @@
 *******************************************/
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // 搭建框架的整体思路。
 func main() {

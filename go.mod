@@ -10,6 +10,8 @@ require (
 	github.com/gohouse/converter v0.0.3
 	github.com/mitchellh/mapstructure v1.3.3
 	github.com/smartystreets/goconvey v1.6.4 // indirect
+	golang.org/x/net v0.0.0-20190620200207-3b0461eec859
+	golang.org/x/text v0.3.0
 	gopkg.in/gcfg.v1 v1.2.3
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 	gopkg.in/yaml.v2 v2.3.0
