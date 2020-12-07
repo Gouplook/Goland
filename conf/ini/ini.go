@@ -38,6 +38,10 @@ func GoConfigReadConf(){
 	// 直接获取
 	cfg, _ := goconfig.LoadConfigFile("conf.ini")
 	enabled,_ := cfg.GetValue("Section","enabled")
+	path:= cfg.GetKeyComments("Section","path")
+	path1,_ := cfg.GetValue("Section","path")
 
 	fmt.Println(enabled)
+	fmt.Println(path)
+	fmt.Println("path1 = ", path1)
 }

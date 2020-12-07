@@ -1,13 +1,17 @@
 /******************************************
 
 @Author :yinjinlin<yinjinlin_uplook@163.com>
-@Time : 2020/11/27 上午10:54
+@Time : 2020/12/7 下午3:05
 
 *******************************************/
-package other
+package problem
 
 import "testing"
 
-func TestChannelIsData(t *testing.T) {
-	//ChannelIsData()
+func TestProblem1(t *testing.T) {
+	//Problem1()
+
+	//Problem2()
+
+	Problem3()
 }
