@@ -21,6 +21,7 @@ var (
 type PluginManger struct {
 	// Registr --- interface
 	plugins map[string]Registry
+
 	lock sync.Mutex  //exclusion 互斥锁
 
 }
