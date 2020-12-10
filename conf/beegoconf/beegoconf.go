@@ -11,16 +11,22 @@ import (
 	"github.com/astaxie/beego/config"
 )
 
-func BeeGoConf(){
+// 待完善
+func BeeGoConf() {
 
 }
+
 // beego 默认解析ini 配置文件   key通过 section::key 的方式获取
-func GetIniFileConf(){
+func GetIniFileConf() {
 	iniConf, _ := config.NewConfig("ini", "../ini/conf.ini")
 	enabled := iniConf.String("Section::enabled")
+	path := iniConf.String("Section::path")
 	fmt.Println(enabled)
-}
 
+	fmt.Println("Path := ", path)
+	fmt.Println("==========")
+
+}
 
 //
 //func GetYamlFileConf(){
@@ -29,5 +35,3 @@ func GetIniFileConf(){
 //
 //	fmt.Println(host)
 //}
-
-

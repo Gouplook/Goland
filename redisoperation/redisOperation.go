@@ -28,7 +28,6 @@ func RedisInit(db int, redism *RedisOperation) {
 }
 
 
-
 func (r *RedisOperation) GetConn() redis.Conn{
 	return  r.pool.Get()
 }

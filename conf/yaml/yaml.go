@@ -8,7 +8,7 @@ package yaml
 
 import (
 	"fmt"
-	"gopkg.in/yaml.v2"
+	"gopkg.in/yaml.v2" // yaml 库
 	"io/ioutil"
 )
 

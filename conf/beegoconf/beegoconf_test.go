@@ -9,14 +9,14 @@ package beegoconf
 import "testing"
 
 func TestBeeGoConf(t *testing.T) {
-	//BeeGoConf()
+	BeeGoConf()
 }
 
 
-//func TestGetIniFileConf(t *testing.T) {
-//	GetIniFileConf()
-//}
-//
+func TestGetIniFileConf(t *testing.T) {
+	GetIniFileConf()
+}
+
 //
 //// GetYamlFileConf
 //func TestGetYamlFileConf(t *testing.T) {
