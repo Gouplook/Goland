@@ -21,7 +21,6 @@ var (
 type PluginManger struct {
 	// Registr --- interface
 	plugins map[string]Registry
-
 	lock sync.Mutex  //exclusion 互斥锁
 
 }
@@ -36,8 +35,9 @@ func InitRegistry(ctx context.Context,name string,opts ...Option)(registry Regis
 func (p *PluginManger)registerPlugin(plugin Registry)(err error){
 	p.lock.Lock()
 	defer p.lock.Unlock()
-	// 调用registry
+	// 调用registry 接口
 	_,ok := p.plugins[plugin.Name()]
+	// 判断注册中心是否已有name
 	if ok{
 		err = fmt.Errorf("duplicate registry plugin")
 		return

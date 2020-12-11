@@ -12,9 +12,10 @@ type Service struct {
 	Nodes []*Node `json:"nodes"`
 }
 
+// 节点
 type Node struct {
 	Id   string `json:"id"`
 	Ip   string `json:"ip"`
-	Port string `json:"port"`
-	//Weigh int `json:"weigh"`
+	Port int    `json:"port"`
+	Weigh int `json:"weigh"` // ---###
 }
