@@ -37,6 +37,7 @@ type EtcdRegistry struct {
 type AllServiceInfo struct {
 	serviceMap map[string]*registry.Service
 }
+//
 type RegisterService struct {
 	id          clientv3.LeaseID
 	service     *registry.Service
