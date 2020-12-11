@@ -102,4 +102,6 @@ func main() {
 		num := OperatorWho(obj)
 		fmt.Println(num)
 	}
+
+	fmt.Println("78880====")
 }
