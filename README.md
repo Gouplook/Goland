@@ -1,3 +1,0 @@
-# Goland
-
-git
