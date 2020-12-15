@@ -39,7 +39,7 @@ func GetSelectedNodes(ctx context.Context) *selectedNodes {
 	return selet
 }
 
-// 选择节点
+// 设置节点
 func setSelected (ctx context.Context,node *registry.Node) {
 	selet := GetSelectedNodes(ctx)
 	if selet == nil {

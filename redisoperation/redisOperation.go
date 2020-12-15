@@ -21,7 +21,7 @@ type RedisOperation struct {
 }
 
 
-// 初始化连接池（待续）
+// 初始化连接池（待续)
 func RedisInit(db int, redism *RedisOperation) {
 
 

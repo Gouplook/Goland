@@ -98,7 +98,6 @@ func WebHttp5() {
 }
 
 // --------------------- 请求 ------------------------
-
 func Get() {
 	r, err := http.Get("http://httpbin.org/get")
 	if err != nil {

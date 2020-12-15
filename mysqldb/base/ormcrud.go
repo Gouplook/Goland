@@ -46,7 +46,7 @@ func OrmUpdate(){
 	}
 	o.Update(&user)
 }
-//Update 默认更新所有的字段，可以更新指定的字段
+// Update 默认更新所有的字段，可以更新指定的字段
 func OrmUpdate2(){
 	o := orm.NewOrm()
 	//user := new(model.User)

@@ -34,7 +34,7 @@ func MysqlSchemaStruct2(){
 			// 字段首字母大写的同时, 是否要把其他字母转换为小写,默认false不转换
 			UcFirstOnly: false,
 			//// 每个struct放入单独的文件,默认false,放入同一个文件(暂未提供)
-			//SeperatFile: false,
+			// SeperatFile: false,
 		})
 
 		// 开始迁移转换
