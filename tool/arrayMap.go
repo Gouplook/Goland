@@ -111,3 +111,50 @@ func ArrayString(separator string, array interface{}) (str string){
 	return str
 }
 
+// 数组去重 int
+func ArrayUniqueInt(arr []int) ([]int){
+	if len(arr) == 0{
+		return arr
+	}
+	newArr := make([]int,0)
+	for i:=0;i<len(arr);i++{
+		repeat := false
+		for j:=i+1;j<len(arr);j++{
+			if arr[i] == arr[j]{
+				repeat = true
+				break
+			}
+		}
+		if arr[i] == 0{
+			continue
+		}
+		if repeat == false{
+			newArr = append(newArr,arr[i])
+		}
+	}
+	return newArr
+}
+
+// 数组去重
+func ArrayUniqueString(arr []string)([]string){
+	if len(arr) == 0{
+		return arr
+	}
+	newArr := make([]string,0)
+	for i:=0;i<len(arr);i++{
+		repeat := false
+		for j:=i+1;j<len(arr);j++{
+			if arr[i] == arr[j]{
+				repeat = true
+				break
+			}
+		}
+		if arr[i] == ""{
+			continue
+		}
+		if repeat == false{
+			newArr = append(newArr,arr[i])
+		}
+	}
+	return newArr
+}
