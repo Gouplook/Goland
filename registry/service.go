@@ -14,8 +14,8 @@ type Service struct {
 
 // 节点
 type Node struct {
-	Id   string `json:"id"`
-	Ip   string `json:"ip"`
-	Port int    `json:"port"`
-	Weigh int `json:"weigh"` // ---###
+	Id    string `json:"id"`
+	Ip    string `json:"ip"`
+	Port  int    `json:"port"`
+	Weigh int    `json:"weigh"` // 加权的权重
 }
