@@ -1,5 +1,4 @@
 /********************************************
-
 @Author :yinjinlin<yinjinlin_uplook@163.com>
 @Time : 2020/12/11 10:21
 @Description:
@@ -39,7 +38,7 @@ type AllServiceInfo struct {
 }
 //
 type RegisterService struct {
-	id          clientv3.LeaseID
+	id          clientv3.LeaseID //租约Id
 	service     *registry.Service
 	registered  bool // 判断是否注册
 	keepAliceCh <-chan *clientv3.LeaseKeepAliveResponse
@@ -59,7 +58,6 @@ func init() {
 	// -----#####
 	etcdRegistry.value.Store(allserviceInfo)
 	registry.RegisterPlugin(etcdRegistry)
-
 	go etcdRegistry.run()
 
 }
@@ -176,7 +174,7 @@ func (e *EtcdRegistry) run() {
 			// ---#####
 			e.syncServiceFromEtcd()
 		default:
-			e.registerOrKeepAlice()
+			e.registerOrKeepAlice() // 续约
 			time.Sleep(time.Millisecond *5)
 		}
 	}
@@ -227,9 +225,10 @@ func (e *EtcdRegistry) registerService(registryService *RegisterService) (err er
 func (e *EtcdRegistry) registerOrKeepAlice() {
 	for _, registryService := range e.registryServiceMap {
 		if registryService.registered{
-			e.keepAlive(registryService)
+			e.keepAlive(registryService)  // 续约逻辑
 			continue
 		}
+		// 注册逻辑
 		e.registerService(registryService)
 	}
 }

@@ -1,8 +1,7 @@
 /********************************************
-
 @Author :yinjinlin<yinjinlin_uplook@163.com>
 @Time : 2020/12/11 17:56
-@Description: 负载均衡--轮询算法
+@Description: 负载均衡--轮询算法、加权轮询
 *********************************************/
 package loadbalance
 
