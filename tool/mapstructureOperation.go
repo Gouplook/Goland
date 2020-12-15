@@ -13,7 +13,7 @@ package tool
 // 2: 用json.Unmarshal将字节流解码为map[string]interface{}类型
 // 默认情况下，mapstructure 自动映射字段  Name --->name  也可以自己定义： Name ----> usrename
 
-// 注意点 转换时，map与struct 字段名 必须一至。
+// 注意点 转换时，map与struct 字段名 必须一致。若字段不一样可以用mapstructure:进行更改
 
 import (
 	"encoding/json"

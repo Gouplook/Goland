@@ -46,7 +46,7 @@ func BasicTime() {
 	now := time.Now()
 	local := time.Now().Local()
 	timestmap := time.Now().Local().Unix()
-	localFroml := time.Now().Local().Format("2006-01-02")  // time --> string
+	localFroml := time.Now().Local().Format("2006-01-02") // time --> string
 
 	// string -> time
 	strToTime, _ := time.Parse("2006-01-02", localFroml)
@@ -56,4 +56,12 @@ func BasicTime() {
 	fmt.Println("timestmap: ", timestmap)
 	fmt.Println("localFroml: ", localFroml)
 	fmt.Println("strToTime: ", strToTime)
+}
+
+// 获取当天时间段 ：2020-12-14 00:00:00~2020-12-14 23:59:59
+func TimeRange(now time.Time) (bTime, eTime time.Time) {
+	local, _ := time.LoadLocation("Asia/Shanghai")
+	bTime = time.Date(now.Year(), now.Month(), now.Day(), 0, 0, 0, 0, local) // 2020-12-14 00:00:00
+	eTime = bTime.AddDate(0, 0, 1).Add(-1 * time.Second)                     // 2020-12-14 23:59:59
+	return
 }
