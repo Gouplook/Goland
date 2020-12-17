@@ -2,7 +2,7 @@
 
 @Author :yinjinlin<yinjinlin_uplook@163.com>
 @Time : 2020/12/11 17:34
-@Description: 负载均衡--随机算法/加权
+@Description: 负载均衡--随机算法
 
 *********************************************/
 package loadbalance
@@ -18,8 +18,6 @@ import (
 type RandomBalance struct {
 	name string
 }
-
-
 
 func NewRandomBalance() LoadBalance{
 	return  &RandomBalance{
@@ -71,7 +69,5 @@ func (r *RandomBalance)Select(ctx context.Context, nodes[]*registry.Node)(node *
 	}
 
 	node = nodes[curIndex]
-
 	return
-
 }

@@ -16,19 +16,17 @@ const (
 	DefaultNodeWeight = 100
 )
 
-
 type LoadBalanceType int
 
 const (
 	LoadBalanceTypeRandom = iota // 随机算法
-	LoadBalanceTypeRoundRobin   // 	轮询算法
+	LoadBalanceTypeRoundRobin   // 	轮询算法/加权轮询
 )
 
 type LoadBalance interface {
 	Name() string
 	Select(ctx context.Context, nodes []*registry.Node) (node *registry.Node, err error)
 }
-
 
 func GetLoadBalance(balanceType LoadBalanceType) (balancer LoadBalance) {
 
