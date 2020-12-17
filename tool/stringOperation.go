@@ -2,6 +2,7 @@
 
 @Author :yinjinlin<yinjinlin_uplook@163.com>
 @Time : 2020/11/23 下午3:25
+@Description:字符串问题转换总结
 
 *******************************************/
 package tool
@@ -11,7 +12,7 @@ import (
 	"strings"
 )
 
-//字符串切割成int型数组
+// 字符串切割成int型数组
 // str := "112,34,56,78"  ---- >  [112 34 56 78]
 func StrExplode2IntArr( s string, step string) []int {
 	strs := strings.Split(s, ",")
@@ -26,5 +27,11 @@ func StrExplode2IntArr( s string, step string) []int {
 	return outData
 	// 1,2,5 类型卡 --> 适合这些门店 4 5 6 9
 
+}
+
+// TrimRgiht
+func StringsTrim(s string, cutset string) string{
+	 str := strings.TrimRight(s,cutset)
+	 return str
 }
 

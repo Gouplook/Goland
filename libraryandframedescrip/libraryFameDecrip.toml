@@ -1,7 +1,7 @@
 
 #------------------数据库配置------------------
 
-        #mysql 启动： mysql.server start &
+    #mysql 启动： mysql.server start &
     # redis  启动服务 ： redis-serive &
     # redis  启动客户端 ：redis-cli
 
