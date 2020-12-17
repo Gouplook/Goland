@@ -402,7 +402,6 @@ func (m *Model) Count(param ...string) int {
 	return num
 }
 
-
 //聚合函数-sum
 // SQL语法格式： SELECT SUM(column_name) FROM table_name [WHERE Clause]
 func (m *Model) Sum(field string) float64 {

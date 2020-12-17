@@ -21,8 +21,11 @@ type NeedToModel struct {
 
 // 表字段
 type NeedToModelField struct {
-	T_table  string `default:"table"`  // 表名待处理
-	F_bus_id string `default:"bus_id"`
+	T_table      string `default:"table"` // 表名待处理
+	F_id         int    `default:"id"`
+	F_email      string `default:"email"`
+	F_password   string `default:"password"`
+	F_created_id string `default:"created_id"`
 }
 
 // 初始化
@@ -44,7 +47,7 @@ func (m *NeedToModel) InsertAll(data []map[string]interface{}) int {
 		return 0
 	}
 	result, _ := m.Model.InsertAll(data)
-	return  result
+	return result
 }
 
 // 更新数据
@@ -81,5 +84,5 @@ func (m *NeedToModel) SelectByPage(where map[string]interface{}, start, limit in
 		return make([]map[string]interface{}, 0)
 	}
 
-	return m.Model.Where(where).Limit(start, limit).OrderBy(m.Field.F_bus_id + " DESC ").Select()
+	return m.Model.Where(where).Limit(start, limit).OrderBy(m.Field.F_created_id + " DESC ").Select()
 }

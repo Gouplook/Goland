@@ -19,6 +19,7 @@ require (
 	google.golang.org/grpc v1.34.0 // indirect
 	gopkg.in/gcfg.v1 v1.2.3 // indirect
 	gopkg.in/warnings.v0 v0.1.2 // indirect
+	gopkg.in/yaml.v2 v2.2.8
 )
 
 //replace github.com/coreos/go-systemd => github.com/coreos/go-systemd/v22 v22.0.0
