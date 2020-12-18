@@ -15,7 +15,7 @@ import (
 
 // 表结构体
 type NeedToModel struct {
-	Model *base.Model      // 数据赠送改查的基本结构体
+	Model *base.Model      // 数据赠删改查的基本结构体
 	Field NeedToModelField // 表字段
 }
 
