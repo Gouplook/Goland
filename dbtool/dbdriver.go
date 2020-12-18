@@ -1,11 +1,11 @@
 /********************************************
 
 @Author :yinjinlin<yinjinlin_uplook@163.com>
-@Time : 2020/12/17 17:01
+@Time : 2020/12/18 14:42
 @Description: 配置基础数据库引擎/配置基础数据库参数
 
 *********************************************/
-package driver
+package dbtool
 
 import (
 	"GoInduction/utils"
@@ -16,7 +16,7 @@ import (
 
 // 如何将这个文件设置为最先启动
 func Init() {
-//func init() {
+	//func init() {
 	logs.Info("Init driver.go mysql start")
 
 	//"root:123456@tcp(127.0.0.1:3306)/macmysql?charset=utf8"
@@ -34,9 +34,8 @@ func Init() {
 	orm.RegisterDataBase("default", cfig.Type, dataSource)
 	// 注册mode
 	//orm.RegisterModel(new(model.User))
-	//orm.RegisterModel(new(model.NeedToModel))  // 存在包重复问题
+	//orm.RegisterModel(new(models.NeedToModel))
 	// 生成表
 	// 第一个参数是数据库别名，第二个参数是是否强制更新
 	orm.RunSyncdb("default", false, true)
-
 }

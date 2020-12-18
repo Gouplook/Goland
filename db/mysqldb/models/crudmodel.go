@@ -1,14 +1,14 @@
 /********************************************
 
 @Author :yinjinlin<yinjinlin_uplook@163.com>
-@Time : 2020/12/15 10:04
-@Description:数据库框架封装
+@Time : 2020/12/18 14:32
+@Description: 数据库 增删改查的封装
 
 *********************************************/
-package model
+package models
 
 import (
-	"GoInduction/mysqldb/base"
+	"GoInduction/base"
 	"GoInduction/tool"
 	"github.com/astaxie/beego/orm"
 )
@@ -86,3 +86,4 @@ func (m *NeedToModel) SelectByPage(where map[string]interface{}, start, limit in
 
 	return m.Model.Where(where).Limit(start, limit).OrderBy(m.Field.F_created_id + " DESC ").Select()
 }
+
