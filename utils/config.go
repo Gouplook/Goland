@@ -28,7 +28,8 @@ type YamlConfig struct {
 
 // 读取配置文件
 func (y *YamlConfig) GetConfig() *YamlConfig {
-	yamlFile, err := ioutil.ReadFile("../conf/app.yaml")
+	//yamlFile, err := ioutil.ReadFile("../conf/app.yaml")
+	yamlFile, err := ioutil.ReadFile("/Users/uplook/goframe/Goland/conf/app.yaml")
 	if err != nil {
 		fmt.Println(err.Error())
 	}

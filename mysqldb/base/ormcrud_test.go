@@ -6,8 +6,11 @@
 *******************************************/
 package base
 
-import "testing"
+import (
+	"testing"
+)
 
+// 新增数据
 func TestOrmInsert(t *testing.T) {
 	OrmInit()
 	OrmInsert()

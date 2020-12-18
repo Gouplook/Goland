@@ -9,8 +9,8 @@
 package base
 
 import (
-	"fmt"
 	"GoInduction/mysqldb/model"
+	"fmt"
 	"github.com/astaxie/beego/orm"
 	"time"
 )
@@ -29,9 +29,9 @@ func OrmInit(){
 
 func OrmInsert() {
 	o := orm.NewOrm()
-	o.Using("default")
+	//o.Using("default")
 	user := new(model.User)
-	user.Password = "qwert123"
+	user.Password = "buyaoqwert123"
 	user.Email = "tengxun@163.com"
 	user.CreatedAt = time.Now().Local().Format("2006-01-02 15:04:05")
 	o.Insert(user)

@@ -17,14 +17,15 @@ import (
 // 如何将这个文件设置为最先启动
 func Init() {
 	//func init() {
-	logs.Info("Init driver.go mysql start")
+ 	logs.Info("Init driver.go mysql start")
 
 	//"root:123456@tcp(127.0.0.1:3306)/macmysql?charset=utf8"
 
 	// 读取配置文件
 	// 读配置文件还有另外一种方法，利用key/value
-	confModel := new(utils.YamlConfig)
-	cfig := confModel.GetConfig()
+
+	cfig:= new(utils.YamlConfig).GetConfig()
+
 	// 设置驱动数据库连接参数
 	dataSource := fmt.Sprintf("%s:%s@(%s:%s)/%s?charset=%s", cfig.Name, cfig.Pwrd, cfig.Host, cfig.Port, cfig.Dbname, cfig.Charset)
 	logs.Info("DatabaseDriverConnect String:", dataSource)
@@ -37,5 +38,5 @@ func Init() {
 	//orm.RegisterModel(new(models.NeedToModel))
 	// 生成表
 	// 第一个参数是数据库别名，第二个参数是是否强制更新
-	orm.RunSyncdb("default", false, true)
+	//orm.RunSyncdb("default", false, true)
 }
