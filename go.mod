@@ -11,7 +11,7 @@ require (
 	github.com/coreos/pkg v0.0.0-20180928190104-399ea9e2e55f // indirect
 	github.com/go-sql-driver/mysql v1.5.0 // indirect
 	github.com/gogo/protobuf v1.3.1 // indirect
-	github.com/gohouse/converter v0.0.3 // indirect
+	github.com/gohouse/converter v0.0.3
 	github.com/golang/protobuf v1.4.3 // indirect
 	github.com/mitchellh/mapstructure v1.4.0
 	go.uber.org/zap v1.16.0 // indirect

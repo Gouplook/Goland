@@ -5,9 +5,10 @@
 @Description: 数据库封装函数的测试
 
 *********************************************/
-package mysqldb
+package model
 
 import (
+	"GoInduction/mysqldb/base"
 	"fmt"
 	"testing"
 	"time"
@@ -17,6 +18,8 @@ import (
 // dataSource : root:123456@tcp(127.0.0.1:3306)/macmysql?charset=utf8
 //
 func TestNeedToModel_Insert(t *testing.T) {
+	//启动
+	base.Init()
 	// 初始化
 	insetModel := new(NeedToModel).Init()
 

@@ -58,7 +58,7 @@ func OrmUpdate2(){
 // Read 默认通过查询主键赋值，可以使用指定的字段进行查询：
 func OrmRead(){
 	o := orm.NewOrm()
-	user := model.User{Id :1107}
+	user := model.User{Id : 1107}
 	err := o.Read(&user)
 	if err == orm.ErrNoRows {
 		fmt.Println("查询不到")

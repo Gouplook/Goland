@@ -5,7 +5,7 @@
 @Description:数据库框架封装
 
 *********************************************/
-package mysqldb
+package model
 
 import (
 	"GoInduction/mysqldb/base"

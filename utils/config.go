@@ -16,12 +16,14 @@ import (
 // 配置文件结构体
 type YamlConfig struct {
 	Host    string `yaml:"host"`
-	Port    int    `yaml:"port"`
-	Type    string `yaml:"type"`
-	Name    string `yaml:"name"`
-	Pwrd    string `yaml:"pwrd"`
-	Dbname  string `yaml:"dbname"`
-	Charset string `yaml:"charset"`
+	Port    string `yaml:"port"`    // 端口
+	Type    string `yaml:"type"`    // 数据库类型
+	Name    string `yaml:"name"`    // 数据库主机名
+	Pwrd    string `yaml:"pwrd"`    // 密码
+	Dbname  string `yaml:"dbname"`  // 数据库名字
+	Charset string `yaml:"charset"` // 设置字符集
+	Maxidle string `yaml:"maxidle"`
+	Maxconn string `yaml:"maxconn"` // 最大连接数
 }
 
 func (y *YamlConfig) GetConfig() *YamlConfig {
