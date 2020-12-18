@@ -13,19 +13,20 @@ import (
 	"io/ioutil"
 )
 
-// 配置文件结构体
+// mysql配置文件结构体
 type YamlConfig struct {
-	Host    string `yaml:"host"`
+	Host    string `yaml:"host"`    // 主机
 	Port    string `yaml:"port"`    // 端口
 	Type    string `yaml:"type"`    // 数据库类型
 	Name    string `yaml:"name"`    // 数据库主机名
-	Pwrd    string `yaml:"pwrd"`    // 密码
+	Pwrd    string `yaml:"pwrd"`    // 数据密码
 	Dbname  string `yaml:"dbname"`  // 数据库名字
 	Charset string `yaml:"charset"` // 设置字符集
 	Maxidle string `yaml:"maxidle"`
 	Maxconn string `yaml:"maxconn"` // 最大连接数
 }
 
+// 读取配置文件
 func (y *YamlConfig) GetConfig() *YamlConfig {
 	yamlFile, err := ioutil.ReadFile("../conf/app.yaml")
 	if err != nil {

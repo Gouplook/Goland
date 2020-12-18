@@ -14,6 +14,6 @@ import (
 
 func TestYamlConfig_GetConfig(t *testing.T) {
 	model := new(YamlConfig)
-	Y := model.GetConfig()
-	fmt.Println(Y.Name)
+	confg := model.GetConfig()
+	fmt.Println(confg.Name)
 }
