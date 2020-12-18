@@ -10,9 +10,9 @@ package base
 
 import (
 	"GoInduction/mysqldb/model"
-	"fmt"
 	"github.com/astaxie/beego/orm"
 	"time"
+	"fmt"
 )
 
 // 先进行初始化

@@ -74,9 +74,9 @@ func (m *Model) Data(param map[string]interface{}) *Model {
 	return m
 }
 
-//条件查询  刷选选出一条或多条
+//条件查询  刷选出一条或多条
 // map[string]interface{"id":1,"name":[]interface{}{"in", []int{1,2}}} )
-// []base.WhereItem{ {userinfo.Field.F_sex, 1}, {userinfo.Field.F_reg_channel, []interface{}{"in", []int{1,2}}} }
+// []base.WhereItem{{userinfo.Field.F_sex, 1}, {userinfo.Field.F_reg_channel, []interface{}{"in", []int{1,2}}} }
 func (m *Model) Where(param interface{}) *Model {
 	// 刷选选出一条,先进行类型断言一下，转换成map类型。
 	if where, ok := param.(map[string]interface{}); ok {
