@@ -1,10 +1,10 @@
-/**
+/*********************************
  * @Author: Yinjinlin
  * @Description:
  * @File:  http.go
  * @Version: 1.0.0
  * @Date: 2020/11/28 12:34
- */
+ *********************************/
 package http
 
 import (
@@ -25,9 +25,7 @@ type User struct {
 }
 
 func WebHttp() {
-
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-
 		// 添加应答头
 		w.Header().Set("Content-type", "application/json")
 		w.Header().Set("author", "kangcun.com")

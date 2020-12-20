@@ -6,7 +6,6 @@
  * @Date: 2020/12/18 21:38
  **********************************************************************/
 package goreflect
-
 import (
 	"fmt"
 	"reflect"
@@ -85,7 +84,4 @@ func ReflectModeValue(r interface{}){
 	fmt.Printf("rVal kind=%v\n", rVal.Kind())
 	//2. rVal Elem返回v持有的接口保管的值的Value封装，或者v持有的指针指向的值的Value封装
 	rVal.Elem().SetInt(20)
-
-
-
 }

@@ -1,10 +1,10 @@
-/**
+/*******************************
  * @Author: Yinjinlin
  * @Description:
  * @File:  autodownload
  * @Version: 1.0.0
  * @Date: 2020/11/29 17:44
- */
+ **********************************/
 package http
 
 import "io"

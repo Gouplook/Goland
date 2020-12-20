@@ -15,6 +15,8 @@ require (
 	github.com/golang/protobuf v1.4.3 // indirect
 	github.com/mitchellh/mapstructure v1.4.0
 	go.uber.org/zap v1.16.0 // indirect
+	golang.org/x/net v0.0.0-20190620200207-3b0461eec859
+	golang.org/x/text v0.3.0
 	google.golang.org/genproto v0.0.0-20201210142538-e3217bee35cc // indirect
 	google.golang.org/grpc v1.34.0 // indirect
 	gopkg.in/gcfg.v1 v1.2.3 // indirect

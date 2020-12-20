@@ -1,10 +1,10 @@
-/**
+/**************************************
  * @Author: Yinjinlin
  * @Description: 反射实践案例
  * @File:  reflectcase
  * @Version: 1.0.0
  * @Date: 2020/12/18 23:37
- */
+ ************************************/
 package goreflect
 
 import (
@@ -69,3 +69,13 @@ func StructCase(s interface{}) {
 	numOfMethod := rVal.NumMethod()
 	fmt.Printf("struct has %d methods\n", numOfMethod)
 }
+
+// --------------------------------
+
+
+
+// ----------------------------------------------------------
+// 编写一个Call结构，有两个字段Num1 Num2 方法 GetSub(name string)
+// 使用反射遍历Call结构体所有的字段信息
+// 使用反射机制完成对GetSub的调用，输出形式为：“Tom 完成了减法运算 8-5= 3”
+
