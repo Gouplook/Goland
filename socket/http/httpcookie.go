@@ -15,7 +15,7 @@ import (
 func setCookie(w http.ResponseWriter, r *http.Request) {
 	//创建Cookie
 	cookie := http.Cookie{
-		Name: "user",
+		Name:     "user",
 		Value:    "admin",
 		HttpOnly: true,
 		MaxAge:   60,
@@ -26,8 +26,9 @@ func setCookie(w http.ResponseWriter, r *http.Request) {
 		HttpOnly: true,
 	}
 
+
 	//将Cookie发送给浏览器 (方法一）
-	w.Header().Set("Set-Cookie", cookie.String())
+	w.Header().Set("---Set-Cookie", cookie.String())
 	//添加第二个Cookie
 	//w.Header().Add("Set-Cookie", cookie2.String())
 
@@ -35,6 +36,7 @@ func setCookie(w http.ResponseWriter, r *http.Request) {
 	http.SetCookie(w, &cookie)
 	http.SetCookie(w, &cookie2)
 }
+
 //获取Cookie
 func getCookie(w http.ResponseWriter, r *http.Request) {
 	//获取请求头中所有的Cookie

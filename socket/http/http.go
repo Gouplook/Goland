@@ -51,6 +51,7 @@ type HandHello struct {
 	name    string
 }
 
+// 实现 type Handler 接口中的一个方法函数
 func (h *HandHello) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	// 将数据写到浏览器上
 	w.Write([]byte(h.context))

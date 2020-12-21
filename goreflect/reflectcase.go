@@ -1,6 +1,7 @@
 /**************************************
  * @Author: Yinjinlin
- * @Description: 反射实践案例, 总结：涉及指针问题需要Elem（）函数调用
+ * @Description: 反射实践案例,
+ * 总结：涉及指针问题需要Elem（）函数调用
  * @File:  reflectcase
  * @Version: 1.0.0
  * @Date: 2020/12/18 23:37
@@ -164,9 +165,9 @@ func ReflectStructPtr() {
 // 使用反射机制完成对GetSub的调用，输出形式为：“Tom 完成了减法运算 8-5= 3”
 
 type Call struct {
-	Name string
-	Num1 int
-	Num2 int
+	Name string `json:"name"`
+	Num1 int	`json:"num_1"`
+	Num2 int	`json:"num_2"`
 }
 
 func (c *Call) GetSub(name string) {
@@ -188,9 +189,20 @@ func CallReflect(c interface{}) {
 
 	valType := rVal.Kind()
 	fmt.Println("valType",valType)
-	// 获取字段
+	// 获取字段数
 	numField := rVal.Elem().NumField()
 	fmt.Println("numFiled= ",numField)
+
+	// 遍历字段
+	for i := 0;i<numField;i++{
+		filed := rVal.Elem().Field(i)
+		fmt.Printf("Filed %d %v\n",i, filed)
+	}
+
+	// 获取结构体方法
+	//numMoth := rVal.Elem().NumMethod()  // 获取方法数量不需要Elem
+	numMethod := rVal.NumMethod()
+	fmt.Println("numMethod= ",numMethod)
 
 	// 改变原结构体字段的值
 	rVal.Elem().FieldByName("Num1").SetInt(8)
@@ -202,6 +214,12 @@ func CallReflect(c interface{}) {
 		fmt.Println("Mod: v.Name= ",v.Name)
 		fmt.Println("Mod: v.Num1= ",v.Num1)
 		fmt.Println("Mod: v.Num2= ",v.Num2)
+	}
+	// 遍历字段 ergodic
+	fmt.Println("遍历字段 ======")
+	for i := 0;i<numField;i++{
+		filed := rVal.Elem().Field(i)
+		fmt.Printf("Filed %d %v\n",i, filed)
 	}
 
 	str := fmt.Sprintf("%s 完成了减法运算 %d - %d = %d\n",v.Name, v.Num1,v.Num2,v.Num1-v.Num2)

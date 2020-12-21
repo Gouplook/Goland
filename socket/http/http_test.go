@@ -17,11 +17,11 @@ func TestWebHttp(t *testing.T) {
 	//WebHttp2()
 	//WebHttp3()
 	//WebHttp4()
-	//WebHttp5()
+	WebHttp5()
 
 	// --------------------- 请求  ------------------------
 	//Get()
 	// ------------------- 处理编码 --------------------
-	Encoding()
+	//Encoding()
 
 }

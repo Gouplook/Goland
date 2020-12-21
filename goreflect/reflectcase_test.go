@@ -41,5 +41,5 @@ func TestReflectStructPtr(t *testing.T){
 func TestCallReflect(t *testing.T) {
 	model := &Call{}
 	model.GetSub("tom")
-				CallReflect(model)
+	CallReflect(model)
 }
