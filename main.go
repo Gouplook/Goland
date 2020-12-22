@@ -1,6 +1,7 @@
 package main
 
 import (
+	"GoInduction/utils"
 	"fmt"
 )
 
@@ -94,14 +95,28 @@ func (o *OperatorFactory) CreateOperator(op string) Resulter {
 func OperatorWho(h Resulter) int {
 	return h.GetResult()
 }
-func main() {
-	var operator OperatorFactory
-	obj := operator.CreateOperator("-")
-	b := obj.SetData(30, 10)
-	if b {
-		num := OperatorWho(obj)
-		fmt.Println(num)
+func Addupper() func (int) int{
+	var n int = 10
+	return func (x int ) int {
+		n= n+x
+		return n
 	}
 
+}
+func main() {
+	//var operator OperatorFactory
+	//obj := operator.CreateOperator("-")
+	//b := obj.SetData(30, 10)
+	//if b {
+	//	num := OperatorWho(obj)
+	//	fmt.Println(num)
+	//}
+
+
 	fmt.Println("78880====")
+	fmt.Println(utils.Age)
+	f := Addupper()
+	fmt.Println(f(1))
+	fmt.Println(f(2))
+
 }
