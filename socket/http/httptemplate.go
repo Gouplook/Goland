@@ -16,14 +16,15 @@ import (
 //创建处理器函数
 func templatehandle(w http.ResponseWriter,r *http.Request){
 	//解析模板文件
-	 t, _ := template.ParseFiles("./httptemplatehtml/index.html")
-	//通过Must函数让Go帮我们自动处理异常
-	//t := template.Must(template.ParseFiles("index.html", "index2.html"))
+	// t, _ := template.ParseFiles("./httptemplatehtml/index.html")
+	//通过Must函数让Go帮我们自动处理异常  多个参数时，最后一个参数生效
+	t := template.Must(template.ParseFiles("./httptemplatehtml/index.html", "./httptemplatehtml/index2.html"))
 
 	//执行
-	t.Execute(w, "Hello Template")
+	//t.Execute(w, "Hello Template")
 	//将响应数据在index2.html文件中显示 对多个tmeplate使用下面这个方法
-	//t.ExecuteTemplate(w, "index2.html", "我要去index2.html中")
+	// name : specified data object
+	t.ExecuteTemplate(w, "index2.html", "跳转index2.html中")
 }
 func HttpTemplate(){
 	http.HandleFunc("/testTemplate",templatehandle)
@@ -43,23 +44,23 @@ func ifHandler(w http.ResponseWriter, r *http.Request){
 //测试range
 func rangeHandler(w http.ResponseWriter, r *http.Request) {
 	//解析模板文件
-	t := template.Must(template.ParseFiles("range.html"))
+	t := template.Must(template.ParseFiles("./httptemplatehtml/range.html"))
 	var emps []*model.Employee
 	emp := &model.Employee{
 		ID:       1,
-		LastName: "李小璐",
+		LastName: "jack",
 		Email:    "lxl@jnl.com",
 	}
 	emps = append(emps, emp)
 	emp2 := &model.Employee{
 		ID:       2,
-		LastName: "白百何",
+		LastName: "baidu",
 		Email:    "bbh@cyf.com",
 	}
 	emps = append(emps, emp2)
 	emp3 := &model.Employee{
 		ID:       3,
-		LastName: "马蓉",
+		LastName: "wangyi",
 		Email:    "mr@wbq.com",
 	}
 	emps = append(emps, emp3)
@@ -74,7 +75,7 @@ func withHandler(w http.ResponseWriter, r *http.Request) {
 	//解析模板文件
 	t := template.Must(template.ParseFiles("./httptemplatehtml/with.html"))
 	//执行
-	t.Execute(w, "狸猫")
+	t.Execute(w, "hello-->")
 }
 
 // 包含动作
@@ -96,14 +97,14 @@ func defineHandler(w http.ResponseWriter, r *http.Request) {
 }
 //测试testDefine2
 func define2Handler(w http.ResponseWriter, r *http.Request) {
-	age := 17
+	age := 20
 	var t *template.Template
 	if age < 18 {
 		//解析模板文件
-		t = template.Must(template.ParseFiles("define2.html"))
+		t = template.Must(template.ParseFiles("./httptemplatehtml/define2.html"))
 	} else {
 		//解析模板文件
-		t = template.Must(template.ParseFiles("define2.html", "content1.html"))
+		t = template.Must(template.ParseFiles("./httptemplatehtml/define2.html", "./httptemplatehtml/content1.html"))
 	}
 	//执行
 	t.ExecuteTemplate(w, "model", "")
@@ -111,10 +112,14 @@ func define2Handler(w http.ResponseWriter, r *http.Request) {
 
 // template action
 func TemplateAction(){
-	http.HandleFunc("/testIf", ifHandler)
+	//http.HandleFunc("/testIf", ifHandler)
+	//http.HandleFunc("/testRange", rangeHandler)
+	//http.HandleFunc("/testWith",withHandler)
+	//http.HandleFunc("/template",templateHandler)
+	//http.HandleFunc("/testDefine",defineHandler)
+	http.HandleFunc("/testdefine2Handler",define2Handler)
 
-
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(":10086", nil)
 
 }
 

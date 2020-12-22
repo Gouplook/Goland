@@ -3,10 +3,10 @@
         <meta charset="UTF-8"/>
     </head>
     <body>
-        {{range .}}
-            遍历到的元素是：
-            {{.}}<br>
-            <a href="#">{{.LastName}}</a>
+    {{range .}}
+        <a href="#">{{.LastName}}</a>
+        遍历到的元素是：
+        {{.ID}}}  {{.Email}}  <br>
         {{else}}
             没有遍历到任何元素
         {{end}}        

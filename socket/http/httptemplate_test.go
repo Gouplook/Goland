@@ -9,8 +9,13 @@ package http
 
 import "testing"
 
+// 模版测试
 func TestHttpTemplate(t *testing.T) {
 	HttpTemplate()
 }
 
+// 动作测试
+func TestTemplateAction(t *testing.T) {
+	TemplateAction()
+}
 
