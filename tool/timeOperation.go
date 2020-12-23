@@ -62,6 +62,28 @@ func BasicTime() {
 func TimeRange(now time.Time) (bTime, eTime time.Time) {
 	local, _ := time.LoadLocation("Asia/Shanghai")
 	bTime = time.Date(now.Year(), now.Month(), now.Day(), 0, 0, 0, 0, local) // 2020-12-14 00:00:00
-	eTime = bTime.AddDate(0, 0, 1).Add(-1 * time.Second)                     // 2020-12-14 23:59:59
+	eTime = bTime.AddDate(0, 0, 1).Add(-1 * time.Second) // 2020-12-14 23:59:59
 	return
+}
+
+
+//字符串转化为时间戳
+//@param  string timeStr 日期字符串
+//@return int64
+func StrtoTime(timeStr string, timelayouts... string) int64 {
+	timeLayout := "2006-01-02 15:04:05"                             //转化所需模板
+	if len(timelayouts) > 0 {
+		timeLayout = timelayouts[0]
+	}
+	loc, _ := time.LoadLocation("Local")                            //重要：获取时区
+	theTime, _ := time.ParseInLocation(timeLayout, timeStr, loc) //使用模板在对应时区转化为time.time类型
+	return  theTime.Unix()
+}
+
+//时间戳转化为字符串
+//@param  int64  timestamp  时间戳
+//@return string
+func TimeToStr(timestamp int64) string {
+	tm := time.Unix(timestamp, 0)
+	return tm.Format("2006/01/02 15:04:05")
 }

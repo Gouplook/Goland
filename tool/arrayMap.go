@@ -135,7 +135,7 @@ func ArrayUniqueInt(arr []int) ([]int){
 	return newArr
 }
 
-// 数组去重
+// 数组去重 string
 func ArrayUniqueString(arr []string)([]string){
 	if len(arr) == 0{
 		return arr

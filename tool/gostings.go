@@ -63,7 +63,6 @@ func GoStrings(){
 	fmt.Printf("num=%v\n", num)
 
 	//10)不区分大小写的字符串比较(==是区分字母大小写的): fmt.Println(strings.EqualFold("abc", "Abc")) // true
-
 	b = strings.EqualFold("abc", "Abc")
 	fmt.Printf("b=%v\n", b) //true
 
@@ -112,6 +111,9 @@ func GoStrings(){
 	//strings.Trim("! hello! ", " !")  // ["hello"] //将左右两边 ! 和 " "去掉
 	str = strings.Trim("! he!llo! ", " !")
 	fmt.Printf("str=%q\n", str)
+
+	// 将字符串右两边指定的字符去掉
+	// TrimRight
 
 	//20)判断字符串是否以指定的字符串开头:
 	//strings.HasPrefix("ftp://192.168.10.1", "ftp") // true

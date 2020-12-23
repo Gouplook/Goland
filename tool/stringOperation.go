@@ -26,7 +26,6 @@ func StrExplode2IntArr( s string, step string) []int {
 	}
 	return outData
 	// 1,2,5 类型卡 --> 适合这些门店 4 5 6 9
-
 }
 
 // TrimRgiht
@@ -35,3 +34,63 @@ func StringsTrim(s string, cutset string) string{
 	 return str
 }
 
+
+//获取字符串长度
+//@param  string str 待获取长度字符串
+//@return int
+func Mb4Strlen(str string) int{
+	str = strings.TrimSpace(str)
+	if len(str) == 0{
+		return 0
+	}
+	strRune := []rune(str)
+	lens := len(strRune)
+	return lens
+}
+
+//截取字符串
+//@param string str   待截取的字符串
+//@param int    index 截取开始位置
+//@param int    lens  截取长度
+func StuffStr(str string,index int,lens int)(string){
+	str = strings.TrimSpace(str)
+	if len(str) == 0{
+		return str
+	}
+	strRune := []rune(str)
+	if len(strRune)<lens{
+		lens = len(strRune)
+	}
+	return string(strRune[index:lens])
+}
+
+
+// 公钥转换
+func GetPemPublic(public_key string) string {
+	res := "-----BEGIN PUBLIC KEY-----\n"
+	strlen := len(public_key)
+	for i:=0;i < strlen;i+=64 {
+		if i + 64 >= strlen {
+			res += public_key[i:] + "\n"
+		}else{
+			res += public_key[i:i + 64] + "\n"
+		}
+	}
+	res += "-----END PUBLIC KEY-----"
+	return res
+}
+
+// 私钥转换
+func GetPemPrivate(private_key string) string {
+	res := "-----BEGIN RSA PRIVATE KEY-----\n"
+	strlen := len(private_key)
+	for i:=0;i < strlen;i+=64 {
+		if i + 64 >= strlen {
+			res += private_key[i:] + "\n"
+		}else{
+			res += private_key[i:i + 64] + "\n"
+		}
+	}
+	res += "-----END RSA PRIVATE KEY-----"
+	return res
+}
