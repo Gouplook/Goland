@@ -17,3 +17,8 @@ func TestYamlConfig_GetConfig(t *testing.T) {
 	confg := model.GetConfig()
 	fmt.Println(confg.Name)
 }
+
+// Big Data Processing
+func TestBigDataProcess(t *testing.T) {
+	BigDataProcess()
+}
