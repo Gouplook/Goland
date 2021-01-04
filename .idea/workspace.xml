@@ -20,7 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc52f206-916b-4616-a64a-584a8ad39e20" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/designpatterns/options.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/ini/conf.ini" beforeDir="false" afterPath="$PROJECT_DIR$/conf/ini/conf.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/ini/ini.go" beforeDir="false" afterPath="$PROJECT_DIR$/conf/ini/ini.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/toml/toml.go" beforeDir="false" afterPath="$PROJECT_DIR$/conf/toml/toml.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/toml/toml_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/conf/toml/toml_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/timeOperation.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/timeOperation.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,9 +59,9 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="go.vgo" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Go Test.TestModel_Where in GoInduction/mysqldb/base">
+  <component name="RunManager" selected="Go Test.TestBasicTime in GoInduction/tool">
     <configuration name="go build GoInduction" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$" />
@@ -63,6 +69,17 @@
       <filePath value="$PROJECT_DIR$/main.go" />
       <package value="GoInduction" />
       <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestBasicTime in GoInduction/tool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Goland" />
+      <working_directory value="$PROJECT_DIR$/tool" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="GoInduction/tool" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestBasicTime\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestGoConfigReadConf in GoInduction/conf/ini" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -87,10 +104,23 @@
       <pattern value="^\QTestModel_Where\E$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestReadeFlie in GoInduction/conf/toml" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Goland" />
+      <working_directory value="$PROJECT_DIR$/conf/toml" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="GoInduction/conf/toml" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestReadeFlie\E$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestModel_Where in GoInduction/mysqldb/base" />
+        <item itemvalue="Go Test.TestBasicTime in GoInduction/tool" />
+        <item itemvalue="Go Test.TestReadeFlie in GoInduction/conf/toml" />
         <item itemvalue="Go Test.TestGoConfigReadConf in GoInduction/conf/ini" />
+        <item itemvalue="Go Test.TestModel_Where in GoInduction/mysqldb/base" />
         <item itemvalue="Go Build.go build GoInduction" />
       </list>
     </recent_temporary>
@@ -109,6 +139,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -119,25 +150,29 @@
     </environment>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1878" height="172" key="GridCell.Tab.0.bottom" timestamp="1606469236169">
+    <state width="1878" height="466" key="GridCell.Tab.0.bottom" timestamp="1606900569112">
       <screen x="1280" y="41" width="1920" height="1080" />
     </state>
-    <state width="1878" height="172" key="GridCell.Tab.0.bottom/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1606469236169" />
+    <state width="1878" height="466" key="GridCell.Tab.0.bottom/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1606900569112" />
+    <state width="1878" height="466" key="GridCell.Tab.0.bottom/1280.41.1920.1080/0.23.1280.777@1280.41.1920.1080" timestamp="1606702258357" />
     <state width="1878" height="366" key="GridCell.Tab.0.bottom/1280.64.1920.1057/46.23.1234.777@1280.64.1920.1057" timestamp="1606454805047" />
-    <state width="1878" height="172" key="GridCell.Tab.0.center" timestamp="1606469236166">
+    <state width="1878" height="466" key="GridCell.Tab.0.center" timestamp="1606900569108">
       <screen x="1280" y="41" width="1920" height="1080" />
     </state>
-    <state width="1878" height="172" key="GridCell.Tab.0.center/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1606469236166" />
+    <state width="1878" height="466" key="GridCell.Tab.0.center/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1606900569108" />
+    <state width="1878" height="466" key="GridCell.Tab.0.center/1280.41.1920.1080/0.23.1280.777@1280.41.1920.1080" timestamp="1606702258355" />
     <state width="1878" height="366" key="GridCell.Tab.0.center/1280.64.1920.1057/46.23.1234.777@1280.64.1920.1057" timestamp="1606454805043" />
-    <state width="1878" height="172" key="GridCell.Tab.0.left" timestamp="1606469236165">
+    <state width="1878" height="466" key="GridCell.Tab.0.left" timestamp="1606900569106">
       <screen x="1280" y="41" width="1920" height="1080" />
     </state>
-    <state width="1878" height="172" key="GridCell.Tab.0.left/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1606469236165" />
+    <state width="1878" height="466" key="GridCell.Tab.0.left/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1606900569106" />
+    <state width="1878" height="466" key="GridCell.Tab.0.left/1280.41.1920.1080/0.23.1280.777@1280.41.1920.1080" timestamp="1606702258354" />
     <state width="1878" height="366" key="GridCell.Tab.0.left/1280.64.1920.1057/46.23.1234.777@1280.64.1920.1057" timestamp="1606454805040" />
-    <state width="1878" height="172" key="GridCell.Tab.0.right" timestamp="1606469236168">
+    <state width="1878" height="466" key="GridCell.Tab.0.right" timestamp="1606900569109">
       <screen x="1280" y="41" width="1920" height="1080" />
     </state>
-    <state width="1878" height="172" key="GridCell.Tab.0.right/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1606469236168" />
+    <state width="1878" height="466" key="GridCell.Tab.0.right/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1606900569109" />
+    <state width="1878" height="466" key="GridCell.Tab.0.right/1280.41.1920.1080/0.23.1280.777@1280.41.1920.1080" timestamp="1606702258356" />
     <state width="1878" height="366" key="GridCell.Tab.0.right/1280.64.1920.1057/46.23.1234.777@1280.64.1920.1057" timestamp="1606454805044" />
     <state width="1878" height="172" key="GridCell.Tab.1.bottom" timestamp="1606469236174">
       <screen x="1280" y="41" width="1920" height="1080" />
@@ -159,10 +194,10 @@
     </state>
     <state width="1878" height="172" key="GridCell.Tab.1.right/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1606469236173" />
     <state width="1878" height="366" key="GridCell.Tab.1.right/1280.64.1920.1057/46.23.1234.777@1280.64.1920.1057" timestamp="1606454806119" />
-    <state x="1741" y="220" key="SettingsEditor" timestamp="1606460798282">
+    <state x="1741" y="220" key="SettingsEditor" timestamp="1606981585263">
       <screen x="1280" y="41" width="1920" height="1080" />
     </state>
-    <state x="1741" y="220" key="SettingsEditor/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1606460798282" />
+    <state x="1741" y="220" key="SettingsEditor/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1606981585263" />
     <state x="1905" y="282" width="670" height="676" key="search.everywhere.popup" timestamp="1606458748717">
       <screen x="1280" y="41" width="1920" height="1080" />
     </state>

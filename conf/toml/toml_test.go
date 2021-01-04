@@ -17,3 +17,8 @@ func TestReadConf(t *testing.T) {
 	fmt.Println("==========")
 	fmt.Println(p.Db)
 }
+
+func TestReadeFlie(t *testing.T) {
+	ReadeFlie("conf.toml")
+
+}

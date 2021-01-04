@@ -25,6 +25,7 @@ func IniReadConf(){
 			Path    string
 		}
 	}{}
+
 	err := gcfg.ReadFileInto(&conf,"conf.ini")
 	if err != nil {
 		fmt.Println("Failed to parse config file")
@@ -38,6 +39,8 @@ func GoConfigReadConf(){
 	// 直接获取
 	cfg, _ := goconfig.LoadConfigFile("conf.ini")
 	enabled,_ := cfg.GetValue("Section","enabled")
+	path, _ := cfg.GetValue("Section","path") // 结构体区分大小写，Section，
 
 	fmt.Println(enabled)
+	fmt.Println(path)
 }

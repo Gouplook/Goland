@@ -67,3 +67,17 @@ func ReadConf(fname string) (p *BaseData, err error) {
 
 	return
 }
+
+func ReadeFlie(filename string){
+	byte, err :=ioutil.ReadFile(filename)
+	if err != nil {
+		panic(err)
+	}
+	fmt.Println(byte)
+
+	str := string(byte)
+
+	fmt.Println("string :",str)
+
+
+}

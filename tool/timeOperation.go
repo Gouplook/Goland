@@ -50,10 +50,14 @@ func BasicTime() {
 
 	// string -> time
 	strToTime, _ := time.Parse("2006-01-02", localFroml)
+	//1606875723  将时间字符串转换为时间戳
+	stamp, _ := time.ParseInLocation("2006-01-02", "2020-12-02",time.Local)
+
 
 	fmt.Println("now time: ", now)
 	fmt.Println("local time: ", local)
 	fmt.Println("timestmap: ", timestmap)
 	fmt.Println("localFroml: ", localFroml)
 	fmt.Println("strToTime: ", strToTime)
+	fmt.Println("stamp",stamp.Unix())
 }
