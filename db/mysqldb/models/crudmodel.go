@@ -13,7 +13,7 @@ import (
 )
 
 // 表结构体
-type 	NeedToModel struct {
+type NeedToModel struct {
 	Model *base.Model      // 数据赠删改查的基本结构体
 	Field NeedToModelField // 表字段
 }
@@ -26,10 +26,10 @@ type NeedToModelField struct {
 	//F_password   string `default:"password"`
 	//F_created_id string `default:"created_id"`
 
-	Table      string `default:"table"` // 表名待处理
-	Id         int    `default:"id"`
-	Email      string `default:"email"`
-	Password   string `default:"password"`
+	Table     string `default:"table"` // 表名待处理
+	Id        int    `default:"id"`
+	Email     string `default:"email"`
+	Password  string `default:"password"`
 	CreatedAt string `default:"created_at"`
 }
 
@@ -97,6 +97,3 @@ func (m *NeedToModel) SelectByPage(where map[string]interface{}, start, limit in
 	// 需要修改
 	return m.Model.Where(where).Limit(start, limit).OrderBy(m.Field.CreatedAt + " DESC ").Select()
 }
-
-
-

@@ -14,5 +14,6 @@ import (
 
 func BigDataProcess(){
 	dec := decimal.NewFromFloat(123.66).Sub(decimal.NewFromFloat(22))
+
 	fmt.Println(dec)
 }

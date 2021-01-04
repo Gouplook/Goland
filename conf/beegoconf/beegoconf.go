@@ -21,9 +21,12 @@ func GetIniFileConf() {
 	iniConf, _ := config.NewConfig("ini", "../ini/conf.ini")
 	enabled := iniConf.String("Section::enabled")
 	path := iniConf.String("Section::path")
+	dbType := iniConf.String("db::type")
+
 	fmt.Println(enabled)
 
 	fmt.Println("Path := ", path)
+	fmt.Println("dbType = ",dbType)
 	fmt.Println("==========")
 
 }

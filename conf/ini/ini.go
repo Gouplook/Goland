@@ -38,10 +38,13 @@ func GoConfigReadConf(){
 	// 直接获取
 	cfg, _ := goconfig.LoadConfigFile("conf.ini")
 	enabled,_ := cfg.GetValue("Section","enabled")
+	// 同时也获取注释的内容
 	path:= cfg.GetKeyComments("Section","path")
 	path1,_ := cfg.GetValue("Section","path")
+	dbType,_ := cfg.GetValue("db","type")
 
 	fmt.Println(enabled)
 	fmt.Println(path)
 	fmt.Println("path1 = ", path1)
+	fmt.Println("dbType= ",dbType)
 }
