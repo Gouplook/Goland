@@ -24,7 +24,4 @@ func TestArrayString(t *testing.T) {
 	fmt.Println("tagIds: ",tagIds)
 	str := ArrayString(",", tagIds)
 	fmt.Println(str)
-
-
-
 }
