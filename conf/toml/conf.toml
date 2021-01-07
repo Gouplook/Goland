@@ -21,6 +21,9 @@ port=6379
 ip="34.23.1.6"
 port=9921
 
+[shanghai.dev]
+url = ""
+
 #嵌套
 [nest]
 data=[["n1","n2"],[1,2]]
