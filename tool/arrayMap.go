@@ -75,7 +75,10 @@ func ArrayRebuild(field string, maps []map[string]interface{}) map[string]interf
 	return reMap
 }
 
-//数组map排序
+// 数组map排序
+// 思路：1： 先定义两个容器，mapData/keys 存放数据和存放key，
+//      2： 对key进行排序 sort.string
+//      3： 遍历key，将key中字段所对应的值，存放起来，return
 func SortsMap(field string, maps []map[string]interface{}) []map[string]interface{} {
 	var mapData = make(map[string]interface{}) // map make不需要指定大小
 	var keys = make([]string, 0)               // 切片make时，需要指定大小
@@ -101,19 +104,6 @@ func SortsMap(field string, maps []map[string]interface{}) []map[string]interfac
 	return remapData
 }
 
-//func SortMap2(field string, maps []map[string]interface{}) []map[string]interface{} {
-//	var mapData = make(map[string]interface{})
-//	var keys = make([]string, 0)
-//
-//	for _, v:= range maps{
-//		vs := v[field]
-//		if vp, ok :=vs.(float64); ok {
-//			//
-//			vs = strconv.FormatFloat(vp,'f',-1, 64)
-//
-//		}
-//	}
-//}
 
 //把数组转换为字符串
 //@param  string separator       转换分隔符

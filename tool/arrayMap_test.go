@@ -8,6 +8,8 @@ package tool
 
 import (
 	"fmt"
+	"sort"
+	"strconv"
 	"testing"
 )
 
@@ -20,8 +22,37 @@ func TestArrayKeys(t *testing.T) {
 	fmt.Println(slile)
 }
 func TestArrayString(t *testing.T) {
-	tagIds := []string{"1#","2#","#4"}
-	fmt.Println("tagIds: ",tagIds)
+	tagIds := []string{"1#", "2#", "#4"}
+	fmt.Println("tagIds: ", tagIds)
 	str := ArrayString(",", tagIds)
 	fmt.Println(str)
+}
+
+func SortMaps(field string, maps []map[string]interface{}) []map[string]interface{} {
+
+	var tempMap = make(map[string]interface{})
+	var keys = make([]string, 0)
+
+	for _, v := range maps {
+		vs := v[field]
+		if vp, ok := vs.(float64); ok {
+			vs = strconv.FormatFloat(vp, 'f', -1, 64)
+		}
+		if vp, ok := vs.(int); ok {
+			vs = strconv.FormatInt(int64(vp), 10)
+		}
+		if vp, ok := vs.(string); ok {
+			vs = vp
+		}
+		keys = append(keys, vs.(string))
+		tempMap[vs.(string)] = v
+	}
+	sort.Strings(keys)
+	remapData := make([]map[string]interface{}, 0)
+
+	// 遍历keys，keys中现在是排好序的, 根据keys中的值进行访问查询
+	for _, v := range keys {
+		remapData = append(remapData, tempMap[v].(map[string]interface{}))
+	}
+	return remapData
 }
