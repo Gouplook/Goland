@@ -6,6 +6,7 @@
  * @Date: 2020/12/18 21:38
  **********************************************************************/
 package goreflect
+
 import (
 	"fmt"
 	"reflect"
@@ -62,6 +63,8 @@ func StructType(s interface{}) {
 	valKind := rVal.Kind()
 	//(2) rTyp.Kind()
 	typKind := rType.Kind()
+	// 结构体序列号
+
 
 	fmt.Printf("valKind = %v   typKind = %v ", valKind, typKind)
 	fmt.Println()

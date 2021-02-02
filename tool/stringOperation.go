@@ -62,6 +62,7 @@ func StuffStr(str string,index int,lens int)(string){
 		lens = len(strRune)
 	}
 	return string(strRune[index:lens])
+
 }
 
 

@@ -3,7 +3,7 @@ module GoInduction
 go 1.14
 
 require (
-	github.com/Unknwon/goconfig v0.0.0-20200908083735-df7de6a44db8 // indirect
+	github.com/Unknwon/goconfig v0.0.0-20200908083735-df7de6a44db8
 	github.com/astaxie/beego v1.12.3
 	github.com/coreos/etcd v3.3.25+incompatible // indirect
 	github.com/coreos/go-semver v0.3.0 // indirect
@@ -20,7 +20,7 @@ require (
 	golang.org/x/text v0.3.0
 	google.golang.org/genproto v0.0.0-20201210142538-e3217bee35cc // indirect
 	google.golang.org/grpc v1.34.0 // indirect
-	gopkg.in/gcfg.v1 v1.2.3 // indirect
+	gopkg.in/gcfg.v1 v1.2.3
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 	gopkg.in/yaml.v2 v2.2.8
 )

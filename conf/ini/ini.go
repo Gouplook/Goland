@@ -39,17 +39,18 @@ func GoConfigReadConf(){
 	// 直接获取
 	cfg, _ := goconfig.LoadConfigFile("conf.ini")
 	enabled,_ := cfg.GetValue("Section","enabled")
-<<<<<<< HEAD
+
 	path, _ := cfg.GetValue("Section","path") // 结构体区分大小写，Section，
 
 	fmt.Println(enabled)
 	fmt.Println(path)
-=======
-	path:= cfg.GetKeyComments("Section","path")
+	// 同时也获取注释的内容
+	path = cfg.GetKeyComments("Section","path")
 	path1,_ := cfg.GetValue("Section","path")
+	dbType,_ := cfg.GetValue("db","type")
 
 	fmt.Println(enabled)
 	fmt.Println(path)
 	fmt.Println("path1 = ", path1)
->>>>>>> ac74f244ef88a102760d4ef508919e70688e87de
+	fmt.Println("dbType= ",dbType)
 }

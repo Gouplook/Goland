@@ -19,12 +19,18 @@ func BeeGoConf() {
 // beego 默认解析ini 配置文件   key通过 section::key 的方式获取
 func GetIniFileConf() {
 	iniConf, _ := config.NewConfig("ini", "../ini/conf.ini")
+
 	enabled := iniConf.String("Section::enabled")
 	path := iniConf.String("Section::path")
+	dbType := iniConf.String("db::type")
+
 	fmt.Println(enabled)
 
 	fmt.Println("Path := ", path)
+	fmt.Println("dbType = ",dbType)
 	fmt.Println("==========")
+	fmt.Println("Section::path")
+	//dbType := iniConf.String()
 
 }
 

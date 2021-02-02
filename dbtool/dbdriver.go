@@ -15,6 +15,7 @@ import (
 )
 
 // 如何将这个文件设置为最先启动
+// 设置全局变量，启动是，先启动init
 func Init() {
 	//func init() {
  	logs.Info("Init driver.go mysql start")
