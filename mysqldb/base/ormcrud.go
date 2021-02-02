@@ -29,9 +29,9 @@ func OrmInit(){
 
 func OrmInsert() {
 	o := orm.NewOrm()
-	o.Using("default")
+	//o.Using("default")
 	user := new(model.User)
-	user.Password = "J123456"
+	user.Password = "buyaoqwert123"
 	user.Email = "tengxun@163.com"
 	user.CreatedAt = time.Now().Local().Format("2006-01-02 15:04:05")
 	o.Insert(user)
@@ -46,7 +46,7 @@ func OrmUpdate(){
 	}
 	o.Update(&user)
 }
-//Update 默认更新所有的字段，可以更新指定的字段
+// Update 默认更新所有的字段，可以更新指定的字段
 func OrmUpdate2(){
 	o := orm.NewOrm()
 	//user := new(model.User)
@@ -58,7 +58,7 @@ func OrmUpdate2(){
 // Read 默认通过查询主键赋值，可以使用指定的字段进行查询：
 func OrmRead(){
 	o := orm.NewOrm()
-	user := model.User{Id :1106}
+	user := model.User{Id : 1107}
 	err := o.Read(&user)
 	if err == orm.ErrNoRows {
 		fmt.Println("查询不到")

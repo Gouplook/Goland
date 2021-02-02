@@ -11,10 +11,11 @@ import "testing"
 func TestMapToStruct(t *testing.T) {
 	MapToStruct()
 }
-
+// 正向转换
 func TestMapToStruct2(t *testing.T) {
 	MapToStruct1()
 }
+// 反向转换
 func TestStructToMap(t *testing.T) {
 	StructToMap()
 }

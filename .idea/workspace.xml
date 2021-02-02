@@ -20,13 +20,89 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc52f206-916b-4616-a64a-584a8ad39e20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/designpatterns/options.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/mysqlcrud.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/app.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/mysqldb/models/crudmodel.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/mysqldb/models/crudmodel_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbtool/dbdriver.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/errno/errno.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goreflect/reflect.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goreflect/reflect_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goreflect/reflectcase.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goreflect/reflectcase_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loadbalance/filter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loadbalance/loadbalance.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loadbalance/random.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loadbalance/random_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loadbalance/roundrobin.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/problem/problem.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/problem/problem_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registry/etcd/etcd.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registry/etcd/etcd_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registry/options.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registry/pluginManger.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registry/registry.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registry/service.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socket/http/autodownload.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socket/http/http.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socket/http/http_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socket/http/httpcookie.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socket/http/httpcookie_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socket/http/httprequest.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socket/http/httprequest_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socket/http/httptemplate.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socket/http/httptemplate_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socket/http/httptemplatehtml/content1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socket/http/httptemplatehtml/content2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socket/http/httptemplatehtml/define.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socket/http/httptemplatehtml/define2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socket/http/httptemplatehtml/if.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socket/http/httptemplatehtml/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socket/http/httptemplatehtml/index2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socket/http/httptemplatehtml/range.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socket/http/httptemplatehtml/template1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socket/http/httptemplatehtml/template2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socket/http/httptemplatehtml/with.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socket/http/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socket/http/model/employee.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/gostings.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/reflectOpeartion.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/bigDataProcessing.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/config_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/goinit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Goland.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/beegoconf/beegoconf.go" beforeDir="false" afterPath="$PROJECT_DIR$/conf/beegoconf/beegoconf.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/beegoconf/beegoconf_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/conf/beegoconf/beegoconf_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf/ini/conf.ini" beforeDir="false" afterPath="$PROJECT_DIR$/conf/ini/conf.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf/ini/ini.go" beforeDir="false" afterPath="$PROJECT_DIR$/conf/ini/ini.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/toml/toml.go" beforeDir="false" afterPath="$PROJECT_DIR$/conf/toml/toml.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/toml/toml_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/conf/toml/toml_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/ini/int_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/conf/ini/int_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/yaml/yaml.go" beforeDir="false" afterPath="$PROJECT_DIR$/conf/yaml/yaml.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryandframedescrip/libraryFameDecrip.toml" beforeDir="false" afterPath="$PROJECT_DIR$/libraryandframedescrip/libraryFameDecrip.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/log.go" beforeDir="false" afterPath="$PROJECT_DIR$/log/log.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysqldb/base.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysqldb/base/converter.go" beforeDir="false" afterPath="$PROJECT_DIR$/mysqldb/base/converter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysqldb/base/crud.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysqldb/base/crud_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysqldb/base/ormcrud.go" beforeDir="false" afterPath="$PROJECT_DIR$/mysqldb/base/ormcrud.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysqldb/base/ormcrud_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/mysqldb/base/ormcrud_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/other_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/other/other_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisoperation/redisOperation.go" beforeDir="false" afterPath="$PROJECT_DIR$/redisoperation/redisOperation.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/arrayMap.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/arrayMap.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/mapstructureOperation.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/mapstructureOperation.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/mapstructureOperation_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/mapstructureOperation_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/stringOperation.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/stringOperation.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/stringOperation_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/stringOperation_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tool/timeOperation.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/timeOperation.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/timeOperation_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/timeOperation_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +138,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Go Test.TestBasicTime in GoInduction/tool">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="Goland" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$" />
+      <package value="GoInduction" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build GoInduction" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$" />
@@ -113,6 +199,81 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <pattern value="^\QTestReadeFlie\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="Goland" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <package value="GoInduction" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Goland" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="Goland" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="Goland" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <module name="Goland" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -198,6 +359,10 @@
       <screen x="1280" y="41" width="1920" height="1080" />
     </state>
     <state x="1741" y="220" key="SettingsEditor/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1606981585263" />
+    <state x="1932" y="336" width="615" height="490" key="find.popup" timestamp="1612170304159">
+      <screen x="1280" y="41" width="1920" height="1080" />
+    </state>
+    <state x="1932" y="336" width="615" height="490" key="find.popup/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612170304159" />
     <state x="1905" y="282" width="670" height="676" key="search.everywhere.popup" timestamp="1606458748717">
       <screen x="1280" y="41" width="1920" height="1080" />
     </state>
