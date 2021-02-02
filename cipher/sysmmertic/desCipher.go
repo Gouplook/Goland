@@ -17,8 +17,9 @@ import (
 // 编写填充函数, 如果最后一个分组字节数不够, 填充
 // 若字节数刚好合适，添加一个新的分组；
 // 填充个的字节的值 == 缺少的字节的数
-func paddingLastGroup(plainText []byte, bloclSize int) []byte{
-	padNum := bloclSize - len(plainText) % bloclSize
+func paddingLastGroup(plainText []byte, blockSize int) []byte{
+	//
+	padNum := blockSize - len(plainText) % blockSize
 	ch := []byte{
 		byte(padNum),
 	}
@@ -46,6 +47,7 @@ func DesEncrypt(plainText, key []byte) []byte {
 	// 2. 明文填充
 	newPlainText := paddingLastGroup(plainText, cipherBlock.BlockSize())
 
+	// 相当于初始化向量 加密和解密必须相同
 	iv := []byte("12345678")
 	// 3: 创建一个使用cbc分组接口
 	blockMode := cipher.NewCBCEncrypter(cipherBlock,iv)
@@ -59,13 +61,13 @@ func DesEncrypt(plainText, key []byte) []byte {
 // @cipherText	:加密文本
 // @key			：密钥（由于是对称加密，加密和解密密钥 是相同的）
 func DesDecrpt(cipherText, key[]byte) []byte{
-
 	// 1.创建一个底层使用des的密码接口
 	cipherBlock, err  := des.NewCipher(key)
 	if err != nil {
 		return nil
 	}
-	iv := []byte("12345678")  //
+	// 相当于初始化向量 加密和解密必须相同
+	iv := []byte("12345678")
 	// 2. 创建一个使用的cbc模式解密的接口
 	stream := cipher.NewCBCDecrypter(cipherBlock, iv)
 
