@@ -57,7 +57,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
-  <component name="RunManager" selected="Go Test.TestAesDencryptCTR in GoInduction/cipher/sysmmertic">
+  <component name="RunManager" selected="Go Test.TestAsyHash in GoInduction/cipher/asymmetricEncrypt">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$" />
@@ -90,15 +90,15 @@
       <pattern value="^\QTestAesDencryptOfb\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestAesEncrypt in GoInduction/cipher/sysmmertic" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestAsyHash in GoInduction/cipher/asymmetricEncrypt" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/cipher/sysmmertic" />
+      <working_directory value="$PROJECT_DIR$/cipher/asymmetricEncrypt" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/cipher/sysmmertic" />
+      <package value="GoInduction/cipher/asymmetricEncrypt" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestAesEncrypt\E$" />
+      <pattern value="^\QTestAsyHash\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestGetPrivate in GoInduction/cipher/asymmetricEncrypt" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -136,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestAsyHash in GoInduction/cipher/asymmetricEncrypt" />
         <item itemvalue="Go Test.TestAesDencryptCTR in GoInduction/cipher/sysmmertic" />
         <item itemvalue="Go Test.TestAesDencryptOfb in GoInduction/cipher/sysmmertic" />
         <item itemvalue="Go Test.TestRSAEncrypt in GoInduction/cipher/asymmetricEncrypt" />
         <item itemvalue="Go Test.TestGetPrivate in GoInduction/cipher/asymmetricEncrypt" />
-        <item itemvalue="Go Test.TestAesEncrypt in GoInduction/cipher/sysmmertic" />
       </list>
     </recent_temporary>
   </component>
