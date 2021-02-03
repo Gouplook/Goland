@@ -28,6 +28,7 @@ import (
 // 4：通过pem将设置好的数据进行编码, 并写入磁盘文件
 
 // 生成私钥
+// 注意事项：
 func GetRsakey(bits int) {
 	// 1: 使用rsa中的GenerateKey方法生成私钥
 	privateKey, err := rsa.GenerateKey(rand.Reader, bits)
@@ -38,7 +39,7 @@ func GetRsakey(bits int) {
 	// 2：通过X509标准得到的RAS私钥序列化特定的字符串ASN.1 PKCS#1 DER编码字符串
 	privateByte := x509.MarshalPKCS1PrivateKey(privateKey)
 
-	//  3：将私钥串设置到pem格式块中
+	// 3：将私钥串设置到pem格式块中
 	block := &pem.Block{
 		Type:  "RSA PRIVATE KEY",
 		Bytes: privateByte,
@@ -63,8 +64,9 @@ func GetRsakey(bits int) {
 	publicKey := privateKey.PublicKey
 
 	// 2：通过X509标准将得到的RSA公钥序列化为字符串
-	//publicByte := x509.MarshalPKCS1PublicKey(&publicKey)
-	publicByte,err := x509.MarshalPKIXPublicKey(&publicKey)
+	// ******* 注意问题，公钥加密方法，和解密使用的方法要一致。********
+	publicByte := x509.MarshalPKCS1PublicKey(&publicKey)
+	//publicByte,err := x509.MarshalPKIXPublicKey(&publicKey)
 	if err != nil {
 		panic(err)
 		return
@@ -121,18 +123,18 @@ func RSAEncrypt(plainText []byte, fileName string) []byte {
 	block, _ := pem.Decode(buf)
 
 	// 3：通过X509标准将得到的RSA公钥序列化为字符串
-	//pubInterface, err := x509.ParsePKCS1PublicKey(block.Bytes)
-	pubInterface, err := x509.ParsePKIXPublicKey(block.Bytes)
+	pubInterface, err := x509.ParsePKCS1PublicKey(block.Bytes)  // 密钥解析，
+	//pubInterface, err := x509.ParsePKIXPublicKey(block.Bytes)
+
 	// 断言类型转换
-	pubKey := pubInterface.(*rsa.PublicKey)
+	//pubKey := pubInterface.(*rsa.PublicKey)
 	// 4：使用得到的公钥通过rsa进行数据加密
-	cipherText, err := rsa.EncryptPKCS1v15(rand.Reader, pubKey, plainText)
+	cipherText, err := rsa.EncryptPKCS1v15(rand.Reader, pubInterface, plainText)
 
 	if err != nil {
 		panic(err)
 	}
 	return cipherText
-
 }
 
 // RSA 解密 私钥解密

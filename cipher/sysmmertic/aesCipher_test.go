@@ -28,7 +28,7 @@ func TestAesEncrypt(t *testing.T) {
 	fmt.Println("解密====", string(decText))
 
 }
-
+// OFB 测试
 func TestAesDencryptOfb(t *testing.T) {
 	plainText := "#OFb54创建一个使用cbc分组接口AES11"
 	key := "abcd1234abcd1234abcd1234"
@@ -46,4 +46,16 @@ func TestAesDencryptOfb(t *testing.T) {
 	fmt.Println("解密====", string(decText))
 
 
+}
+
+// CTR测试
+func TestAesDencryptCTR(t *testing.T) {
+	plainText :=[]byte("使用CTR分组接口")
+	key := []byte("abcd1234abcd1234abcd1234")
+	fmt.Printf("加密前：%v", string(plainText) )
+	fmt.Println()
+	cipherByte := AesEncryptCTR(plainText,key)
+	fmt.Println("====", string(cipherByte))
+	decText := AesDencryptCTR(cipherByte, key)
+	fmt.Println("解密====", string(decText))
 }

@@ -13,6 +13,10 @@ import (
 )
 
 var iv = []byte("1234567890123456")
+// 分组模式
+// OFB - 不推荐使用
+// CFB - 不推荐使用
+// CTR - 推荐使用
 
 // ------------------------cbc-----------------------------------
 // 加密 模式 cbc
@@ -62,7 +66,7 @@ func AesDencrypt(cipherText, key []byte) []byte {
 }
 
 
-//--------------------OFB-----------------------
+//--------------------OFB 不推荐使用-----------------------
 // 该模式下加密，不需要填充
 // 加密 OFB分组模式 加密和解密相同，相当于两次异或（XORKeyStream）
 func AesEncryptOfb(plainText, key []byte) []byte{
@@ -103,4 +107,32 @@ func AesDencryptOfb(ciphertext, key []byte) []byte {
 	return dst
 
 }
+
+// -------------------------CTR----------------
+func AesEncryptCTR(plainText,key []byte) []byte{
+	block,err := aes.NewCipher(key)
+	if err != nil {
+		panic(err)
+	}
+	stream := cipher.NewCTR(block,iv)
+	src := plainText
+	dst := make([]byte,len(plainText))
+
+	stream.XORKeyStream(dst, src)
+
+	return dst
+}
+
+func AesDencryptCTR(cipherText,key []byte)[]byte {
+	block,err := aes.NewCipher(key)
+	if err != nil {
+		panic(err)
+	}
+	stream := cipher.NewCTR(block,iv)
+	src := cipherText
+	dst := make([]byte,len(cipherText))
+	stream.XORKeyStream(dst,src)
+	return dst
+}
+
 

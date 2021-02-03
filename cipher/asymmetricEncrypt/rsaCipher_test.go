@@ -8,6 +8,7 @@
 package asymmetricEncrypt
 
 import (
+	"crypto/md5"
 	"fmt"
 	"testing"
 )
@@ -16,13 +17,13 @@ import (
 
 // 生产密钥
 func TestGetPrivate(t *testing.T){
-	GetRsakey(1024)
+	GetRsakey(2048)
 }
 
 
 //
 func TestRSAEncrypt(t *testing.T) {
-	src := []byte("EncryptPEMBlock使用指定的密码、加密算法加密data，返回一个具有指定块类型，保管加密后数据的PEM块")
+	src := []byte("EncryptPEMBlock使用指定的密码3333 打开文件")
 
 	fmt.Println("加密前==： ")
 	cipherText := RSAEncrypt(src,"public.pem")
@@ -30,5 +31,8 @@ func TestRSAEncrypt(t *testing.T) {
 	plainText := RSADencrpt(cipherText,"private.pem")
 
 	fmt.Println("解密后==： ")
-	fmt.Println(string(plainText) +"88")
+	fmt.Println(string(plainText))
+
+	data := []byte("These pretzels are making me thirsty.")
+	fmt.Printf("%v",md5.Sum(data))
 }
