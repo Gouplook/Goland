@@ -10,8 +10,11 @@ package asymmetricEncrypt
 import (
 	"crypto/rand"
 	"crypto/rsa"
+	"crypto/sha256"
 	"crypto/x509"
+	"encoding/hex"
 	"encoding/pem"
+	"fmt"
 	"os"
 )
 
@@ -163,4 +166,22 @@ func RSADencrpt(cipherText []byte, fileName string) []byte {
 
 	return plainText
 
+}
+ // Hash 加密
+func AsyHash() {
+	// 1: 创建哈希接口对象
+	hash := sha256.New()
+
+	// 2. 添加数据
+	src :=[]byte("哈希接口对象加密")
+	hash.Write(src)
+	hash.Write(src)
+
+	// 3. 计算结果
+	res := hash.Sum(nil)
+
+	// 4. 格式化为16进制形式
+	str := hex.EncodeToString(res)
+
+	fmt.Printf("%s\n", str)
 }

@@ -36,3 +36,8 @@ func TestRSAEncrypt(t *testing.T) {
 	data := []byte("These pretzels are making me thirsty.")
 	fmt.Printf("%v",md5.Sum(data))
 }
+
+// 测试hash
+func TestAsyHash(t *testing.T) {
+	AsyHash()
+}
