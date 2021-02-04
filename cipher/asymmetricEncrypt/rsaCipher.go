@@ -127,7 +127,7 @@ func RSAEncrypt(plainText []byte, fileName string) []byte {
 	block, _ := pem.Decode(buf)
 
 	// 3：通过X509标准将得到的RSA公钥序列化为字符串
-	pubInterface, err := x509.ParsePKCS1PublicKey(block.Bytes)  // 密钥解析，
+	pubInterface, err := x509.ParsePKCS1PublicKey(block.Bytes)  // 密钥解析
 	//pubInterface, err := x509.ParsePKIXPublicKey(block.Bytes)
 
 	// 断言类型转换

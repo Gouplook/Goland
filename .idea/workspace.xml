@@ -20,9 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc52f206-916b-4616-a64a-584a8ad39e20" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/channel/readchannel.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/channel/readchannel_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/channel/summarize.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/channel/summarize_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cipher/asymmetricEncrypt/rsaCipher.go" beforeDir="false" afterPath="$PROJECT_DIR$/cipher/asymmetricEncrypt/rsaCipher.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cipher/digitalsignature/digitalsignature.go" beforeDir="false" afterPath="$PROJECT_DIR$/cipher/digitalsignature/digitalsignature.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cipher/digitalsignature/ellipticCurve.go" beforeDir="false" afterPath="$PROJECT_DIR$/cipher/digitalsignature/ellipticCurve.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +61,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
-  <component name="RunManager" selected="Go Test.TestAsyHash in GoInduction/cipher/asymmetricEncrypt">
+  <component name="RunManager" selected="Go Test.TestReadData in GoInduction/channel">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$" />
@@ -68,59 +72,59 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestAsyHash in GoInduction/cipher/asymmetricEncrypt" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCpuNum in GoInduction/channel" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/cipher/asymmetricEncrypt" />
+      <working_directory value="$PROJECT_DIR$/channel" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/cipher/asymmetricEncrypt" />
+      <package value="GoInduction/channel" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestAsyHash\E$" />
+      <pattern value="^\QTestCpuNum\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestEccVerify in GoInduction/cipher/digitalsignature" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestFactorial in GoInduction/channel" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/cipher/digitalsignature" />
+      <working_directory value="$PROJECT_DIR$/channel" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/cipher/digitalsignature" />
+      <package value="GoInduction/channel" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestEccVerify\E$" />
+      <pattern value="^\QTestFactorial\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestGenerateHamc in GoInduction/cipher/messageauthentication" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestPrimeNum in GoInduction/channel" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/cipher/messageauthentication" />
+      <working_directory value="$PROJECT_DIR$/channel" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/cipher/messageauthentication" />
+      <package value="GoInduction/channel" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestGenerateHamc\E$" />
+      <pattern value="^\QTestPrimeNum\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestGetPrivate in GoInduction/cipher/digitalsignature" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestReadData in GoInduction/channel" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/cipher/digitalsignature" />
+      <working_directory value="$PROJECT_DIR$/channel" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/cipher/digitalsignature" />
+      <package value="GoInduction/channel" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestGetPrivate\E$" />
+      <pattern value="^\QTestReadData\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestSignatureRSA in GoInduction/cipher/digitalsignature" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSelectChannel in GoInduction/channel" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/cipher/digitalsignature" />
+      <working_directory value="$PROJECT_DIR$/channel" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/cipher/digitalsignature" />
+      <package value="GoInduction/channel" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestSignatureRSA\E$" />
+      <pattern value="^\QTestSelectChannel\E$" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -136,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestAsyHash in GoInduction/cipher/asymmetricEncrypt" />
-        <item itemvalue="Go Test.TestEccVerify in GoInduction/cipher/digitalsignature" />
-        <item itemvalue="Go Test.TestSignatureRSA in GoInduction/cipher/digitalsignature" />
-        <item itemvalue="Go Test.TestGetPrivate in GoInduction/cipher/digitalsignature" />
-        <item itemvalue="Go Test.TestGenerateHamc in GoInduction/cipher/messageauthentication" />
+        <item itemvalue="Go Test.TestReadData in GoInduction/channel" />
+        <item itemvalue="Go Test.TestPrimeNum in GoInduction/channel" />
+        <item itemvalue="Go Test.TestFactorial in GoInduction/channel" />
+        <item itemvalue="Go Test.TestSelectChannel in GoInduction/channel" />
+        <item itemvalue="Go Test.TestCpuNum in GoInduction/channel" />
       </list>
     </recent_temporary>
   </component>
@@ -173,32 +177,32 @@
       <screen x="1280" y="41" width="1920" height="1080" />
     </state>
     <state x="1938" y="390" key="#com.intellij.fileTypes.FileTypeChooser/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612259667125" />
-    <state width="1878" height="260" key="GridCell.Tab.0.bottom" timestamp="1612403163100">
+    <state width="1878" height="643" key="GridCell.Tab.0.bottom" timestamp="1612430915877">
       <screen x="1280" y="41" width="1920" height="1080" />
     </state>
     <state width="1878" height="260" key="GridCell.Tab.0.bottom/1280.41.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1612346570506" />
-    <state width="1878" height="260" key="GridCell.Tab.0.bottom/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612403163100" />
+    <state width="1878" height="643" key="GridCell.Tab.0.bottom/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612430915877" />
     <state width="1878" height="223" key="GridCell.Tab.0.bottom/1280.41.1920.1080/0.23.1280.777@1280.41.1920.1080" timestamp="1612260409015" />
     <state width="1878" height="366" key="GridCell.Tab.0.bottom/1280.64.1920.1057/46.23.1234.777@1280.64.1920.1057" timestamp="1606454805047" />
-    <state width="1878" height="260" key="GridCell.Tab.0.center" timestamp="1612403163097">
+    <state width="1878" height="643" key="GridCell.Tab.0.center" timestamp="1612430915874">
       <screen x="1280" y="41" width="1920" height="1080" />
     </state>
     <state width="1878" height="260" key="GridCell.Tab.0.center/1280.41.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1612346570504" />
-    <state width="1878" height="260" key="GridCell.Tab.0.center/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612403163097" />
+    <state width="1878" height="643" key="GridCell.Tab.0.center/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612430915874" />
     <state width="1878" height="223" key="GridCell.Tab.0.center/1280.41.1920.1080/0.23.1280.777@1280.41.1920.1080" timestamp="1612260409012" />
     <state width="1878" height="366" key="GridCell.Tab.0.center/1280.64.1920.1057/46.23.1234.777@1280.64.1920.1057" timestamp="1606454805043" />
-    <state width="1878" height="260" key="GridCell.Tab.0.left" timestamp="1612403163096">
+    <state width="1878" height="643" key="GridCell.Tab.0.left" timestamp="1612430915872">
       <screen x="1280" y="41" width="1920" height="1080" />
     </state>
     <state width="1878" height="260" key="GridCell.Tab.0.left/1280.41.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1612346570503" />
-    <state width="1878" height="260" key="GridCell.Tab.0.left/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612403163096" />
+    <state width="1878" height="643" key="GridCell.Tab.0.left/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612430915872" />
     <state width="1878" height="223" key="GridCell.Tab.0.left/1280.41.1920.1080/0.23.1280.777@1280.41.1920.1080" timestamp="1612260409010" />
     <state width="1878" height="366" key="GridCell.Tab.0.left/1280.64.1920.1057/46.23.1234.777@1280.64.1920.1057" timestamp="1606454805040" />
-    <state width="1878" height="260" key="GridCell.Tab.0.right" timestamp="1612403163098">
+    <state width="1878" height="643" key="GridCell.Tab.0.right" timestamp="1612430915875">
       <screen x="1280" y="41" width="1920" height="1080" />
     </state>
     <state width="1878" height="260" key="GridCell.Tab.0.right/1280.41.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1612346570505" />
-    <state width="1878" height="260" key="GridCell.Tab.0.right/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612403163098" />
+    <state width="1878" height="643" key="GridCell.Tab.0.right/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612430915875" />
     <state width="1878" height="223" key="GridCell.Tab.0.right/1280.41.1920.1080/0.23.1280.777@1280.41.1920.1080" timestamp="1612260409014" />
     <state width="1878" height="366" key="GridCell.Tab.0.right/1280.64.1920.1057/46.23.1234.777@1280.64.1920.1057" timestamp="1606454805044" />
     <state width="1878" height="296" key="GridCell.Tab.1.bottom" timestamp="1612329440611">

@@ -73,7 +73,6 @@ func SignatureRSA(plainText []byte, fileName string) []byte {
 // RSA签名验证
 // @sigText 签名字符串
 // @publicKey 公钥
-
 func VerifyRSA(plainText, sigText []byte, publicKeyFile string) bool {
 	//1. 打开公钥文件, 将文件内容读出 - []byte
 	file, err := os.Open(publicKeyFile)
