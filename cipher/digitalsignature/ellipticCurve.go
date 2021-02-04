@@ -41,10 +41,10 @@ func GenerateEcckey(){
 
 	}
 	priFile,err :=  os.Create("esprivate.pem")
-	pem.Encode(priFile,block)
-	priFile.Close()
+	_ = pem.Encode(priFile,block)
+	_ = priFile.Close()
 	//3. 将公钥写入磁盘
-	//- 从私钥中得到公钥
+	//-  从私钥中得到公钥
 	publicKey := privateKey.PublicKey
 	//- 使用x509进行序列化
 	derText, err := x509.MarshalPKIXPublicKey(&publicKey)

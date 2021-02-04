@@ -21,10 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fc52f206-916b-4616-a64a-584a8ad39e20" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cipher/asymmetricEncrypt/rsaCipher.go" beforeDir="false" afterPath="$PROJECT_DIR$/cipher/asymmetricEncrypt/rsaCipher.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cipher/asymmetricEncrypt/rsaCipher_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/cipher/asymmetricEncrypt/rsaCipher_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cipher/digitalsignature/digitalsignature.go" beforeDir="false" afterPath="$PROJECT_DIR$/cipher/digitalsignature/digitalsignature.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cipher/sysmmertic/aesCipher.go" beforeDir="false" afterPath="$PROJECT_DIR$/cipher/sysmmertic/aesCipher.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cipher/digitalsignature/ellipticCurve.go" beforeDir="false" afterPath="$PROJECT_DIR$/cipher/digitalsignature/ellipticCurve.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
