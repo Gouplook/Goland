@@ -13,6 +13,7 @@ import (
 )
 
 var iv = []byte("1234567890123456")
+
 // 分组模式
 // OFB - 不推荐使用
 // CFB - 不推荐使用
@@ -34,9 +35,9 @@ func AesEncrypt(plainText, key []byte) []byte {
 	// 3. 创建一个密码分组模式的接口对象
 	//iv := "12345678abcdefgh"
 	//iv := plainText[:block.BlockSize()]
-	blockMode := cipher.NewCBCEncrypter(block,iv)
+	blockMode := cipher.NewCBCEncrypter(block, iv)
 
-	// 4.  加密
+	// 4. 加密
 	dst := make([]byte, len(newPlainText))
 	src := newPlainText
 	blockMode.CryptBlocks(dst, src)
@@ -54,9 +55,9 @@ func AesDencrypt(cipherText, key []byte) []byte {
 	}
 	//
 	//iv := []byte("12345678abcdefgh")
-	blockMode := cipher.NewCBCDecrypter(block,iv)
+	blockMode := cipher.NewCBCDecrypter(block, iv)
 
-	dst := make([]byte,len(cipherText))
+	dst := make([]byte, len(cipherText))
 	src := cipherText
 	blockMode.CryptBlocks(dst, src)
 
@@ -65,13 +66,12 @@ func AesDencrypt(cipherText, key []byte) []byte {
 	return plainText
 }
 
-
 //--------------------OFB 不推荐使用-----------------------
 // 该模式下加密，不需要填充
 // 加密 OFB分组模式 加密和解密相同，相当于两次异或（XORKeyStream）
-func AesEncryptOfb(plainText, key []byte) []byte{
+func AesEncryptOfb(plainText, key []byte) []byte {
 	// 1. 建一个底层使用aes的密码接口
-	block,err := aes.NewCipher(key)
+	block, err := aes.NewCipher(key)
 	if err != nil {
 		panic(err)
 		return nil
@@ -79,19 +79,18 @@ func AesEncryptOfb(plainText, key []byte) []byte{
 
 	// 2. 创建一个密码分组模式的接口对象
 	stream := cipher.NewOFB(block, iv)
-	dst := make([]byte,len(plainText))
+	dst := make([]byte, len(plainText))
 	src := plainText
 
 	// 对接口对象进行加解密操作
-	stream.XORKeyStream(dst, src )
+	stream.XORKeyStream(dst, src)
 	return dst
 }
-
 
 // 解密
 func AesDencryptOfb(ciphertext, key []byte) []byte {
 	// 1: 创建一个底层的aes接口
-	block,err := aes.NewCipher(key)
+	block, err := aes.NewCipher(key)
 	if err != nil {
 		panic(err)
 		return nil
@@ -99,40 +98,37 @@ func AesDencryptOfb(ciphertext, key []byte) []byte {
 
 	// 2: 创建和一个密码分组模式的接口对象
 	stream := cipher.NewOFB(block, iv)
-	dst := make([]byte,len(ciphertext))
+	dst := make([]byte, len(ciphertext))
 	src := ciphertext
 
 	// 3: 对接口对象进行加解密操作
-	stream.XORKeyStream(dst,src)
+	stream.XORKeyStream(dst, src)
 	return dst
 
 }
 
 // -------------------------CTR----------------
-func AesEncryptCTR(plainText,key []byte) []byte{
-	block,err := aes.NewCipher(key)
+func AesEncryptCTR(plainText, key []byte) []byte {
+	block, err := aes.NewCipher(key)
 	if err != nil {
 		panic(err)
 	}
-	stream := cipher.NewCTR(block,iv)
+	stream := cipher.NewCTR(block, iv)
 	src := plainText
-	dst := make([]byte,len(plainText))
+	dst := make([]byte, len(plainText))
 
 	stream.XORKeyStream(dst, src)
-
 	return dst
 }
 
-func AesDencryptCTR(cipherText,key []byte)[]byte {
-	block,err := aes.NewCipher(key)
+func AesDencryptCTR(cipherText, key []byte) []byte {
+	block, err := aes.NewCipher(key)
 	if err != nil {
 		panic(err)
 	}
-	stream := cipher.NewCTR(block,iv)
+	stream := cipher.NewCTR(block, iv)
 	src := cipherText
-	dst := make([]byte,len(cipherText))
-	stream.XORKeyStream(dst,src)
+	dst := make([]byte, len(cipherText))
+	stream.XORKeyStream(dst, src)
 	return dst
 }
-
-

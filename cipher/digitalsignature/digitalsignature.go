@@ -58,11 +58,11 @@ func SignatureRSA(plainText []byte, fileName string) []byte {
 	//6. 给哈希对象添加数据
 	rsaHash.Write(plainText)
 
-	//7. 计算哈希值
+	//7. 计算哈希值(得到是一个固定长度的哈希值）
 	hashText := rsaHash.Sum(nil)
 
 	//8. 使用rsa中的函数对散列值签名
-	signText, err := rsa.SignPKCS1v15(rand.Reader,privateKey,crypto.SHA512,hashText)
+	signText, err := rsa.SignPKCS1v15(rand.Reader, privateKey, crypto.SHA512, hashText)
 	if err != nil {
 		panic(err)
 	}
@@ -76,18 +76,18 @@ func SignatureRSA(plainText []byte, fileName string) []byte {
 
 func VerifyRSA(plainText, sigText []byte, publicKeyFile string) bool {
 	//1. 打开公钥文件, 将文件内容读出 - []byte
-	file,err := os.Open(publicKeyFile)
+	file, err := os.Open(publicKeyFile)
 	if err != nil {
 		panic(err)
 	}
 
 	fileInfo, err := file.Stat()
-	buf := make([]byte,fileInfo.Size())
+	buf := make([]byte, fileInfo.Size())
 	file.Read(buf)
 	defer file.Close()
 
 	//2. 使用pem解码 -> 得到pem.Block结构体变量
-	block,_ := pem.Decode(buf)
+	block, _ := pem.Decode(buf)
 
 	//3. 使用x509对pem.Block中的Bytes变量中的数据进行解析 ->  得到一接口
 	pubInterface, err := x509.ParsePKIXPublicKey(block.Bytes)
@@ -96,10 +96,10 @@ func VerifyRSA(plainText, sigText []byte, publicKeyFile string) bool {
 	publicKey := pubInterface.(*rsa.PublicKey)
 
 	//5. 对原始消息进行哈希运算(和签名使用的哈希算法一致) -> 散列值
-	hashText := sha512.Sum512(plainText)  // 返回[64]byte
+	hashText := sha512.Sum512(plainText) // 返回[64]byte
 
 	//6. 签名认证 - rsa中的函数
-	err = rsa.VerifyPKCS1v15(publicKey,crypto.SHA512,hashText[:],sigText)
+	err = rsa.VerifyPKCS1v15(publicKey, crypto.SHA512, hashText[:], sigText)
 	if err == nil {
 		return true
 	}

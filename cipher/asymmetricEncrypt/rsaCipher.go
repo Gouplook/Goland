@@ -54,6 +54,7 @@ func GetRsakey(bits int) {
 		panic(err)
 		return
 	}
+	// 通过pem.Encode 写入到磁盘中
 	err = pem.Encode(file, block)
 	if err != nil {
 		panic(err)
@@ -137,6 +138,7 @@ func RSAEncrypt(plainText []byte, fileName string) []byte {
 	if err != nil {
 		panic(err)
 	}
+
 	return cipherText
 }
 
