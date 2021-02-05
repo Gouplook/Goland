@@ -102,7 +102,7 @@ func GetRsakey(bits int) {
 // 1：将公钥文件中的公钥读出，得到使用pem编码的字符串
 // 2：将得到的字符串进行解码
 // 3：使用x509将编码之后的公钥解析出来
-// 4：使用得到的公钥通过rsa进行数据加密
+// 4：使用得到的公钥通过rsa进行数据加密+
 
 // RSA 解密
 // 1：将私钥文件中的私钥读出来，得到使用pem编码的字符串
@@ -167,7 +167,6 @@ func RSADencrpt(cipherText []byte, fileName string) []byte {
 	}
 
 	return plainText
-
 }
  // Hash 加密
 func AsyHash() {

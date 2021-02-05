@@ -18,14 +18,13 @@ import (
 // 设置全局变量，启动是，先启动init
 func Init() {
 	//func init() {
- 	logs.Info("Init driver.go mysql start")
+	logs.Info("Init driver.go mysql start")
 
 	//"root:123456@tcp(127.0.0.1:3306)/macmysql?charset=utf8"
-
 	// 读取配置文件
 	// 读配置文件还有另外一种方法，利用key/value
 
-	cfig:= new(utils.YamlConfig).GetConfig()
+	cfig := new(utils.YamlConfig).GetConfig()
 
 	// 设置驱动数据库连接参数
 	dataSource := fmt.Sprintf("%s:%s@(%s:%s)/%s?charset=%s", cfig.Name, cfig.Pwrd, cfig.Host, cfig.Port, cfig.Dbname, cfig.Charset)
