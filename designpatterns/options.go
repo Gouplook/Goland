@@ -7,12 +7,10 @@
 package designpatterns
 
 type Optinon struct {
-
 	StringOption1 string
 	StringOption2 string
 	StringOption3 string
 	IntOption1 int
 	IntOption2 int
 	IntOption3 int
-
 }

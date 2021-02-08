@@ -15,6 +15,8 @@ import (
 	"os"
 )
 
+// bufio 对io方法进行封装
+
 // io ReadString : 是将外部文件读到（应用程序中）输出流中
 func IoFileRead(name string) {
 	file, _ := os.Open(name)
@@ -64,17 +66,6 @@ func IoFileCopy(dstName, srcName string) {
 	dstWrite := bufio.NewWriter(dstFile)
 
 	io.Copy(dstWrite, srcRead)
-
-}
-
-// 统计单词数量
-type CharName struct {
-	Word       int // 单词
-	Number     int // 数字
-	OtherChar  int // 其他字符
-	SpaceCount int // 空格
-}
-func WordSum(name string) {
 
 }
 

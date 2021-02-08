@@ -25,7 +25,7 @@ func WriteData(intChan chan int) {
 // 读数据
 func ReadData(intChan chan int, exitChan chan bool) {
 	for {
-		v, ok := <-intChan
+		v, ok := <- intChan
 		if !ok {
 			break
 		}

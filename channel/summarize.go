@@ -17,10 +17,10 @@ import (
 // 管道可以声明为只读或者只写
 //1. 在默认情况下下，管道是双向
 //2  声明为只写
-//  var chan2 chan<- int
+//  var chanWrite chan<- int
 
 //3. 声明为只读
-//var chan3 <-chan int
+//var chanReade <- chan int
 
 func SelectChannel() {
 	//1.定义一个管道 10个数据int
@@ -34,10 +34,10 @@ func SelectChannel() {
 		stringChan <- "hello" + fmt.Sprintf("%d", i)
 	}
 
-	//传统的方法在遍历管道时，如果不关闭会阻塞而导致 deadlock
-	//问题，在实际开发中，可能我们不好确定什么关闭该管道.
-	//可以使用select 方式可以解决
-	//label:
+	// 传统的方法在遍历管道时，如果不关闭会阻塞而导致 deadlock
+	// 问题，在实际开发中，可能我们不好确定什么关闭该管道.
+	// 可以使用select 方式可以解决
+	// label:
 	for {
 		select {
 		//注意: 这里，如果intChan一直没有关闭，不会一直阻塞而deadlock

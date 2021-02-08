@@ -20,9 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc52f206-916b-4616-a64a-584a8ad39e20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/file/fileStream.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file/fileSumup.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file/file_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memoBook.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alipay" beforeDir="false" afterPath="$PROJECT_DIR$/alipay" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alipay/LICENSE" beforeDir="false" />
@@ -30,6 +28,13 @@
       <change beforePath="$PROJECT_DIR$/alipay/authorize.go" beforeDir="false" afterPath="$PROJECT_DIR$/alipay/authorize.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alipay/go.mod" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/alipay/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/channel/readchannel.go" beforeDir="false" afterPath="$PROJECT_DIR$/channel/readchannel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/channel/summarize.go" beforeDir="false" afterPath="$PROJECT_DIR$/channel/summarize.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designpatterns/options.go" beforeDir="false" afterPath="$PROJECT_DIR$/designpatterns/options.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/fileSumup.go" beforeDir="false" afterPath="$PROJECT_DIR$/file/fileSumup.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/fileread.txt" beforeDir="false" afterPath="$PROJECT_DIR$/file/fileread.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/gostings.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/gostings.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/stringOperation.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/stringOperation.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,9 +67,9 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Go Test.TestIoFileCopy in GoInduction/file">
+  <component name="RunManager" selected="Go Test.TestSelectChannel in GoInduction/channel">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$" />
@@ -75,15 +80,15 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestFileStream in GoInduction/file" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCpuNum in GoInduction/channel" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/file" />
+      <working_directory value="$PROJECT_DIR$/channel" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/file" />
+      <package value="GoInduction/channel" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestFileStream\E$" />
+      <pattern value="^\QTestCpuNum\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestIoFileCopy in GoInduction/file" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -97,28 +102,6 @@
       <pattern value="^\QTestIoFileCopy\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestIoFileReadWrite in GoInduction/file" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/file" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="GoInduction/file" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestIoFileReadWrite\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestIoutilFile in GoInduction/file" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/file" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="GoInduction/file" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestIoutilFile\E$" />
-      <method v="2" />
-    </configuration>
     <configuration name="TestIoutilFileWrite in GoInduction/file" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$/file" />
@@ -128,6 +111,28 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <pattern value="^\QTestIoutilFileWrite\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestSelectChannel in GoInduction/channel" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Goland" />
+      <working_directory value="$PROJECT_DIR$/channel" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="GoInduction/channel" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestSelectChannel\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestWordSum in GoInduction/file" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Goland" />
+      <working_directory value="$PROJECT_DIR$/file" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="GoInduction/file" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestWordSum\E$" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -143,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestIoFileCopy in GoInduction/file" />
+        <item itemvalue="Go Test.TestSelectChannel in GoInduction/channel" />
+        <item itemvalue="Go Test.TestCpuNum in GoInduction/channel" />
         <item itemvalue="Go Test.TestIoutilFileWrite in GoInduction/file" />
-        <item itemvalue="Go Test.TestIoutilFile in GoInduction/file" />
-        <item itemvalue="Go Test.TestIoFileReadWrite in GoInduction/file" />
-        <item itemvalue="Go Test.TestFileStream in GoInduction/file" />
+        <item itemvalue="Go Test.TestWordSum in GoInduction/file" />
+        <item itemvalue="Go Test.TestIoFileCopy in GoInduction/file" />
       </list>
     </recent_temporary>
   </component>
@@ -184,67 +189,67 @@
       <screen x="1280" y="41" width="1920" height="1080" />
     </state>
     <state x="1938" y="390" key="#com.intellij.fileTypes.FileTypeChooser/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612259667125" />
-    <state width="1878" height="480" key="GridCell.Tab.0.bottom" timestamp="1612691561144">
+    <state width="1878" height="265" key="GridCell.Tab.0.bottom" timestamp="1612752109912">
       <screen x="1280" y="41" width="1920" height="1080" />
     </state>
     <state width="1878" height="260" key="GridCell.Tab.0.bottom/1280.41.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1612346570506" />
-    <state width="1878" height="480" key="GridCell.Tab.0.bottom/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612691561144" />
+    <state width="1878" height="265" key="GridCell.Tab.0.bottom/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612752109912" />
     <state width="1878" height="643" key="GridCell.Tab.0.bottom/1280.41.1920.1080/0.23.1280.777@1280.41.1920.1080" timestamp="1612434056269" />
     <state width="1878" height="366" key="GridCell.Tab.0.bottom/1280.64.1920.1057/46.23.1234.777@1280.64.1920.1057" timestamp="1606454805047" />
-    <state width="1878" height="480" key="GridCell.Tab.0.center" timestamp="1612691561141">
+    <state width="1878" height="265" key="GridCell.Tab.0.center" timestamp="1612752109910">
       <screen x="1280" y="41" width="1920" height="1080" />
     </state>
     <state width="1878" height="260" key="GridCell.Tab.0.center/1280.41.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1612346570504" />
-    <state width="1878" height="480" key="GridCell.Tab.0.center/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612691561141" />
+    <state width="1878" height="265" key="GridCell.Tab.0.center/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612752109910" />
     <state width="1878" height="643" key="GridCell.Tab.0.center/1280.41.1920.1080/0.23.1280.777@1280.41.1920.1080" timestamp="1612434056267" />
     <state width="1878" height="366" key="GridCell.Tab.0.center/1280.64.1920.1057/46.23.1234.777@1280.64.1920.1057" timestamp="1606454805043" />
-    <state width="1878" height="480" key="GridCell.Tab.0.left" timestamp="1612691561140">
+    <state width="1878" height="265" key="GridCell.Tab.0.left" timestamp="1612752109909">
       <screen x="1280" y="41" width="1920" height="1080" />
     </state>
     <state width="1878" height="260" key="GridCell.Tab.0.left/1280.41.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1612346570503" />
-    <state width="1878" height="480" key="GridCell.Tab.0.left/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612691561140" />
+    <state width="1878" height="265" key="GridCell.Tab.0.left/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612752109909" />
     <state width="1878" height="643" key="GridCell.Tab.0.left/1280.41.1920.1080/0.23.1280.777@1280.41.1920.1080" timestamp="1612434056265" />
     <state width="1878" height="366" key="GridCell.Tab.0.left/1280.64.1920.1057/46.23.1234.777@1280.64.1920.1057" timestamp="1606454805040" />
-    <state width="1878" height="480" key="GridCell.Tab.0.right" timestamp="1612691561143">
+    <state width="1878" height="265" key="GridCell.Tab.0.right" timestamp="1612752109911">
       <screen x="1280" y="41" width="1920" height="1080" />
     </state>
     <state width="1878" height="260" key="GridCell.Tab.0.right/1280.41.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1612346570505" />
-    <state width="1878" height="480" key="GridCell.Tab.0.right/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612691561143" />
+    <state width="1878" height="265" key="GridCell.Tab.0.right/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612752109911" />
     <state width="1878" height="643" key="GridCell.Tab.0.right/1280.41.1920.1080/0.23.1280.777@1280.41.1920.1080" timestamp="1612434056268" />
     <state width="1878" height="366" key="GridCell.Tab.0.right/1280.64.1920.1057/46.23.1234.777@1280.64.1920.1057" timestamp="1606454805044" />
-    <state width="1878" height="296" key="GridCell.Tab.1.bottom" timestamp="1612688234796">
+    <state width="1878" height="296" key="GridCell.Tab.1.bottom" timestamp="1612750727284">
       <screen x="1280" y="41" width="1920" height="1080" />
     </state>
-    <state width="1878" height="296" key="GridCell.Tab.1.bottom/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612688234796" />
+    <state width="1878" height="296" key="GridCell.Tab.1.bottom/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612750727284" />
     <state width="1878" height="223" key="GridCell.Tab.1.bottom/1280.41.1920.1080/0.23.1280.777@1280.41.1920.1080" timestamp="1612260409021" />
     <state width="1878" height="366" key="GridCell.Tab.1.bottom/1280.64.1920.1057/46.23.1234.777@1280.64.1920.1057" timestamp="1606454806120" />
-    <state width="1878" height="296" key="GridCell.Tab.1.center" timestamp="1612688234793">
+    <state width="1878" height="296" key="GridCell.Tab.1.center" timestamp="1612750727282">
       <screen x="1280" y="41" width="1920" height="1080" />
     </state>
-    <state width="1878" height="296" key="GridCell.Tab.1.center/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612688234793" />
+    <state width="1878" height="296" key="GridCell.Tab.1.center/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612750727282" />
     <state width="1878" height="223" key="GridCell.Tab.1.center/1280.41.1920.1080/0.23.1280.777@1280.41.1920.1080" timestamp="1612260409018" />
     <state width="1878" height="366" key="GridCell.Tab.1.center/1280.64.1920.1057/46.23.1234.777@1280.64.1920.1057" timestamp="1606454806118" />
-    <state width="1878" height="296" key="GridCell.Tab.1.left" timestamp="1612688234792">
+    <state width="1878" height="296" key="GridCell.Tab.1.left" timestamp="1612750727281">
       <screen x="1280" y="41" width="1920" height="1080" />
     </state>
-    <state width="1878" height="296" key="GridCell.Tab.1.left/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612688234792" />
+    <state width="1878" height="296" key="GridCell.Tab.1.left/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612750727281" />
     <state width="1878" height="223" key="GridCell.Tab.1.left/1280.41.1920.1080/0.23.1280.777@1280.41.1920.1080" timestamp="1612260409017" />
     <state width="1878" height="366" key="GridCell.Tab.1.left/1280.64.1920.1057/46.23.1234.777@1280.64.1920.1057" timestamp="1606454806116" />
-    <state width="1878" height="296" key="GridCell.Tab.1.right" timestamp="1612688234795">
+    <state width="1878" height="296" key="GridCell.Tab.1.right" timestamp="1612750727283">
       <screen x="1280" y="41" width="1920" height="1080" />
     </state>
-    <state width="1878" height="296" key="GridCell.Tab.1.right/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612688234795" />
+    <state width="1878" height="296" key="GridCell.Tab.1.right/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612750727283" />
     <state width="1878" height="223" key="GridCell.Tab.1.right/1280.41.1920.1080/0.23.1280.777@1280.41.1920.1080" timestamp="1612260409020" />
     <state width="1878" height="366" key="GridCell.Tab.1.right/1280.64.1920.1057/46.23.1234.777@1280.64.1920.1057" timestamp="1606454806119" />
-    <state x="1896" y="184" key="SettingsEditor" timestamp="1612402549797">
+    <state x="1576" y="185" key="SettingsEditor" timestamp="1612749616212">
       <screen x="1280" y="41" width="1920" height="1080" />
     </state>
     <state x="123" y="39" key="SettingsEditor/1280.41.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1612346225537" />
-    <state x="1896" y="184" key="SettingsEditor/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612402549797" />
-    <state width="960" height="540" key="XDebugger.FullValuePopup" timestamp="1612319238134">
+    <state x="1576" y="185" key="SettingsEditor/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612749616212" />
+    <state width="960" height="540" key="XDebugger.FullValuePopup" timestamp="1612748029571">
       <screen x="1280" y="41" width="1920" height="1080" />
     </state>
-    <state width="960" height="540" key="XDebugger.FullValuePopup/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612319238134" />
+    <state width="960" height="540" key="XDebugger.FullValuePopup/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1612748029571" />
     <state x="1932" y="336" width="615" height="490" key="find.popup" timestamp="1612170304159">
       <screen x="1280" y="41" width="1920" height="1080" />
     </state>
@@ -271,6 +276,11 @@
           <url>file://$PROJECT_DIR$/cipher/asymmetricEncrypt/rsaCipher.go</url>
           <line>130</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/file/fileSumup.go</url>
+          <line>20</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -44,7 +44,7 @@ func TestPrimeNum(t *testing.T) {
 	start := time.Now().Unix()
 	// 开启一个协程，向 intChan放入 1-8000个数'
 	go PutNum(intChan, 100)
-	//开启8个协程，从 intChan取出数据，并判断是否为素数.
+	// 开启8个协程，从 intChan取出数据，并判断是否为素数.
 	for i := 0; i < 8; i++ {
 		go PrimeNum(intChan, primeChan, exitChan)
 	}
@@ -60,7 +60,7 @@ func TestPrimeNum(t *testing.T) {
 
 	//遍历我们的 primeChan ,把结果取出
 	for {
-		res, ok := <-primeChan
+		res, ok := <- primeChan
 		if !ok {
 			break
 		}

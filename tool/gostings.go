@@ -14,21 +14,21 @@ import (
 )
 
 func GoStrings(){
-	//统计字符串的长度，按字节 len(str)
+	//1: 统计字符串的长度，按字节 len(str)
 	////golang的编码统一为utf-8 (ascii的字符(字母和数字) 占一个字节，汉字占用3个字节)
 	str := "hello北"
 	fmt.Println("str len=", len(str)) // 8
 
 
 	str2 := "hello北京"
-	//字符串遍历，同时处理有中文的问题 r := []rune(str)
+	//2: 字符串遍历，同时处理有中文的问题 r := []rune(str)
 	r := []rune(str2)
 	for i := 0; i < len(r); i++ {
 		fmt.Printf("字符=%c\n", r[i])
 	}
 
 
-	//字符串转整数:	 n, err := strconv.Atoi("12")
+	//3: 字符串转整数:	 n, err := strconv.Atoi("12")
 	n, err := strconv.Atoi("123")
 	if err != nil {
 		fmt.Println("转换错误", err)
@@ -36,45 +36,47 @@ func GoStrings(){
 		fmt.Println("转成的结果是", n)
 	}
 
-	//4)整数转字符串  str = strconv.Itoa(12345)
+	//4： 整数转字符串  str = strconv.Itoa(12345)
 	str = strconv.Itoa(12345)
 	fmt.Printf("str=%v, str=%T\n", str, str)
 
-	//5)字符串 转 []byte:  var bytes = []byte("hello go")
+	//5： 字符串 转 []byte:  var bytes = []byte("hello go")
 	var bytes = []byte("hello go")
 	fmt.Printf("bytes=%v\n", bytes)
 
-	//6)[]byte 转 字符串: str = string([]byte{97, 98, 99})
+	//6： []byte 转 字符串: str = string([]byte{97, 98, 99})
 	str = string([]byte{97, 98, 99})
 	fmt.Printf("str=%v\n", str)
 
-	//10进制转 2, 8, 16进制:  str = strconv.FormatInt(123, 2),返回对应的字符串
+	//7： 10进制转 2, 8, 16进制:  str = strconv.FormatInt(123, 2),返回对应的字符串
 	str = strconv.FormatInt(123, 2)
 	fmt.Printf("123对应的二进制是=%v\n", str)
-	str = strconv.FormatInt(123, 16)
+	str = strconv.FormatInt(123,  16)
 	fmt.Printf("123对应的16进制是=%v\n", str)
+	// 说明： 'f' 格式 10：表示小数位保留10位 64 :表示这个小数是float64
+	str = strconv.FormatFloat(123,'f',10,64 )
 
-	//查找子串是否在指定的字符串中: strings.Contains("seafood", "foo") //true
+	//8： 查找子串是否在指定的字符串中: strings.Contains("seafood", "foo") //true
 	b := strings.Contains("seafood", "mary")
 	fmt.Printf("b=%v\n", b)
 
-	//统计一个字符串有几个指定的子串 ： strings.Count("ceheese", "e") //4
+	//9： 统计一个字符串有几个指定的子串 ： strings.Count("ceheese", "e") //4
 	num := strings.Count("ceheese", "e")
 	fmt.Printf("num=%v\n", num)
 
-	//10)不区分大小写的字符串比较(==是区分字母大小写的): fmt.Println(strings.EqualFold("abc", "Abc")) // true
+	//10： 不区分大小写的字符串比较(==是区分字母大小写的): fmt.Println(strings.EqualFold("abc", "Abc")) // true
 	b = strings.EqualFold("abc", "Abc")
 	fmt.Printf("b=%v\n", b) //true
 
 	fmt.Println("结果","abc" == "Abc") // false //区分字母大小写
 
-	//11)返回子串在字符串第一次出现的index值，如果没有返回-1 :
+	//11： 返回子串在字符串第一次出现的index值，如果没有返回-1 :
 	//strings.Index("NLT_abc", "abc") // 4
 
 	index := strings.Index("NLT_abcabcabc", "abc") // 4
 	fmt.Printf("index=%v\n",index)
 
-	//12)返回子串在字符串最后一次出现的index，
+	//12： 返回子串在字符串最后一次出现的index，
 	//如没有返回-1 : strings.LastIndex("go golang", "go")
 
 	index = strings.LastIndex("go golang", "go") //3
