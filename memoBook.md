@@ -1,2 +1,25 @@
 // ==========设置常用快捷键备忘录========
 step over :fn+a
+
+
+#-------------数据库配置------------------
+
+    #mysql 启动： mysql.server start &
+    # redis  启动服务 ： redis-serive &
+    # redis  启动客户端 ：redis-cli
+
+#-----------------框架 -------------------
+    # ----map转struct 库
+    # go get github.com/mitchellh/mapstructure
+
+    #--- 开源的商城啊 管理系统 框架
+    #  https://gitee.com/explore/ecommerce
+
+    #--- golang 监控日志框架
+    #  https://github.com/alibaba/sentinel-golang
+
+    #---golang 编码库 encod
+    # go get golang.org/x/net/html
+
+    #--goland 编码转换包
+    # go get golang.org/x/text/transform
