@@ -54,7 +54,7 @@ func GetRsakey(bits int) {
 		panic(err)
 		return
 	}
-	// 通过pem.Encode 写入到磁盘中
+	// 通过pem.Encode  写入到磁盘中
 	err = pem.Encode(file, block)
 	if err != nil {
 		panic(err)
@@ -102,7 +102,7 @@ func GetRsakey(bits int) {
 // 1：将公钥文件中的公钥读出，得到使用pem编码的字符串
 // 2：将得到的字符串进行解码
 // 3：使用x509将编码之后的公钥解析出来
-// 4：使用得到的公钥通过rsa进行数据加密+
+// 4：使用得到的公钥通过rsa进行数据加密
 
 // RSA 解密
 // 1：将私钥文件中的私钥读出来，得到使用pem编码的字符串
@@ -122,7 +122,7 @@ func RSAEncrypt(plainText []byte, fileName string) []byte {
 	buf := make([]byte, fileInfo.Size())
 
 	file.Read(buf)
-	file.Close()
+	defer file.Close()
 	// 2：将得到的字符串进行解码
 	block, _ := pem.Decode(buf)
 

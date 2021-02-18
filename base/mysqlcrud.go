@@ -38,7 +38,6 @@ type WhereItem struct {
 
 //实例化Model引用
 //@param string table 表名称
-
 func NewMode(table string, ormer ...orm.Ormer) *Model {
 	var ormers orm.Ormer
 	if len(ormer) > 0 {

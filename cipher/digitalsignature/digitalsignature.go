@@ -26,7 +26,7 @@ import (
 // data = 原始数据 + 数字签名
 // 数字签名, 需要使用 公钥 进行解密-----> 得到散列值
 
-// RSA签名 - 私钥
+// RSA签名 - (利用私钥进行签名）
 func SignatureRSA(plainText []byte, fileName string) []byte {
 	//1. 打开磁盘的私钥文件
 	file, err := os.Open(fileName)

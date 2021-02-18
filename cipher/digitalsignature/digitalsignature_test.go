@@ -13,7 +13,7 @@ import (
 )
 
 func TestSignatureRSA(t *testing.T) {
-	src := []byte("在明明德，在亲民，在止於至善")
+	src := []byte("大学之道，在明明德，在亲民，在止於至善")
 	signText := SignatureRSA(src,"private.pem")
 	fmt.Println("SignText :")
 	fmt.Println(signText)

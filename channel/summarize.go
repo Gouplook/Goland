@@ -86,7 +86,7 @@ func Factorial(n int) {
 	lock.Unlock()
 }
 
-// --------------
+// ------计算素数--------
 // 向intChan 放入num个数
 func PutNum(intChan chan int, num int) {
 	for i := 1; i <= num; i++ {
