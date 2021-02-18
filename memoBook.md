@@ -23,3 +23,26 @@ step over :fn+a
 
     #--goland 编码转换包
     # go get golang.org/x/text/transform
+
+
+// kantu
+
+ // istat menus
+ // appCleaner
+ // magnet
+ // back
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
