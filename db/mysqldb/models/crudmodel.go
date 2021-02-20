@@ -97,3 +97,14 @@ func (m *NeedToModel) SelectByPage(where map[string]interface{}, start, limit in
 	// 需要修改
 	return m.Model.Where(where).Limit(start, limit).OrderBy(m.Field.CreatedAt + " DESC ").Select()
 }
+
+// 根据[]int查数据
+func (m *NeedToModel)GetByIds(ids []int) []map[string]interface{} {
+	if len(ids) == 0 {
+		return []map[string]interface{}{}
+	}
+	rs := m.Model.Where(map[string]interface{}{
+		m.Field.Id: []interface{}{"in",ids},
+	}).Select()
+	return rs
+}

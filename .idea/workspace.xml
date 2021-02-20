@@ -20,10 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc52f206-916b-4616-a64a-584a8ad39e20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DevelopmentMemo.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file/fileupload.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file/fileupload_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/function.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alipay" beforeDir="false" afterPath="$PROJECT_DIR$/alipay" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alipay/LICENSE" beforeDir="false" />
@@ -31,19 +27,9 @@
       <change beforePath="$PROJECT_DIR$/alipay/authorize.go" beforeDir="false" afterPath="$PROJECT_DIR$/alipay/authorize.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alipay/go.mod" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/alipay/go.sum" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/beegoconf/beegoconf.go" beforeDir="false" afterPath="$PROJECT_DIR$/conf/beegoconf/beegoconf.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/beegoconf/beegoconf_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/conf/beegoconf/beegoconf_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/fileStream.go" beforeDir="false" afterPath="$PROJECT_DIR$/file/fileStream.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goreflect/reflect.go" beforeDir="false" afterPath="$PROJECT_DIR$/goreflect/reflect.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goreflect/reflect_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/goreflect/reflect_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memoBook.md" beforeDir="false" afterPath="$PROJECT_DIR$/memoBook.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/other/other.go" beforeDir="false" afterPath="$PROJECT_DIR$/other/other.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/problem/problem.go" beforeDir="false" afterPath="$PROJECT_DIR$/problem/problem.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisoperation/redis.go" beforeDir="false" afterPath="$PROJECT_DIR$/redisoperation/redis.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/timeOperation.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/timeOperation.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/timeOperation_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/timeOperation_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/fileupload.go" beforeDir="false" afterPath="$PROJECT_DIR$/file/fileupload.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/fileupload_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/file/fileupload_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/upload/image/351/52f/7a4/3c3/40b/591/0193e0bff3002c" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -301,13 +287,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/file/fileupload_test.go</url>
-          <line>13</line>
+          <line>14</line>
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/file/fileupload.go</url>
-          <line>33</line>
-          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

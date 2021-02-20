@@ -112,3 +112,5 @@ func SaveImgFromUrl (imgUrl string)(reply ReplyFileInfo,err error) {
 	// 需保存字段 name,ext,size, type, strMd5,strSha256
 	return
 }
+
+// 根据hashs查图片

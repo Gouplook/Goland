@@ -11,6 +11,7 @@ import (
 	"testing"
 )
 
+// 根据url地址获取远程图片
 func TestSaveImgFromUrl(t *testing.T) {
 	// u= 33d4385f-6021-40c7-a90f-04b21f6e6049
 	//u := uuid.NewV4()
