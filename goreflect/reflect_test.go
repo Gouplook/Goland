@@ -1,4 +1,4 @@
-/******************************************
+ /******************************************
  * @Author: Yinjinlin
  * @Description: 反射基本点
  * @File:  reflect_test
@@ -35,7 +35,7 @@ func TestReflectModeValue(t *testing.T) {
 	// 原理：
 	// num := 9
 	// ptr *int = &num
-	// num2 := *ptr  //=== 类似 rVal.Elem()
+	// num2 := *ptr  // === 类似 rVal.Elem()
 	var num int = 10
 	ReflectModeValue(&num)
 	fmt.Println(num)

@@ -91,3 +91,13 @@ func TimeToStr(timestamp int64) string {
 	tm := time.Unix(timestamp, 0)
 	return tm.Format("2006/01/02 15:04:05")
 }
+// 字符串时间格式转time.Time
+func StrToTimeTime(strTime string, format string) (t time.Time, err error){
+	local,_ := time.LoadLocation("Asia/Shanghai")
+	t,err = time.ParseInLocation(format,strTime,local)
+	if err != nil {
+		panic(err)
+		return
+	}
+	return t,err
+}

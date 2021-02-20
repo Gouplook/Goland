@@ -1,6 +1,7 @@
 module GoInduction
 
 go 1.16
+
 require (
 	github.com/Unknwon/goconfig v0.0.0-20200908083735-df7de6a44db8
 	github.com/astaxie/beego v1.12.3
@@ -15,6 +16,7 @@ require (
 	github.com/golang/protobuf v1.4.3 // indirect
 	github.com/gomodule/redigo v2.0.0+incompatible
 	github.com/mitchellh/mapstructure v1.4.0
+	github.com/satori/go.uuid v1.2.0 // indirect
 	github.com/shopspring/decimal v1.2.0
 	github.com/smartwalle/crypto4go v1.0.2 // indirect
 	go.uber.org/zap v1.16.0 // indirect

@@ -22,12 +22,14 @@ func Problem1(){
 func Problem2(){
 	data := "A\xfe\x02\xff\x04"
 	for _,v := range data {
+		//%#v	值的Go语法表示
 		fmt.Printf("%#x ",v)
 	}
 	//prints: 0x41 0xfffd 0x2 0xfffd 0x4 (not ok)
 
 	fmt.Println()
 	for _,v := range []byte(data) {
+		// %#v	值的Go语法表示
 		fmt.Printf("%#x ",v)
 	}
 	//prints: 0x41 0xfe 0x2 0xff 0x4 (good)

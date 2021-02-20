@@ -12,7 +12,7 @@ import (
 	"github.com/garyburd/redigo/redis"
 )
 
-//通过go 向redis 写入数据和读取数据
+// 通过go 向redis 写入数据和读取数据
 func GoRedisReadWrite() {
 	// 1: 链接到redis
 	conn, err := redis.Dial("tcp", "127.0.0.1:6379")

@@ -17,7 +17,7 @@ func TestGetIniFileConf(t *testing.T) {
 	GetIniFileConf()
 }
 
-//
+// support section::key type in given key when using ini type
 //// GetYamlFileConf
 //func TestGetYamlFileConf(t *testing.T) {
 //	GetYamlFileConf()

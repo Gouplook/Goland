@@ -15,7 +15,7 @@ import (
 // 基本类型反射
 func BaseType(b interface{}) {
 	// int(float64)  ----> interface
-	//通过反射获取的传入的变量的 type , kind, 值
+	// 通过反射获取的传入的变量的 type , kind, 值
 	//1. 先获取到 reflect.Type
 	rType := reflect.TypeOf(b)
 	fmt.Println(rType)
