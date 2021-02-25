@@ -19,7 +19,6 @@ import (
 )
 
 //生成密钥对
-
 func GenerateEcckey(){
 	//1. 使用ecdsa生成密钥对
 	privateKey, err := ecdsa.GenerateKey(elliptic.P521(),rand.Reader)
@@ -64,7 +63,6 @@ func GenerateEcckey(){
 	pubFile.Close()
 
 }
-
 
 // ecc签名 - 私钥
 func EccSignature(plainText []byte, privName string)  (rText, sText []byte){
