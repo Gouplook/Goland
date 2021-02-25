@@ -96,6 +96,7 @@ func GoStrings(){
 		fmt.Printf("str[%v]=%v\n", i, strArr[i])
 	}
 	fmt.Printf("strArr=%v\n", strArr)
+	//
 
 	//15)将字符串的字母进行大小写的转换:
 	//strings.ToLower("Go") // go strings.ToUpper("Go") // GO

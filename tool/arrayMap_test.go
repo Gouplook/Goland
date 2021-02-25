@@ -10,6 +10,7 @@ import (
 	"fmt"
 	"sort"
 	"strconv"
+	"strings"
 	"testing"
 )
 
@@ -55,4 +56,10 @@ func SortMaps(field string, maps []map[string]interface{}) []map[string]interfac
 		remapData = append(remapData, tempMap[v].(map[string]interface{}))
 	}
 	return remapData
+}
+func TestStr(t *testing.T){
+	startTimePointArr := strings.Split("22:00", ":")
+	startTimePointStr := startTimePointArr[0] + startTimePointArr[1]
+	startTimePointInt, _ := strconv.Atoi(startTimePointStr)
+	fmt.Println(startTimePointInt)
 }

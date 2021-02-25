@@ -104,7 +104,7 @@ func (m *NeedToModel)GetByIds(ids []int) []map[string]interface{} {
 		return []map[string]interface{}{}
 	}
 	rs := m.Model.Where(map[string]interface{}{
-		m.Field.Id: []interface{}{"in",ids},
+	//	m.Field.Id: []interface{}{"in",ids},
 	}).Select()
 	return rs
 }

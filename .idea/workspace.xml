@@ -27,6 +27,9 @@
       <change beforePath="$PROJECT_DIR$/alipay/authorize.go" beforeDir="false" afterPath="$PROJECT_DIR$/alipay/authorize.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alipay/go.mod" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/alipay/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/mysqldb/models/crudmodel.go" beforeDir="false" afterPath="$PROJECT_DIR$/db/mysqldb/models/crudmodel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/arrayMap_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/arrayMap_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/gostings.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/gostings.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +67,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="go.sdk" />
   </component>
-  <component name="RunManager" selected="Go Test.TestSaveImgFromUrl in GoInduction/file">
+  <component name="RunManager" selected="Go Test.TestStr in GoInduction/tool">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$" />
@@ -108,6 +111,17 @@
       <pattern value="^\QTestSaveImgFromUrl\E$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestStr in GoInduction/tool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Goland" />
+      <working_directory value="$PROJECT_DIR$/tool" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="GoInduction/tool" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestStr\E$" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestStrtoTimeTime in GoInduction/tool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$/tool" />
@@ -117,17 +131,6 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <pattern value="^\QTestStrtoTimeTime\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestStructType in GoInduction/goreflect" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/goreflect" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="GoInduction/goreflect" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestStructType\E$" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -143,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestStr in GoInduction/tool" />
         <item itemvalue="Go Test.TestSaveImgFromUrl in GoInduction/file" />
         <item itemvalue="Go Test.TestStrtoTimeTime in GoInduction/tool" />
         <item itemvalue="Go Test.TestProblem1 in GoInduction/problem" />
         <item itemvalue="Go Test.TestReflectModeValue in GoInduction/goreflect" />
-        <item itemvalue="Go Test.TestStructType in GoInduction/goreflect" />
       </list>
     </recent_temporary>
   </component>
@@ -184,31 +187,31 @@
       <screen x="1280" y="41" width="1920" height="1080" />
     </state>
     <state x="1938" y="390" key="#com.intellij.fileTypes.FileTypeChooser/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1613808918327" />
-    <state width="1878" height="477" key="GridCell.Tab.0.bottom" timestamp="1613813681294">
-      <screen x="1280" y="41" width="1920" height="1080" />
+    <state width="1238" height="209" key="GridCell.Tab.0.bottom" timestamp="1614130181656">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="200" key="GridCell.Tab.0.bottom/1280.41.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1613642557960" />
+    <state width="1238" height="209" key="GridCell.Tab.0.bottom/1280.41.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1614130181656" />
     <state width="1878" height="477" key="GridCell.Tab.0.bottom/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1613813681294" />
     <state width="1878" height="296" key="GridCell.Tab.0.bottom/1280.41.1920.1080/0.23.1280.777@1280.41.1920.1080" timestamp="1612778377121" />
     <state width="1878" height="366" key="GridCell.Tab.0.bottom/1280.64.1920.1057/46.23.1234.777@1280.64.1920.1057" timestamp="1606454805047" />
-    <state width="1878" height="477" key="GridCell.Tab.0.center" timestamp="1613813681290">
-      <screen x="1280" y="41" width="1920" height="1080" />
+    <state width="1238" height="209" key="GridCell.Tab.0.center" timestamp="1614130181653">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="200" key="GridCell.Tab.0.center/1280.41.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1613642557958" />
+    <state width="1238" height="209" key="GridCell.Tab.0.center/1280.41.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1614130181653" />
     <state width="1878" height="477" key="GridCell.Tab.0.center/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1613813681290" />
     <state width="1878" height="296" key="GridCell.Tab.0.center/1280.41.1920.1080/0.23.1280.777@1280.41.1920.1080" timestamp="1612778377114" />
     <state width="1878" height="366" key="GridCell.Tab.0.center/1280.64.1920.1057/46.23.1234.777@1280.64.1920.1057" timestamp="1606454805043" />
-    <state width="1878" height="477" key="GridCell.Tab.0.left" timestamp="1613813681288">
-      <screen x="1280" y="41" width="1920" height="1080" />
+    <state width="1238" height="209" key="GridCell.Tab.0.left" timestamp="1614130181651">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="200" key="GridCell.Tab.0.left/1280.41.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1613642557957" />
+    <state width="1238" height="209" key="GridCell.Tab.0.left/1280.41.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1614130181651" />
     <state width="1878" height="477" key="GridCell.Tab.0.left/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1613813681288" />
     <state width="1878" height="296" key="GridCell.Tab.0.left/1280.41.1920.1080/0.23.1280.777@1280.41.1920.1080" timestamp="1612778377112" />
     <state width="1878" height="366" key="GridCell.Tab.0.left/1280.64.1920.1057/46.23.1234.777@1280.64.1920.1057" timestamp="1606454805040" />
-    <state width="1878" height="477" key="GridCell.Tab.0.right" timestamp="1613813681292">
-      <screen x="1280" y="41" width="1920" height="1080" />
+    <state width="1238" height="209" key="GridCell.Tab.0.right" timestamp="1614130181655">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="200" key="GridCell.Tab.0.right/1280.41.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1613642557959" />
+    <state width="1238" height="209" key="GridCell.Tab.0.right/1280.41.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1614130181655" />
     <state width="1878" height="477" key="GridCell.Tab.0.right/1280.41.1920.1080/0.0.1280.800@1280.41.1920.1080" timestamp="1613813681292" />
     <state width="1878" height="296" key="GridCell.Tab.0.right/1280.41.1920.1080/0.23.1280.777@1280.41.1920.1080" timestamp="1612778377119" />
     <state width="1878" height="366" key="GridCell.Tab.0.right/1280.64.1920.1057/46.23.1234.777@1280.64.1920.1057" timestamp="1606454805044" />
