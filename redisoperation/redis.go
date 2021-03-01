@@ -69,6 +69,7 @@ func GoRedisPool(){
 	r, _ := redis.String(conn.Do("Get", "Name"))
 	fmt.Println("1:==",r)
 
+	//
 
 	// 获得另一个链接
 	conn = pool.Get()

@@ -77,7 +77,7 @@ func SaveImgFromUrl (imgUrl string)(reply ReplyFileInfo,err error) {
 	strSha256 := hex.EncodeToString(objSha256.Sum(nil))
 
 	// 获取图片大小 imgSize
-	imgSize,_ :=strconv.ParseInt(response.Header.Get("Content-Length"),10,64)
+	imgSize,_ := strconv.ParseInt(response.Header.Get("Content-Length"),10,64)
 
 	// 5：利用获取的strMd5和strSha256字符串，数据库业务操作（查重）
 	fmt.Println(strMd5)

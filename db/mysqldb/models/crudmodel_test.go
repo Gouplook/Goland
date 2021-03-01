@@ -30,7 +30,7 @@ func TestNeedToModel_Insert(t *testing.T) {
 	insetModel := new(NeedToModel).Init()
 
 	// 数据导入
-	//data := map[string]interface{}{
+	//  data := map[string]interface{}{
 	//	insetModel.Field.F_email:      "wangyi@163.com",
 	//	insetModel.Field.F_password:   "qwer123",
 	//	insetModel.Field.F_created_id: time.Now().Local().Format("2006-01-02 15:04:05"),

@@ -17,7 +17,7 @@ import (
 
 // bufio 对io方法进行封装
 
-// io ReadString : 是将外部文件读到（应用程序中）输出流中
+// io ReadString : 是将外部文件读到（应用程序中）输入流中
 func IoFileRead(name string) {
 	file, _ := os.Open(name)
 	reader := bufio.NewReader(file)
