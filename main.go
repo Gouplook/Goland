@@ -103,7 +103,6 @@ func Addupper() func(int) int {
 		n = n + x
 		return n
 	}
-
 }
 func main() {
 
@@ -112,5 +111,4 @@ func main() {
 	f := Addupper()
 	fmt.Println(f(1))
 	fmt.Println(f(2))
-
 }
