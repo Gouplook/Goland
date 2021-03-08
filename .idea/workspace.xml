@@ -20,21 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc52f206-916b-4616-a64a-584a8ad39e20" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevelopmentMemo.md" beforeDir="false" afterPath="$PROJECT_DIR$/DevelopmentMemo.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alipay" beforeDir="false" afterPath="$PROJECT_DIR$/alipay" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alipay/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alipay/alipay.go" beforeDir="false" afterPath="$PROJECT_DIR$/alipay/alipay.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alipay/authorize.go" beforeDir="false" afterPath="$PROJECT_DIR$/alipay/authorize.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alipay/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alipay/go.sum" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/mysqldb/models/crudmodel.go" beforeDir="false" afterPath="$PROJECT_DIR$/db/mysqldb/models/crudmodel.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/mysqldb/models/crudmodel_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/db/mysqldb/models/crudmodel_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/fileStream.go" beforeDir="false" afterPath="$PROJECT_DIR$/file/fileStream.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/fileSumup.go" beforeDir="false" afterPath="$PROJECT_DIR$/file/fileSumup.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/fileread.txt" beforeDir="false" afterPath="$PROJECT_DIR$/file/fileread.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/fileupload.go" beforeDir="false" afterPath="$PROJECT_DIR$/file/fileupload.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisoperation/redis.go" beforeDir="false" afterPath="$PROJECT_DIR$/redisoperation/redis.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
