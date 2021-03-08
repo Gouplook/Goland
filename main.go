@@ -9,6 +9,7 @@ import (
 type Add struct {
 	Object
 }
+
 func (a *Add) GetResult() int { // 方法的实现要和接口中方法的声明保持一致
 	return a.numA + a.numB
 }
@@ -39,6 +40,7 @@ func (a *Add) SetData(data ...interface{}) bool {
 type Sub struct {
 	Object
 }
+
 func (s *Sub) SetData(data ...interface{}) bool {
 	// 1: 对数据的个数进行校验。
 	var b bool = true
@@ -95,30 +97,20 @@ func (o *OperatorFactory) CreateOperator(op string) Resulter {
 func OperatorWho(h Resulter) int {
 	return h.GetResult()
 }
-func Addupper() func (int) int{
+func Addupper() func(int) int {
 	var n int = 10
-	return func (x int ) int {
-		n= n+x
+	return func(x int) int {
+		n = n + x
 		return n
 	}
 
 }
 func main() {
-	//var operator OperatorFactory
-	//obj := operator.CreateOperator("-")
-	//b := obj.SetData(30, 10)
-	//if b {
-	//	num := OperatorWho(obj)
-	//	fmt.Println(num)
-	//}
-
 
 	fmt.Println("78880====")
 	fmt.Println(utils.Age)
 	f := Addupper()
 	fmt.Println(f(1))
 	fmt.Println(f(2))
-	fmt.Println("xxx")
-
 
 }
