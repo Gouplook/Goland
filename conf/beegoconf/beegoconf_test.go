@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-03-08 13:06:11
+ * @LastEditTime: 2021-03-09 14:09:59
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /Goland/conf/beegoconf/beegoconf_test.go
+ */
 /******************************************
 
 @Author :yinjinlin<yinjinlin_uplook@163.com>
@@ -11,14 +19,3 @@ import "testing"
 func TestBeeGoConf(t *testing.T) {
 	BeeGoConf()
 }
-
-
-func TestGetIniFileConf(t *testing.T) {
-	GetIniFileConf()
-}
-
-// support section::key type in given key when using ini type
-//// GetYamlFileConf
-//func TestGetYamlFileConf(t *testing.T) {
-//	GetYamlFileConf()
-//}

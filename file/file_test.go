@@ -25,7 +25,6 @@ func TestIoFileReadWrite(t *testing.T) {
 	name := "filewrite.txt"
 	IoFileWrite(name)
 }
-
 // 测试ioutil 读文件
 func TestIoutilFile(t *testing.T) {
 	IoutilFileRead("fileread.txt")

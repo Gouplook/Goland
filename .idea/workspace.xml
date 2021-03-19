@@ -21,11 +21,15 @@
   <component name="ChangeListManager">
     <list default="true" id="fc52f206-916b-4616-a64a-584a8ad39e20" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/beegoconf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/beegoconf/app.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/beegoconf/beegoconf.go" beforeDir="false" afterPath="$PROJECT_DIR$/conf/beegoconf/beegoconf.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/beegoconf/beegoconf_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/conf/beegoconf/beegoconf_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/ini/ini.go" beforeDir="false" afterPath="$PROJECT_DIR$/conf/ini/ini.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/ini/int_test.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/file/file_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/file/file_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/file/fileread.txt" beforeDir="false" afterPath="$PROJECT_DIR$/file/fileread.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/file/filewrite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/file/filewrite.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memoBook.md" beforeDir="false" afterPath="$PROJECT_DIR$/memoBook.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,11 +201,16 @@
           <line>29</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/file/file_test.go</url>
+          <line>41</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="GoTestRunConfiguration">
-        <watch expression="fileNames" language="go" />
+        <watch expression="fileNames" />
       </configuration>
     </watches-manager>
   </component>

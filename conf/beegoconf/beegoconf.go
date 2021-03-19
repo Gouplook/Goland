@@ -8,27 +8,20 @@ package beegoconf
 
 import (
 	"fmt"
+	"log"
+
 	"github.com/astaxie/beego/config"
 )
 
 // 待完善
 func BeeGoConf() {
+	cg, err := config.NewConfig("ini", "app.conf")
 
-}
-
-// beego 默认解析ini 配置文件   key通过 section::key 的方式获取
-func GetIniFileConf() {
-	// 初始化一个解析器对象
-	iniConf, _ := config.NewConfig("ini", "../ini/conf.ini")
-	// 通过对象获取数据
-	enabled := iniConf.String("Section::enabled")
-	path := iniConf.String("Section::path")
-	dbType := iniConf.String("db::type")
-
-	fmt.Println(enabled)
-	fmt.Println("Path := ", path)
-	fmt.Println("dbType = ",dbType)
-	fmt.Println("==========")
-	fmt.Println("Section::path")
+	if err != nil {
+		log.Fatal("config.NewConfig error")
+		return
+	}
+	redisHost := cg.String("db.maxconn")
+	fmt.Println(redisHost)
 
 }

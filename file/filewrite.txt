@@ -1,1 +1,1 @@
-func LimitReader(r Reader, n int64) Reader11209871
+大学之道，在明明德，在亲民，止于至善
