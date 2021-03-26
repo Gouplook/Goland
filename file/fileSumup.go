@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-03-08 13:06:11
+ * @LastEditTime: 2021-03-23 10:51:27
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: /Goland/file/fileSumup.go
+ */
 /********************************************
 
 @Author :yinjinlin<yinjinlin_uplook@163.com>

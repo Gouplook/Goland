@@ -8,6 +8,7 @@ package tool
 
 import (
 	"fmt"
+	"strconv"
 	"testing"
 	"time"
 )
@@ -32,4 +33,15 @@ func TestStrtoTimeTime(t *testing.T) {
 	// 字符串时间格式转time.Time
 	tm, _ := StrToTimeTime("2001-02-03","2006-01-02")
 	fmt.Println(tm)
+}
+
+func TestTimeSoStr(t *testing.T) {
+	timesp := "1590561184"
+	timesp2, _ := strconv.ParseInt(timesp,10, 64)
+	uTime := TimeToStr(timesp2)
+
+	uTime2 := time.Now().Local().Format("2006-01-02")
+	fmt.Println(uTime2)
+
+	fmt.Println(uTime)
 }

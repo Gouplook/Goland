@@ -45,6 +45,7 @@ func StructCase(s interface{}) {
 	rType := reflect.TypeOf(s)
 	rVal := reflect.ValueOf(s)
 
+
 	valKind := rVal.Kind()
 	// 如果传入的不是struct，就退出
 	if valKind != reflect.Struct {

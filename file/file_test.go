@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-08 13:06:11
- * @LastEditTime: 2021-03-08 16:42:25
+ * @LastEditTime: 2021-03-23 13:53:53
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /Goland/file/file_test.go
@@ -25,6 +25,7 @@ func TestIoFileReadWrite(t *testing.T) {
 	name := "filewrite.txt"
 	IoFileWrite(name)
 }
+
 // 测试ioutil 读文件
 func TestIoutilFile(t *testing.T) {
 	IoutilFileRead("fileread.txt")
@@ -42,4 +43,6 @@ func TestIoFileCopy(t *testing.T) {
 // 测试ioutil写文件
 func TestIoutilFileWrite(t *testing.T) {
 	IoutilFileWrite("filewrite.txt")
+	fmt.Println("hello world.......")
+	t.Log("122222....")
 }
