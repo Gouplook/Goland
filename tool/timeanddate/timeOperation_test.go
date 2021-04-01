@@ -4,7 +4,7 @@
 @Time : 2020/11/25 上午11:28
 
 *******************************************/
-package tool
+package timeanddate
 
 import (
 	"fmt"
@@ -44,4 +44,14 @@ func TestTimeSoStr(t *testing.T) {
 	fmt.Println(uTime2)
 
 	fmt.Println(uTime)
+}
+
+func TestGetBirthday(t *testing.T) {
+	str := GetBirthday("34082319981024043x")
+	fmt.Println(str)
+}
+func TestGetAge(t *testing.T) {
+	str := GetBirthday("34082319981024043x")
+	age := GetAge(str)
+	fmt.Println(age)
 }

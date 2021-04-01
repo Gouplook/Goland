@@ -4,10 +4,11 @@
 @Time : 2020/11/25 上午11:26
 
 *******************************************/
-package tool
+package timeanddate
 
 import (
 	"fmt"
+	"regexp"
 	"time"
 )
 
@@ -89,8 +90,15 @@ func StrtoTime(timeStr string, timelayouts... string) int64 {
 //@return string
 func TimeToStr(timestamp int64) string {
 	tm := time.Unix(timestamp, 0)
-	return tm.Format("2006/01/02 15:04:05")
+	return tm.Format("2006-01-02 15:04:05")
 }
+
+//时间戳转 数据库的Date格式
+func TimeToDate(timestamp int64) string {
+	tm := time.Unix(timestamp, 0)
+	return tm.Format("2006-01-02")
+}
+
 // 字符串时间格式转time.Time
 func StrToTimeTime(strTime string, format string) (t time.Time, err error){
 	local,_ := time.LoadLocation("Asia/Shanghai")
@@ -100,4 +108,33 @@ func StrToTimeTime(strTime string, format string) (t time.Time, err error){
 		return
 	}
 	return t,err
+}
+
+
+// 根据身份证号---获取生日
+func GetBirthday(str string) string {
+	reg, err := regexp.Compile("^(\\d{6})(\\d{8})(.*)")
+	if err != nil {
+		return ""
+	}
+
+	if reg.MatchString(str) == true {
+		submatch := reg.FindStringSubmatch(str)
+
+		test, _ := time.Parse("20060102", submatch[2])
+		return test.Format("2006-01-02")
+	}
+	return ""
+}
+//根据身份证号---获取年龄
+func GetAge(date string) (age int) {
+	d, _ := time.Parse("2006-01-02", date)
+	year := d.Year()
+	if year <= 0 {
+		age = -1
+	}
+
+	nowyear := time.Now().Year()
+	age = nowyear - year
+	return
 }

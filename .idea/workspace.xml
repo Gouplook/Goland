@@ -20,15 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc52f206-916b-4616-a64a-584a8ad39e20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/fileSumup.go" beforeDir="false" afterPath="$PROJECT_DIR$/file/fileSumup.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/file_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/file/file_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/fileread.txt" beforeDir="false" afterPath="$PROJECT_DIR$/file/fileread.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goreflect/reflectcase.go" beforeDir="false" afterPath="$PROJECT_DIR$/goreflect/reflectcase.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memoBook.md" beforeDir="false" afterPath="$PROJECT_DIR$/memoBook.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/timeOperation_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/timeOperation_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
