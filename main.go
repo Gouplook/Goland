@@ -1,8 +1,8 @@
 package main
 
 import (
-	"GoInduction/utils"
 	"fmt"
+	"sort"
 )
 
 // 加法类
@@ -110,9 +110,25 @@ func Addupper() func(int) int {
 func main() {
 
 	fmt.Println("78880====")
-	fmt.Println(utils.Age)
-	f := Addupper()
-	fmt.Println(f(1))
-	fmt.Println(f(2))
+	//fmt.Println(utils.Age)
+	//f := Addupper()
+	//fmt.Println(f(1))
+	//fmt.Println(f(2))
+
+	//realPrice := 770.0  // 实际支付
+	//price := 1000.0 // 面值
+	//discout, _ := decimal.NewFromFloat(realPrice).Div(decimal.NewFromFloat(price)).Truncate(2).Float64()
+	//fmt.Println(discout)
+	dis := []float64{2.5,2.9,2.5}
+
+	dis2 := dis
+	sort.Float64s(dis)
+	fmt.Println(dis)
+	min,max := dis[0],dis[len(dis)-1]
+	fmt.Println(min)
+	fmt.Println(max)
+	fmt.Println(dis2)
 
 }
+
+

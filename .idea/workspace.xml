@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fc52f206-916b-4616-a64a-584a8ad39e20" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +50,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
@@ -63,13 +65,22 @@
       <recent name="$PROJECT_DIR$/tool/timeanddate" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestBigDataProcess in GoInduction/utils">
+  <component name="RunManager" selected="Go Build.go build GoInduction">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$" />
       <go_parameters value="-i" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$" />
+      <package value="GoInduction" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build GoInduction" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Goland" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
       <package value="GoInduction" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
@@ -96,29 +107,7 @@
       <pattern value="^\QTestGetAge\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestGetBirthday in GoInduction/tool/timeanddate" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/tool/timeanddate" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="GoInduction/tool/timeanddate" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestGetBirthday\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestIoFileCopy in GoInduction/file" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/file" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="GoInduction/file" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestIoFileCopy\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestTimeSoStr in GoInduction/tool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestMapToStruct2 in GoInduction/tool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$/tool" />
       <framework value="gotest" />
@@ -126,7 +115,18 @@
       <package value="GoInduction/tool" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestTimeSoStr\E$" />
+      <pattern value="^\QTestMapToStruct2\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestStructToMap in GoInduction/tool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Goland" />
+      <working_directory value="$PROJECT_DIR$/tool" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="GoInduction/tool" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestStructToMap\E$" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -142,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build GoInduction" />
+        <item itemvalue="Go Test.TestStructToMap in GoInduction/tool" />
+        <item itemvalue="Go Test.TestMapToStruct2 in GoInduction/tool" />
         <item itemvalue="Go Test.TestBigDataProcess in GoInduction/utils" />
         <item itemvalue="Go Test.TestGetAge in GoInduction/tool/timeanddate" />
-        <item itemvalue="Go Test.TestGetBirthday in GoInduction/tool/timeanddate" />
-        <item itemvalue="Go Test.TestTimeSoStr in GoInduction/tool" />
-        <item itemvalue="Go Test.TestIoFileCopy in GoInduction/file" />
       </list>
     </recent_temporary>
   </component>
