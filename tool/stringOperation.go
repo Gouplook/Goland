@@ -8,6 +8,7 @@
 package tool
 
 import (
+	"fmt"
 	"strconv"
 	"strings"
 )
@@ -96,4 +97,11 @@ func GetPemPrivate(private_key string) string {
 	}
 	res += "-----END RSA PRIVATE KEY-----"
 	return res
+}
+//把数组转换为字符串
+//@param  string separator       转换分隔符
+//@param  interface{}  interface 待转换数据
+//@return string
+func Implode(separator string, array interface{}) (string) {
+	return strings.Replace(strings.Trim(fmt.Sprint(array), "[]"), " ", separator, -1)
 }
