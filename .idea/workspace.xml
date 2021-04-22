@@ -20,12 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc52f206-916b-4616-a64a-584a8ad39e20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gofunc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tool/advanceMap_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tool/advancedMap.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goroutine/gowait,go.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goroutine/gowait_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevelopmentMemo.md" beforeDir="false" afterPath="$PROJECT_DIR$/DevelopmentMemo.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/channel/summarize_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/channel/summarize_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +67,7 @@
       <recent name="$PROJECT_DIR$/tool/timeanddate" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestAdvanceMap in GoInduction/tool">
+  <component name="RunManager" selected="Go Test.TestGoWait in GoInduction/goroutine">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$" />
@@ -100,15 +98,15 @@
       <pattern value="^\QTestAdvanceMap\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestBigDataProcess in GoInduction/utils" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGoWait in GoInduction/goroutine" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/utils" />
+      <working_directory value="$PROJECT_DIR$/goroutine" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/utils" />
+      <package value="GoInduction/goroutine" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestBigDataProcess\E$" />
+      <pattern value="^\QTestGoWait\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestMapToStruct2 in GoInduction/tool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -146,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestAdvanceMap in GoInduction/tool" />
+        <item itemvalue="Go Test.TestGoWait in GoInduction/goroutine" />
         <item itemvalue="Go Build.go build GoInduction" />
+        <item itemvalue="Go Test.TestAdvanceMap in GoInduction/tool" />
         <item itemvalue="Go Test.TestStructToMap in GoInduction/tool" />
         <item itemvalue="Go Test.TestMapToStruct2 in GoInduction/tool" />
-        <item itemvalue="Go Test.TestBigDataProcess in GoInduction/utils" />
       </list>
     </recent_temporary>
   </component>

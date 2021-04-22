@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"sort"
 )
 
 // 加法类
@@ -119,15 +118,14 @@ func main() {
 	//price := 1000.0 // 面值
 	//discout, _ := decimal.NewFromFloat(realPrice).Div(decimal.NewFromFloat(price)).Truncate(2).Float64()
 	//fmt.Println(discout)
-	dis := []float64{2.5,2.9,2.5}
-
-	dis2 := dis
-	sort.Float64s(dis)
-	fmt.Println(dis)
-	min,max := dis[0],dis[len(dis)-1]
-	fmt.Println(min)
-	fmt.Println(max)
-	fmt.Println(dis2)
+	//dis := []float64{2.5,2.9,2.5}
+	//
+	//dis2 := dis
+	//sort.Float64s(dis)
+	//fmt.Println(dis)
+	//min,max := dis[0],dis[len(dis)-1]
+	//fmt.Println(min)
+	//fmt.Println(max)
+	//fmt.Println(dis2)
 
 }
-
