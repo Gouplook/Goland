@@ -20,10 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc52f206-916b-4616-a64a-584a8ad39e20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tool/goJson,go.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gofunc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/advanceMap_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/advancedMap.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/stringOperation.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/stringOperation.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevelopmentMemo.md" beforeDir="false" afterPath="$PROJECT_DIR$/DevelopmentMemo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/channel/summarize_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/channel/summarize_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +69,7 @@
       <recent name="$PROJECT_DIR$/tool/timeanddate" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build GoInduction">
+  <component name="RunManager" selected="Go Test.TestAdvanceMap in GoInduction/tool">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$" />
@@ -87,6 +89,17 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestAdvanceMap in GoInduction/tool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Goland" />
+      <working_directory value="$PROJECT_DIR$/tool" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="GoInduction/tool" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestAdvanceMap\E$" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestBigDataProcess in GoInduction/utils" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$/utils" />
@@ -96,17 +109,6 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <pattern value="^\QTestBigDataProcess\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestGetAge in GoInduction/tool/timeanddate" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/tool/timeanddate" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="GoInduction/tool/timeanddate" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestGetAge\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestMapToStruct2 in GoInduction/tool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -144,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestAdvanceMap in GoInduction/tool" />
         <item itemvalue="Go Build.go build GoInduction" />
         <item itemvalue="Go Test.TestStructToMap in GoInduction/tool" />
         <item itemvalue="Go Test.TestMapToStruct2 in GoInduction/tool" />
         <item itemvalue="Go Test.TestBigDataProcess in GoInduction/utils" />
-        <item itemvalue="Go Test.TestGetAge in GoInduction/tool/timeanddate" />
       </list>
     </recent_temporary>
   </component>
@@ -204,12 +206,12 @@
           <line>42</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/tool/advancedMap.go</url>
+          <line>27</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="GoTestRunConfiguration">
-        <watch expression="fileNames" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>

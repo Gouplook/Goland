@@ -31,3 +31,15 @@ Or, if you don't want/need a background service you can just run:
   
   
   621778 8362401349705
+
+
+
+CREATE TABLE `kc_tag` (
+`tag_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+`bus_id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '所属企业商户id',
+`name` varchar(20) NOT NULL DEFAULT '' COMMENT '标签名称',
+`id_del` tinyint(1) unsigned NOT NULL DEFAULT '0' COMMENT '是否被删除 0=否 1=是',
+`ctime` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '创建时间',
+PRIMARY KEY (`tag_id`),
+KEY `bus_id` (`bus_id`,`id_del`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=84 DEFAULT CHARSET=utf8mb4 COMMENT='卡协服务-单项目可用标签';

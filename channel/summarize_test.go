@@ -58,6 +58,7 @@ func TestPrimeNum(t *testing.T) {
 		close(primeChan)
 	}()
 
+
 	//遍历我们的 primeChan ,把结果取出
 	for {
 		res, ok := <- primeChan
