@@ -59,3 +59,19 @@ func AdvanceMap() {
 	}
 
 }
+
+
+func SileIn (){
+	cardId := make([]int,0)
+	cardId = append(cardId, 19)
+	cardId = append(cardId, 12)
+	cardId = append(cardId, 18)
+	cardId = append(cardId, 98)
+
+	for _, card := range cardId {
+		fmt.Println(card)
+	}
+
+
+
+}
