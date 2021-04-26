@@ -20,11 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc52f206-916b-4616-a64a-584a8ad39e20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tool/goJson_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gogorm/gogorm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gogorm/gogorm_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/advanceMap_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/advanceMap_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/advancedMap.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/advancedMap.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/goJson,go.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/goJson,go.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,14 +61,15 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gogorm" />
       <recent name="$PROJECT_DIR$/tool/timeanddate" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestJsonUnmarshal in GoInduction/tool">
+  <component name="RunManager" selected="Go Test.TestAotiSql in GoInduction/gogorm">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$" />
@@ -79,35 +80,37 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build GoInduction" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestAotiSql in GoInduction/gogorm" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/main.go" />
-      <package value="GoInduction" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestAdvanceMap in GoInduction/tool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/tool" />
+      <working_directory value="$PROJECT_DIR$/gogorm" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/tool" />
+      <package value="GoInduction/gogorm" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestAdvanceMap\E$" />
+      <pattern value="^\QTestAotiSql\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestGoWait in GoInduction/goroutine" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCreateUser in GoInduction/gogorm" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/goroutine" />
+      <working_directory value="$PROJECT_DIR$/gogorm" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/goroutine" />
+      <package value="GoInduction/gogorm" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestGoWait\E$" />
+      <pattern value="^\QTestCreateUser\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestFindUser in GoInduction/gogorm" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Goland" />
+      <working_directory value="$PROJECT_DIR$/gogorm" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="GoInduction/gogorm" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestFindUser\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestJsonMarshal in GoInduction/tool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -145,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestAotiSql in GoInduction/gogorm" />
+        <item itemvalue="Go Test.TestFindUser in GoInduction/gogorm" />
+        <item itemvalue="Go Test.TestCreateUser in GoInduction/gogorm" />
         <item itemvalue="Go Test.TestJsonUnmarshal in GoInduction/tool" />
         <item itemvalue="Go Test.TestJsonMarshal in GoInduction/tool" />
-        <item itemvalue="Go Test.TestAdvanceMap in GoInduction/tool" />
-        <item itemvalue="Go Test.TestGoWait in GoInduction/goroutine" />
-        <item itemvalue="Go Build.go build GoInduction" />
       </list>
     </recent_temporary>
   </component>

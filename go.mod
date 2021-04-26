@@ -27,6 +27,8 @@ require (
 	gopkg.in/gcfg.v1 v1.2.3
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 	gopkg.in/yaml.v2 v2.2.8
+	gorm.io/driver/mysql v1.0.5 // indirect
+	gorm.io/gorm v1.21.8 // indirect
 )
 
 //replace github.com/coreos/go-systemd => github.com/coreos/go-systemd/v22 v22.0.0
