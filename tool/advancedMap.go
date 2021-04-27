@@ -47,15 +47,39 @@ func AdvanceMap() {
 	fmt.Println("maps=====", maps)
 	var outStruct []CardBase
 
+	// 追加
+	maps = append(maps, map[string]interface{}{
+		"name":"RcardId",
+		"card_id":14,
+		"salesnum":1006,
+	})
+	maps2 := make([]map[string]interface{},2)
+	// 必须make，否则panic: assignment to entry in nil map
+	// 原因：未初始化的的value 是nil，自己
+	maps2[0] = make(map[string]interface{})
+	maps2[0]["name"] = "signle1"
+	maps2[0]["card_id"] = 101
+	maps2[0]["price"] = 101.0
+	maps2[0]["salesnum"] = 1003101
+
+	maps2[1] = make(map[string]interface{})
+	maps2[1]["name"] = "signle2"
+	maps2[1]["card_id"] = 201
+	maps2[1]["price"] = 201.0
+	maps2[1]["salesnum"] = 2003101
+
+	maps = append(maps,maps2...)
+	fmt.Println("maps =",maps)
 	_ = mapstructure.WeakDecode(maps, &outStruct)
 
 	for k, v := range outStruct {
+		fmt.Println("========key value =======")
 		fmt.Println("k = ", k, v.Name)
 		fmt.Println("k = ", k, v.CardId)
 		fmt.Println("k = ", k, v.SalesNum)
 		fmt.Println("k = ", k, v.Clicks)
-		fmt.Println("========key value =======")
-		fmt.Println(outStruct[k].Name)
+
+		//fmt.Println(outStruct[k].Name)
 	}
 
 }
@@ -67,11 +91,15 @@ func SileIn (){
 	cardId = append(cardId, 12)
 	cardId = append(cardId, 18)
 	cardId = append(cardId, 98)
+	cardId = append(cardId, 100)
 
 	for _, card := range cardId {
 		fmt.Println(card)
 	}
 
-
+	var slice []int
+	fmt.Println("slice =", slice)
+	slice1 := make([]int,0)
+	fmt.Println("slice1 =", slice1)
 
 }

@@ -9,8 +9,12 @@ package tool
 
 import "testing"
 
+// map和map切片测试
 func TestAdvanceMap(t *testing.T) {
-	//AdvanceMap()
+	AdvanceMap()
+}
+
+func TestSileIn(t *testing.T) {
 	SileIn()
 }
 

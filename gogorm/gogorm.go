@@ -122,7 +122,6 @@ func CreateCards() {
 		{"CardName": "hncard", "CardPrcie": 203.50},
 	})
 	fmt.Println(rs.RowsAffected)
-
 }
 
 
