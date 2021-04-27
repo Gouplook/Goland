@@ -49,11 +49,11 @@ func AdvanceMap() {
 
 	// 追加
 	maps = append(maps, map[string]interface{}{
-		"name":"RcardId",
-		"card_id":14,
-		"salesnum":1006,
+		"name":     "RcardId",
+		"card_id":  14,
+		"salesnum": 1006,
 	})
-	maps2 := make([]map[string]interface{},2)
+	maps2 := make([]map[string]interface{}, 2)
 	// 必须make，否则panic: assignment to entry in nil map
 	// 原因：未初始化的的value 是nil，自己
 	maps2[0] = make(map[string]interface{})
@@ -68,8 +68,8 @@ func AdvanceMap() {
 	maps2[1]["price"] = 201.0
 	maps2[1]["salesnum"] = 2003101
 
-	maps = append(maps,maps2...)
-	fmt.Println("maps =",maps)
+	maps = append(maps, maps2...)
+	fmt.Println("maps =", maps)
 	_ = mapstructure.WeakDecode(maps, &outStruct)
 
 	for k, v := range outStruct {
@@ -84,9 +84,8 @@ func AdvanceMap() {
 
 }
 
-
-func SileIn (){
-	cardId := make([]int,0)
+func SileIn() {
+	cardId := make([]int, 0)
 	cardId = append(cardId, 19)
 	cardId = append(cardId, 12)
 	cardId = append(cardId, 18)
@@ -99,7 +98,7 @@ func SileIn (){
 
 	var slice []int
 	fmt.Println("slice =", slice)
-	slice1 := make([]int,0)
+	slice1 := make([]int, 0)
 	fmt.Println("slice1 =", slice1)
 
 }
