@@ -98,7 +98,7 @@ func SileIn() {
 
 	var slice []int
 	fmt.Println("slice =", slice)
-	slice1 := make([]int, 0)
+	slice1 := make([]int, 1)
 	fmt.Println("slice1 =", slice1)
 
 }
