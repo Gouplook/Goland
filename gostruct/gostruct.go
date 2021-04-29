@@ -32,5 +32,4 @@ func StructBase() {
 
 	fmt.Println(d1)
 	fmt.Println(*(d1.Ptr))
-
 }
