@@ -84,6 +84,28 @@ func AdvanceMap() {
 
 }
 
+// 双map
+func AdvMapMap(){
+	// 第一种初始化
+	//maps := map[string]map[string]interface{}{}
+	// 第二种初始化
+	var maps map[string]map[string]interface{}
+	maps = make(map[string]map[string]interface{})
+	maps["001"] = make(map[string]interface{},2)
+	maps["001"] = map[string]interface{}{
+		"name":"Apllo",
+	}
+	maps["001"] = map[string]interface{}{
+		"Id":10,
+	}
+	maps["002"] = map[string]interface{}{
+		"cardId":20,
+	}
+
+	fmt.Println(maps)
+}
+
+// 切片
 func SileIn() {
 	cardId := make([]int, 0)
 	cardId = append(cardId, 19)

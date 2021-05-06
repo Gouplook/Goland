@@ -21,7 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fc52f206-916b-4616-a64a-584a8ad39e20" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gostruct/gostruct.go" beforeDir="false" afterPath="$PROJECT_DIR$/gostruct/gostruct.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/advanceMap_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/advanceMap_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/advancedMap.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/advancedMap.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +67,7 @@
       <recent name="$PROJECT_DIR$/tool/timeanddate" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestStructBase in GoInduction/gostruct">
+  <component name="RunManager" selected="Go Test.TestAdvMapMap in GoInduction/tool">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$" />
@@ -75,6 +76,17 @@
       <filePath value="$PROJECT_DIR$" />
       <package value="GoInduction" />
       <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestAdvMapMap in GoInduction/tool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Goland" />
+      <working_directory value="$PROJECT_DIR$/tool" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="GoInduction/tool" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestAdvMapMap\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestAdvanceMap in GoInduction/tool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -97,17 +109,6 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <pattern value="^\QTestAotiSql\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestFindUser in GoInduction/gogorm" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/gogorm" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="GoInduction/gogorm" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestFindUser\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestSileIn in GoInduction/tool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -145,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestAdvMapMap in GoInduction/tool" />
         <item itemvalue="Go Test.TestStructBase in GoInduction/gostruct" />
         <item itemvalue="Go Test.TestSileIn in GoInduction/tool" />
         <item itemvalue="Go Test.TestAdvanceMap in GoInduction/tool" />
         <item itemvalue="Go Test.TestAotiSql in GoInduction/gogorm" />
-        <item itemvalue="Go Test.TestFindUser in GoInduction/gogorm" />
       </list>
     </recent_temporary>
   </component>

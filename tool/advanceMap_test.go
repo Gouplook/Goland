@@ -18,3 +18,8 @@ func TestSileIn(t *testing.T) {
 	SileIn()
 }
 
+//双map测试
+func TestAdvMapMap(t *testing.T) {
+	AdvMapMap()
+}
+
