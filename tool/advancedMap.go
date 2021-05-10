@@ -27,22 +27,31 @@ type Card struct {
 
 // 定义一个map
 func AdvanceMap() {
-	maps := make([]map[string]interface{}, 3)
+	maps := make([]map[string]interface{}, 4)
+
 	maps[0] = make(map[string]interface{})
 	maps[0]["name"] = "综合0"
 	maps[0]["card_id"] = 11
 	maps[0]["price"] = 100.0
 	maps[0]["salesnum"] = 1003
+
 	maps[1] = make(map[string]interface{})
 	maps[1]["name"] = "综合1"
 	maps[1]["card_id"] = 12
 	maps[1]["price"] = 100.1
 	maps[1]["salesnum"] = 1004
+
 	maps[2] = make(map[string]interface{})
 	maps[2]["name"] = "综合2"
 	maps[2]["card_id"] = 13
 	maps[2]["price"] = 200.2
 	maps[2]["salesnum"] = 1005
+
+	maps[3] = make(map[string]interface{})
+	maps[3]["name"] = "综合3"
+	maps[3]["card_id"] = 14
+	maps[3]["price"]= 300.5
+	maps[3]["salesnum"]=1006
 
 	fmt.Println("maps=====", maps)
 	var outStruct []CardBase
@@ -53,9 +62,14 @@ func AdvanceMap() {
 		"card_id":  14,
 		"salesnum": 1006,
 	})
+
+	fmt.Println("Append maps====",maps)
+
+	fmt.Println("maps[3][\"name\"]",maps[3]["name"])
+
 	maps2 := make([]map[string]interface{}, 2)
 	// 必须make，否则panic: assignment to entry in nil map
-	// 原因：未初始化的的value 是nil，自己
+	// 原因：未初始化的的value 是nil，
 	maps2[0] = make(map[string]interface{})
 	maps2[0]["name"] = "signle1"
 	maps2[0]["card_id"] = 101
@@ -70,6 +84,9 @@ func AdvanceMap() {
 
 	maps = append(maps, maps2...)
 	fmt.Println("maps =", maps)
+
+	// map 转换成结构体
+	fmt.Println("====map 转换成结构体====")
 	_ = mapstructure.WeakDecode(maps, &outStruct)
 
 	for k, v := range outStruct {
@@ -91,15 +108,17 @@ func AdvMapMap(){
 	// 第二种初始化
 	var maps map[string]map[string]interface{}
 	maps = make(map[string]map[string]interface{})
-	maps["001"] = make(map[string]interface{},2)
+	maps["001"] = make(map[string]interface{})
 	maps["001"] = map[string]interface{}{
-		"name":"Apllo",
+		"name":"Linux",
 	}
-	maps["001"] = map[string]interface{}{
-		"Id":10,
-	}
+	maps["002"] = make(map[string]interface{})
 	maps["002"] = map[string]interface{}{
 		"cardId":20,
+	}
+	maps["003"] = make(map[string]interface{})
+	maps["003"] = map[string]interface{}{
+		"Id": 4,
 	}
 
 	fmt.Println(maps)
@@ -122,5 +141,9 @@ func SileIn() {
 	fmt.Println("slice =", slice)
 	slice1 := make([]int, 1)
 	fmt.Println("slice1 =", slice1)
+	slice2 := make([]int, 0)
+	fmt.Println("slice2 =", slice2)
+
+
 
 }

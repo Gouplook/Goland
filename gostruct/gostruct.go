@@ -19,7 +19,7 @@ type Demo struct {
 }
 // 结构体中基本应用
 func StructBase() {
-	// 说明：slice 不需要make，map和指针 使用之前必须make
+	// 说明：slice 不需要make，map和指针 使用之前必须make和new
 	var d1 Demo
 	d1.Name = "Aollo"
 	d1.Slice = []int{1,2}

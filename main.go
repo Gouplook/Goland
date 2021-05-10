@@ -128,4 +128,6 @@ func main() {
 	//fmt.Println(max)
 	//fmt.Println(dis2)
 
+	// routers（注册service中的路由） -- logic（实现业务逻辑） -- model（数据模型） --- service(对应接口的）
+
 }

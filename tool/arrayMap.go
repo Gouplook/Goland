@@ -48,7 +48,7 @@ func ArrayValue2Array(field string, maps []map[string]interface{}) []int {
 	return arr
 }
 
-//map数组转map ( 根据子段，在map切片中提取map）
+//map数组转map (根据字段，在map切片中提取map）
 func ArrayRebuild(field string, maps []map[string]interface{}) map[string]interface{} {
 	//分析参数
 	if len(maps) == 0 {

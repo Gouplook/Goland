@@ -17,6 +17,12 @@ import (
 // specInfo, _ := json.Marshal(specIds)
 // mSS.Field.F_spec_info: string(specInfo),
 
+
+// 场景2：
+// rpc添加描述 struct ---> string 前端传过来的数据 存储到数据库中 marshl
+// rpc获取描述 string ---> struct 从数据库中取出数据给前端 Unmarshl
+
+
 // Product 商品信息
 type Product struct {
 	Name      string `json:"name"`
@@ -49,6 +55,7 @@ type Good struct {
 
 func JsonUnmarshal() {
 	var data = `{"name":"Xiao mi 6","product_id":"10","number":"10000","price":"2499","is_on_sale":"true"}`
+	// 一般从数据查到的数据或网落之前传送过来的。
 	g := &Good{}
 	err := json.Unmarshal([]byte(data),g)
 	if err != nil {
