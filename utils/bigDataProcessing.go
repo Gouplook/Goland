@@ -24,5 +24,6 @@ func BigDataProcess(){
 	fmt.Println(mul)
 	fmt.Println(div)
 	fmt.Println(div2,b)
+	fmt.Println(add)
 
 }
