@@ -26,6 +26,7 @@ type Person struct {
 	Name string `mapstructure:"name"` // 可以映射，默认情况下，mapstructure 自动映射
 	Age  int
 	//Job  string
+
 }
 
 type Cat struct {
@@ -64,12 +65,15 @@ func MapToStruct() {
 		switch m["type"].(string) {
 		case "person":
 			var p Person
-			mapstructure.Decode(m, &p)
+			err = mapstructure.Decode(m, &p)
+			if err != nil{
+
+			}
 			fmt.Println("person", p)
 
 		case "cat":
 			var cat Cat
-			mapstructure.WeakDecode(m, &cat)
+			_ = mapstructure.WeakDecode(m, &cat)
 			fmt.Println("cat", cat)
 		}
 	}
@@ -84,7 +88,7 @@ func MapToStruct1() {
 		"job":  "goland",
 	}
 	var structdata Person
-	mapstructure.WeakDecode(mapdata, &structdata)
+	_ = mapstructure.WeakDecode(mapdata, &structdata)
 	fmt.Println(structdata)
 }
 
@@ -101,7 +105,7 @@ func StructToMap() {
 		Age:  18,
 	}
 	var m map[string]interface{}
-	mapstructure.WeakDecode(p, &m)
+	_ = mapstructure.WeakDecode(p, &m)
 	data, _ := json.Marshal(m)
 	fmt.Println(string(data))
 }

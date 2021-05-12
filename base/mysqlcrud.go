@@ -2,15 +2,15 @@
 
 @Author :yinjinlin<yinjinlin_uplook@163.com>
 @Time : 2020/12/18 14:35
-@Description: mysql数据的增删改查，
+@Description: mysql数据的增删改查，你好
 
 *********************************************/
 package base
 
 import (
+	"GoInduction/tool"
 	"errors"
 	"fmt"
-	"GoInduction/tool"
 	"github.com/astaxie/beego/logs"
 	"github.com/astaxie/beego/orm"
 	"reflect"
