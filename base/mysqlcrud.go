@@ -435,7 +435,7 @@ func (m *Model) Avg(field string) float64 {
 	if err != nil {
 		fmt.Println("Avg 打印日志..... 后期统一处理")
 		//if kcgin.KcConfig.RunMode != kcgin.PROD {
-		//	logs.Error("Sql:", sql, " Error,", err.Error())
+		// logs.Error("Sql:", sql, " Error,", err.Error())
 		//}
 	}
 	var num float64
