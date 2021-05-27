@@ -48,6 +48,7 @@ func BasicTime() {
 	local := time.Now().Local()
 	timestmap := time.Now().Local().Unix()
 	localFroml := time.Now().Local().Format("2006-01-02") // time --> string
+	nowForml := now.Format("2006-01")
 
 	// string -> time
 	strToTime, _ := time.Parse("2006-01-02", localFroml)
@@ -59,6 +60,7 @@ func BasicTime() {
 	fmt.Println("local time: ", local)
 	fmt.Println("timestmap: ", timestmap)
 	fmt.Println("localFroml: ", localFroml)
+	fmt.Println("nowForml: ", nowForml)
 	fmt.Println("strToTime: ", strToTime)
 	fmt.Println("stamp",stamp.Unix())
 }

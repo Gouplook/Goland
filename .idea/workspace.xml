@@ -21,11 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="fc52f206-916b-4616-a64a-584a8ad39e20" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/other/other.go" beforeDir="false" afterPath="$PROJECT_DIR$/other/other.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/other/other_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/other/other_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registry/options.go" beforeDir="false" afterPath="$PROJECT_DIR$/registry/options.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevelopmentMemo.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/timeanddate/timeOperation.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/timeanddate/timeOperation.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/bigDataProcessing.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/bigDataProcessing.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +78,7 @@
       <recent name="$PROJECT_DIR$/tool/timeanddate" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestChannelIsData in GoInduction/other">
+  <component name="RunManager" selected="Go Test.TestBigDataProcess in GoInduction/utils">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$" />
@@ -161,8 +159,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestChannelIsData in GoInduction/other" />
         <item itemvalue="Go Test.TestBigDataProcess in GoInduction/utils" />
+        <item itemvalue="Go Test.TestChannelIsData in GoInduction/other" />
         <item itemvalue="Go Test.TestSileIn in GoInduction/tool" />
         <item itemvalue="Go Test.TestAdvMapMap in GoInduction/tool" />
         <item itemvalue="Go Test.TestAdvanceMap in GoInduction/tool" />
