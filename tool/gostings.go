@@ -9,16 +9,15 @@ package tool
 
 import (
 	"fmt"
-	"strings"
 	"strconv"
+	"strings"
 )
 
-func GoStrings(){
+func StrLen(){
 	//1: 统计字符串的长度，按字节 len(str)
 	////golang的编码统一为utf-8 (ascii的字符(字母和数字) 占一个字节，汉字占用3个字节)
 	str := "hello北"
 	fmt.Println("str len=", len(str)) // 8
-
 
 	str2 := "hello北京"
 	//2: 字符串遍历，同时处理有中文的问题 r := []rune(str)
@@ -27,6 +26,10 @@ func GoStrings(){
 		fmt.Printf("字符=%c\n", r[i])
 	}
 
+
+}
+
+func StrStrconv(){
 
 	//3: 字符串转整数:	 n, err := strconv.Atoi("12")
 	n, err := strconv.Atoi("123")
@@ -37,24 +40,32 @@ func GoStrings(){
 	}
 
 	//4： 整数转字符串  str = strconv.Itoa(12345)
-	str = strconv.Itoa(12345)
+	str := strconv.Itoa(12345)
 	fmt.Printf("str=%v, str=%T\n", str, str)
+}
 
+func StrByte(){
 	//5： 字符串 转 []byte:  var bytes = []byte("hello go")
 	var bytes = []byte("hello go")
 	fmt.Printf("bytes=%v\n", bytes)
 
 	//6： []byte 转 字符串: str = string([]byte{97, 98, 99})
-	str = string([]byte{97, 98, 99})
+	str := string([]byte{97, 98, 99})
 	fmt.Printf("str=%v\n", str)
+}
+
+func StrFormat(){
 
 	//7： 10进制转 2, 8, 16进制:  str = strconv.FormatInt(123, 2),返回对应的字符串
-	str = strconv.FormatInt(123, 2)
+	str := strconv.FormatInt(123, 2)
 	fmt.Printf("123对应的二进制是=%v\n", str)
 	str = strconv.FormatInt(123,  16)
 	fmt.Printf("123对应的16进制是=%v\n", str)
 	// 说明： 'f' 格式 10：表示小数位保留10位 64 :表示这个小数是float64
 	str = strconv.FormatFloat(123,'f',10,64 )
+}
+
+func GoStrings(){
 
 	//8： 查找子串是否在指定的字符串中: strings.Contains("seafood", "foo") //true
 	b := strings.Contains("seafood", "mary")
@@ -85,8 +96,8 @@ func GoStrings(){
 	//将指定的子串替换成 另外一个子串: strings.Replace("go go hello", "go", "go语言", n)
 	//n可以指定你希望替换几个，如果n=-1表示全部替换
 
-	str2 = "go go hello"
-	str = strings.Replace(str2, "go", "北京", -1)
+	str2 := "go go hello"
+	str := strings.Replace(str2, "go", "北京", -1)
 	fmt.Printf("str=%v str2=%v\n", str, str2)
 
 	//按照指定的某个字符，为分割标识，将一个字符串拆分成字符串数组：
@@ -99,8 +110,6 @@ func GoStrings(){
 	//
 
 	//15)将字符串的字母进行大小写的转换:
-	//strings.ToLower("Go") // go strings.ToUpper("Go") // GO
-
 	str = "goLang Hello"
 	str = strings.ToLower(str)
 	str = strings.ToUpper(str)

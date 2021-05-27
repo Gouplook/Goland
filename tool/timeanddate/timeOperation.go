@@ -78,12 +78,12 @@ func TimeRange(now time.Time) (bTime, eTime time.Time) {
 //@param  string timeStr 日期字符串
 //@return int64
 func StrtoTime(timeStr string, timelayouts... string) int64 {
-	timeLayout := "2006-01-02 15:04:05"                             //转化所需模板
+	timeLayout := "2006-01-02 15:04:05"                            // 转化所需模板
 	if len(timelayouts) > 0 {
 		timeLayout = timelayouts[0]
 	}
-	loc, _ := time.LoadLocation("Local")                            //重要：获取时区
-	theTime, _ := time.ParseInLocation(timeLayout, timeStr, loc) //使用模板在对应时区转化为time.time类型
+	loc, _ := time.LoadLocation("Local")                    // 重要：获取时区
+	theTime, _ := time.ParseInLocation(timeLayout, timeStr, loc) //  使用模板在对应时区转化为time.time类型
 	return  theTime.Unix()
 }
 

@@ -25,7 +25,7 @@ import (
 type Person struct {
 	Name string `mapstructure:"name"` // 可以映射，默认情况下，mapstructure 自动映射
 	Age  int
-	//Job  string
+	// Job  string
 
 }
 
@@ -62,11 +62,12 @@ func MapToStruct() {
 			log.Fatal(err)
 		}
 
+	//	fmt.Println("m=",m)
 		switch m["type"].(string) {
 		case "person":
 			var p Person
 			err = mapstructure.Decode(m, &p)
-			if err != nil{
+			if err != nil {
 
 			}
 			fmt.Println("person", p)

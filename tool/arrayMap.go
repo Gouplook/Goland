@@ -26,7 +26,7 @@ func ArrayKeys(maps map[int]interface{}) []int {
 	return arr
 }
 
-//map数组转数组
+//map数组转数组（根据字段提取信息）
 func ArrayValue2Array(field string, maps []map[string]interface{}) []int {
 	//分析参数
 	if len(maps) == 0 {

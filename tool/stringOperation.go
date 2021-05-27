@@ -14,7 +14,6 @@ import (
 )
 
 // 字符串切割成int型数组
-
 // str := "112,34,56,78"  ---- >  [112 34 56 78]
 func StrExplode2IntArr( s string, step string) []int {
 	strs := strings.Split(s, ",")
@@ -38,7 +37,6 @@ func StringsTrim(s string, cutset string) string{
 
 
 //获取字符串长度
-
 //@param  string str 待获取长度字符串
 //@return int
 func Mb4Strlen(str string) int{
@@ -52,7 +50,6 @@ func Mb4Strlen(str string) int{
 }
 
 //截取字符串
-
 //@param string str   待截取的字符串
 //@param int    index 截取开始位置
 //@param int    lens  截取长度
