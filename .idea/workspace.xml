@@ -21,7 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="fc52f206-916b-4616-a64a-584a8ad39e20" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/mysqlcrud.go" beforeDir="false" afterPath="$PROJECT_DIR$/base/mysqlcrud.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/other.go" beforeDir="false" afterPath="$PROJECT_DIR$/other/other.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/other_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/other/other_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registry/options.go" beforeDir="false" afterPath="$PROJECT_DIR$/registry/options.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +72,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -76,7 +80,7 @@
       <recent name="$PROJECT_DIR$/tool/timeanddate" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestBigDataProcess in GoInduction/utils">
+  <component name="RunManager" selected="Go Test.TestChannelIsData in GoInduction/other">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$" />
@@ -121,15 +125,16 @@
       <pattern value="^\QTestBigDataProcess\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestJsonUnmarshal in GoInduction/tool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestChannelIsData in GoInduction/other" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/tool" />
+      <working_directory value="$PROJECT_DIR$/other" />
+      <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/tool" />
+      <package value="GoInduction/other" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestJsonUnmarshal\E$" />
+      <pattern value="^\QTestChannelIsData\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestSileIn in GoInduction/tool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -156,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestChannelIsData in GoInduction/other" />
         <item itemvalue="Go Test.TestBigDataProcess in GoInduction/utils" />
         <item itemvalue="Go Test.TestSileIn in GoInduction/tool" />
         <item itemvalue="Go Test.TestAdvMapMap in GoInduction/tool" />
         <item itemvalue="Go Test.TestAdvanceMap in GoInduction/tool" />
-        <item itemvalue="Go Test.TestJsonUnmarshal in GoInduction/tool" />
       </list>
     </recent_temporary>
   </component>
@@ -195,11 +200,6 @@
           <url>file://$PROJECT_DIR$/cipher/sysmmertic/aesCipher_test.go</url>
           <line>19</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/cipher/asymmetricEncrypt/rsaCipher_test.go</url>
-          <line>27</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/dbtool/dbdriver.go</url>

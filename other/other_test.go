@@ -10,4 +10,6 @@ import "testing"
 
 func TestChannelIsData(t *testing.T) {
 	//ChannelIsData()
+	// IsOk()
+	TypeJudgment()
 }

@@ -21,6 +21,7 @@ func IsOk(){
 // 2： 类型判断
 func TypeJudgment(){
 	var a interface{}
+	a = "yin"
 	// 如果 ok 是 true，则说明 变量 a 是字符串类型，而 newA 就是 string 类型的变量，a 的实际值
 	newA, ok := a.(string)
 
