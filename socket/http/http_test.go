@@ -17,10 +17,11 @@ func TestWebHttp(t *testing.T) {
 	//WebHttp2()
 	//WebHttp3()
 	//WebHttp4()
-	WebHttp5()
+	// WebHttp5()go get golang.org/x/text/transform@v0.3.6
 
 	// --------------------- 请求  ------------------------
-	//Get()
+	// Get()
+	Post()
 	// ------------------- 处理编码 --------------------
 	//Encoding()
 

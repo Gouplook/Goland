@@ -29,7 +29,7 @@ func TypeJudgment(){
 }
 
 
-//3: 判断 channel 是否 已关闭 且 有没有数据
+//3: 判断 gochannel 是否 已关闭 且 有没有数据
 func ChannelIsData(){
 	ch := make(chan string,1)
 	for {

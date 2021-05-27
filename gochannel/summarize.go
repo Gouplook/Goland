@@ -5,7 +5,7 @@
 @Description: 管道总结
 
 *********************************************/
-package channel
+package gochannel
 
 import (
 	"fmt"

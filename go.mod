@@ -8,8 +8,11 @@ require (
 	github.com/astaxie/beego v1.12.3 // indirect
 	github.com/garyburd/redigo v1.6.2 // indirect
 	github.com/gohouse/converter v0.0.3 // indirect
+	github.com/gomodule/redigo v2.0.0+incompatible // indirect
 	github.com/mitchellh/mapstructure v1.4.1 // indirect
 	github.com/shopspring/decimal v1.2.0 // indirect
+	golang.org/x/net v0.0.0-20210525063256-abc453219eb5 // indirect
+	golang.org/x/text v0.3.6 // indirect
 	golang.org/x/tools v0.0.0-20200117065230-39095c1d176c // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gorm.io/driver/mysql v1.1.0 // indirect

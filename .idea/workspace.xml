@@ -20,12 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc52f206-916b-4616-a64a-584a8ad39e20" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/gofunc/function.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gofunc/function_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/channel/readchannel.go" beforeDir="false" afterPath="$PROJECT_DIR$/gochannel/readchannel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/channel/readchannel_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gochannel/readchannel_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/channel/summarize.go" beforeDir="false" afterPath="$PROJECT_DIR$/gochannel/summarize.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/channel/summarize_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gochannel/summarize_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/advancedMap.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/advancedMap.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/timeanddate/timeOperation.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/timeanddate/timeOperation.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/bigDataProcessing.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/bigDataProcessing.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/other.go" beforeDir="false" afterPath="$PROJECT_DIR$/other/other.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/problem/problem_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/problem/problem_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisoperation/redis.go" beforeDir="false" afterPath="$PROJECT_DIR$/redisoperation/redis.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/http/http.go" beforeDir="false" afterPath="$PROJECT_DIR$/socket/http/http.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/http/http_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/socket/http/http_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +88,7 @@
       <recent name="$PROJECT_DIR$/tool/timeanddate" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestAdvMapMap in GoInduction/tool">
+  <component name="RunManager" selected="Go Test.TestFib in GoInduction/gofunc">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$" />
@@ -91,62 +99,64 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestAdvMapMap in GoInduction/tool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestFib in GoInduction/gofunc" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/tool" />
-      <kind value="PACKAGE" />
-      <package value="GoInduction/tool" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTestAdvMapMap\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestBasicTime in GoInduction/tool/timeanddate" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/tool/timeanddate" />
+      <working_directory value="$PROJECT_DIR$/gofunc" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/tool/timeanddate" />
+      <package value="GoInduction/gofunc" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestBasicTime\E$" />
+      <pattern value="^\QTestFib\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestBigDataProcess in GoInduction/utils" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGenPalyer in GoInduction/gofunc" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/utils" />
+      <working_directory value="$PROJECT_DIR$/gofunc" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/utils" />
+      <package value="GoInduction/gofunc" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestBigDataProcess\E$" />
+      <pattern value="^\QTestGenPalyer\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestChannelIsData in GoInduction/other" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGoRedisPool in GoInduction/redisoperation" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/other" />
+      <working_directory value="$PROJECT_DIR$/redisoperation" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/other" />
+      <package value="GoInduction/redisoperation" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestChannelIsData\E$" />
+      <pattern value="^\QTestGoRedisPool\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestSileIn in GoInduction/tool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGoRedisReadWrite in GoInduction/redisoperation" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/tool" />
+      <working_directory value="$PROJECT_DIR$/redisoperation" />
+      <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/tool" />
+      <package value="GoInduction/redisoperation" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestSileIn\E$" />
+      <pattern value="^\QTestGoRedisReadWrite\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestProblem1 in GoInduction/problem" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Goland" />
+      <working_directory value="$PROJECT_DIR$/problem" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="GoInduction/problem" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestProblem1\E$" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -162,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestAdvMapMap in GoInduction/tool" />
-        <item itemvalue="Go Test.TestBasicTime in GoInduction/tool/timeanddate" />
-        <item itemvalue="Go Test.TestBigDataProcess in GoInduction/utils" />
-        <item itemvalue="Go Test.TestChannelIsData in GoInduction/other" />
-        <item itemvalue="Go Test.TestSileIn in GoInduction/tool" />
+        <item itemvalue="Go Test.TestFib in GoInduction/gofunc" />
+        <item itemvalue="Go Test.TestGenPalyer in GoInduction/gofunc" />
+        <item itemvalue="Go Test.TestProblem1 in GoInduction/problem" />
+        <item itemvalue="Go Test.TestGoRedisReadWrite in GoInduction/redisoperation" />
+        <item itemvalue="Go Test.TestGoRedisPool in GoInduction/redisoperation" />
       </list>
     </recent_temporary>
   </component>
@@ -216,6 +226,11 @@
           <url>file://$PROJECT_DIR$/file/file_test.go</url>
           <line>42</line>
           <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/tool/mapstructureOperation.go</url>
+          <line>57</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

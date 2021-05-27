@@ -9,9 +9,9 @@ package problem
 import "testing"
 
 func TestProblem1(t *testing.T) {
-	//Problem1()
+	Problem1()
 
 	//Problem2()
 
-	Problem3()
+	// Problem3()
 }

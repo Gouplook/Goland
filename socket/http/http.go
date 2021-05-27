@@ -38,7 +38,7 @@ func WebHttp() {
 		//w.Write([]byte("hello world HTML!"))
 		//io.WriteString(w, "hello world HTML!")
 		p := User{Id: 123, Name: "Jim"}
-		json.NewEncoder(w).Encode(p)
+		_ = json.NewEncoder(w).Encode(p)
 
 	})
 
@@ -105,6 +105,7 @@ func Get() {
 	defer func() {
 		_ = r.Body.Close()
 	}()
+
 
 	context, err := ioutil.ReadAll(r.Body)
 	if err != nil {

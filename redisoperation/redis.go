@@ -55,7 +55,6 @@ func init() {
 		},
 	}
 }
-
 func GoRedisPool(){
 	// 1: 先从pool中取出一个链接
 	conn := pool.Get()
@@ -89,5 +88,5 @@ func GoRedisPool(){
 	r3, _ := redis.String(conn.Do("Get", "Name3"))
 	fmt.Println("2:==",r3)
 
-
+ // go get github.com/gomodule/redigo/redis@v2.0.0+incompatible
 }

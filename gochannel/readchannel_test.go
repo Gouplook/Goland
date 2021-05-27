@@ -5,7 +5,7 @@
 @Description:
 
 *********************************************/
-package channel
+package gochannel
 
 import "testing"
 
