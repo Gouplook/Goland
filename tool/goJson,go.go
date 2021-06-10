@@ -30,6 +30,9 @@ type Product struct {
 	IsOnSale  bool
 }
 
+
+
+
 // Marshal
 func JsonMarshal() {
 	p := &Product{}

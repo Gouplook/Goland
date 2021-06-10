@@ -145,6 +145,15 @@ func SileIn() {
 	slice2 := make([]int, 0)
 	fmt.Println("slice2 =", slice2)
 
+}
+
+
+func SlieIn2(){
+	cardId := make([]int, 0)
+	cardId = []int{2}
+	cardId = []int{4,5}
+	fmt.Println(cardId)
 
 
 }
+

@@ -20,20 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc52f206-916b-4616-a64a-584a8ad39e20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gofunc/function.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gofunc/function_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/channel/readchannel.go" beforeDir="false" afterPath="$PROJECT_DIR$/gochannel/readchannel.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/channel/readchannel_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gochannel/readchannel_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/channel/summarize.go" beforeDir="false" afterPath="$PROJECT_DIR$/gochannel/summarize.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/channel/summarize_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gochannel/summarize_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/other/other.go" beforeDir="false" afterPath="$PROJECT_DIR$/other/other.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/problem/problem_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/problem/problem_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisoperation/redis.go" beforeDir="false" afterPath="$PROJECT_DIR$/redisoperation/redis.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket/http/http.go" beforeDir="false" afterPath="$PROJECT_DIR$/socket/http/http.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket/http/http_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/socket/http/http_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gofunc/function.go" beforeDir="false" afterPath="$PROJECT_DIR$/gofunc/function.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/advanceMap_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/advanceMap_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/advancedMap.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/advancedMap.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/goJson,go.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/goJson,go.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/goJson_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/goJson_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +52,11 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/tool/advancedMap.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/gofunc/function.go" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/base/mysqlcrud.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/gofunc/function_test.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/gochannel/readchannel.go" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1kquGm8O42kyhKjs3yNnFpu6A4F" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -88,7 +84,7 @@
       <recent name="$PROJECT_DIR$/tool/timeanddate" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestFib in GoInduction/gofunc">
+  <component name="RunManager" selected="Go Test.TestJsonUnmarshal in GoInduction/tool">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$" />
@@ -123,40 +119,40 @@
       <pattern value="^\QTestGenPalyer\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestGoRedisPool in GoInduction/redisoperation" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestJsonUnmarshal in GoInduction/tool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/redisoperation" />
+      <working_directory value="$PROJECT_DIR$/tool" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/redisoperation" />
+      <package value="GoInduction/tool" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestGoRedisPool\E$" />
+      <pattern value="^\QTestJsonUnmarshal\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestGoRedisReadWrite in GoInduction/redisoperation" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestMakeSuffix in GoInduction/gofunc" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/redisoperation" />
+      <working_directory value="$PROJECT_DIR$/gofunc" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/redisoperation" />
+      <package value="GoInduction/gofunc" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestGoRedisReadWrite\E$" />
+      <pattern value="^\QTestMakeSuffix\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestProblem1 in GoInduction/problem" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSlieIn2 in GoInduction/tool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/problem" />
+      <working_directory value="$PROJECT_DIR$/tool" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/problem" />
+      <package value="GoInduction/tool" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestProblem1\E$" />
+      <pattern value="^\QTestSlieIn2\E$" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -172,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestJsonUnmarshal in GoInduction/tool" />
+        <item itemvalue="Go Test.TestSlieIn2 in GoInduction/tool" />
+        <item itemvalue="Go Test.TestMakeSuffix in GoInduction/gofunc" />
         <item itemvalue="Go Test.TestFib in GoInduction/gofunc" />
         <item itemvalue="Go Test.TestGenPalyer in GoInduction/gofunc" />
-        <item itemvalue="Go Test.TestProblem1 in GoInduction/problem" />
-        <item itemvalue="Go Test.TestGoRedisReadWrite in GoInduction/redisoperation" />
-        <item itemvalue="Go Test.TestGoRedisPool in GoInduction/redisoperation" />
       </list>
     </recent_temporary>
   </component>

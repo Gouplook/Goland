@@ -7,7 +7,9 @@
 *********************************************/
 package tool
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestJsonMarshal(t *testing.T) {
 	JsonMarshal()
