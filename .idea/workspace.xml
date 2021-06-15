@@ -21,11 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fc52f206-916b-4616-a64a-584a8ad39e20" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gofunc/function.go" beforeDir="false" afterPath="$PROJECT_DIR$/gofunc/function.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/advanceMap_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/advanceMap_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/advancedMap.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/advancedMap.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/goJson,go.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/goJson,go.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/goJson_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/goJson_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
