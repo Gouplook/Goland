@@ -63,3 +63,35 @@ func TestStr(t *testing.T){
 	startTimePointInt, _ := strconv.Atoi(startTimePointStr)
 	fmt.Println(startTimePointInt)
 }
+
+
+// 根据字段提取，[]map[string]interface{} 中的string信息
+func TestArrayValue2Array(t *testing.T) {
+	maps := make([]map[string]interface{},4)
+	maps[0] = make(map[string]interface{})
+	maps[0]["name"] = "综合0"
+	maps[0]["card_id"] = 11
+	maps[0]["price"] = 100.0
+	maps[0]["salesnum"] = 1003
+
+	maps[1] = make(map[string]interface{})
+	maps[1]["name"] = "综合1"
+	maps[1]["card_id"] = 12
+	maps[1]["price"] = 100.1
+	maps[1]["salesnum"] = 1004
+
+	maps[2] = make(map[string]interface{})
+	maps[2]["name"] = "综合2"
+	maps[2]["card_id"] = 13
+	maps[2]["price"] = 200.2
+	maps[2]["salesnum"] = 1005
+
+	maps[3] = make(map[string]interface{})
+	maps[3]["name"] = "综合3"
+	maps[3]["card_id"] = 14
+	maps[3]["price"] = 300.5
+	maps[3]["salesnum"] = 1006
+
+	cardIds := ArrayValue2Array("card_id",maps)
+	fmt.Println(cardIds)
+}

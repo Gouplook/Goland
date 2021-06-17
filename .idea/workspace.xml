@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc52f206-916b-4616-a64a-584a8ad39e20" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/gomap/advMap.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gomap/avdMap_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/arrayMap_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/arrayMap_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +82,7 @@
       <recent name="$PROJECT_DIR$/tool/timeanddate" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestJsonUnmarshal in GoInduction/tool">
+  <component name="RunManager" selected="Go Test.TestSlieIn2 in GoInduction/gomap">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$" />
@@ -90,28 +93,28 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestFib in GoInduction/gofunc" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestAdvanceMap in GoInduction/gomap" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/gofunc" />
+      <working_directory value="$PROJECT_DIR$/gomap" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/gofunc" />
+      <package value="GoInduction/gomap" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestFib\E$" />
+      <pattern value="^\QTestAdvanceMap\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestGenPalyer in GoInduction/gofunc" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestArrayValue2Array in GoInduction/tool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/gofunc" />
+      <working_directory value="$PROJECT_DIR$/tool" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/gofunc" />
+      <package value="GoInduction/tool" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestGenPalyer\E$" />
+      <pattern value="^\QTestArrayValue2Array\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestJsonUnmarshal in GoInduction/tool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -126,24 +129,24 @@
       <pattern value="^\QTestJsonUnmarshal\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestMakeSuffix in GoInduction/gofunc" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSileIn in GoInduction/gomap" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/gofunc" />
+      <working_directory value="$PROJECT_DIR$/gomap" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/gofunc" />
+      <package value="GoInduction/gomap" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestMakeSuffix\E$" />
+      <pattern value="^\QTestSileIn\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestSlieIn2 in GoInduction/tool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSlieIn2 in GoInduction/gomap" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/tool" />
+      <working_directory value="$PROJECT_DIR$/gomap" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/tool" />
+      <package value="GoInduction/gomap" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
@@ -163,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestSlieIn2 in GoInduction/gomap" />
+        <item itemvalue="Go Test.TestArrayValue2Array in GoInduction/tool" />
+        <item itemvalue="Go Test.TestSileIn in GoInduction/gomap" />
+        <item itemvalue="Go Test.TestAdvanceMap in GoInduction/gomap" />
         <item itemvalue="Go Test.TestJsonUnmarshal in GoInduction/tool" />
-        <item itemvalue="Go Test.TestSlieIn2 in GoInduction/tool" />
-        <item itemvalue="Go Test.TestMakeSuffix in GoInduction/gofunc" />
-        <item itemvalue="Go Test.TestFib in GoInduction/gofunc" />
-        <item itemvalue="Go Test.TestGenPalyer in GoInduction/gofunc" />
       </list>
     </recent_temporary>
   </component>
