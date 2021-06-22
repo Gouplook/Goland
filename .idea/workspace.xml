@@ -20,10 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc52f206-916b-4616-a64a-584a8ad39e20" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dbtool/goexcel.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbtool/goexcel_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/excel1.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gomap/advMap.go" beforeDir="false" afterPath="$PROJECT_DIR$/gomap/advMap.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gomap/avdMap_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gomap/avdMap_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/arrayMap_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/arrayMap_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,11 +81,13 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/dbtool" />
       <recent name="$PROJECT_DIR$/gogorm" />
       <recent name="$PROJECT_DIR$/tool/timeanddate" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestArrayRebuild in GoInduction/tool">
+  <component name="RunManager" selected="Go Build.go build GoInduction">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$" />
@@ -91,6 +96,15 @@
       <package value="GoInduction" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build GoInduction" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Goland" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="GoInduction" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/main.go" />
       <method v="2" />
     </configuration>
     <configuration name="TestAdvanceMap in GoInduction/gomap" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -117,16 +131,16 @@
       <pattern value="^\QTestArrayRebuild\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestArrayValue2Array in GoInduction/tool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestExcelMain in GoInduction/dbtool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/tool" />
+      <working_directory value="$PROJECT_DIR$/dbtool" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/tool" />
+      <package value="GoInduction/dbtool" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestArrayValue2Array\E$" />
+      <pattern value="^\QTestExcelMain\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestMapMap in GoInduction/gomap" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -139,18 +153,6 @@
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
       <pattern value="^\QTestMapMap\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestSlieIn2 in GoInduction/gomap" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/gomap" />
-      <root_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="GoInduction/gomap" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTestSlieIn2\E$" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -166,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build GoInduction" />
+        <item itemvalue="Go Test.TestExcelMain in GoInduction/dbtool" />
         <item itemvalue="Go Test.TestArrayRebuild in GoInduction/tool" />
         <item itemvalue="Go Test.TestAdvanceMap in GoInduction/gomap" />
         <item itemvalue="Go Test.TestMapMap in GoInduction/gomap" />
-        <item itemvalue="Go Test.TestSlieIn2 in GoInduction/gomap" />
-        <item itemvalue="Go Test.TestArrayValue2Array in GoInduction/tool" />
       </list>
     </recent_temporary>
   </component>
@@ -240,6 +242,26 @@
           <url>file://$PROJECT_DIR$/tool/arrayMap_test.go</url>
           <line>124</line>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/main.go</url>
+          <line>171</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/main.go</url>
+          <line>159</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/main.go</url>
+          <line>193</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/main.go</url>
+          <line>217</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
