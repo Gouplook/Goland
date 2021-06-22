@@ -23,8 +23,11 @@ func TestAdvMapMap(t *testing.T) {
 	AdvMapMap()
 }
 
-
 func TestSlieIn2(t *testing.T) {
 	SlieIn2()
 }
 
+
+func TestMapMap(t *testing.T) {
+	MapMap2()
+}

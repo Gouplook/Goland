@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc52f206-916b-4616-a64a-584a8ad39e20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gomap/advMap.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gomap/avdMap_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gomap/advMap.go" beforeDir="false" afterPath="$PROJECT_DIR$/gomap/advMap.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gomap/avdMap_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gomap/avdMap_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tool/arrayMap_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/arrayMap_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +82,7 @@
       <recent name="$PROJECT_DIR$/tool/timeanddate" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestSlieIn2 in GoInduction/gomap">
+  <component name="RunManager" selected="Go Test.TestArrayRebuild in GoInduction/tool">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$" />
@@ -105,6 +105,18 @@
       <pattern value="^\QTestAdvanceMap\E$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestArrayRebuild in GoInduction/tool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Goland" />
+      <working_directory value="$PROJECT_DIR$/tool" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="GoInduction/tool" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestArrayRebuild\E$" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestArrayValue2Array in GoInduction/tool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$/tool" />
@@ -117,19 +129,7 @@
       <pattern value="^\QTestArrayValue2Array\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestJsonUnmarshal in GoInduction/tool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/tool" />
-      <root_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="GoInduction/tool" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTestJsonUnmarshal\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestSileIn in GoInduction/gomap" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestMapMap in GoInduction/gomap" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$/gomap" />
       <root_directory value="$PROJECT_DIR$" />
@@ -138,7 +138,7 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestSileIn\E$" />
+      <pattern value="^\QTestMapMap\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestSlieIn2 in GoInduction/gomap" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -166,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestArrayRebuild in GoInduction/tool" />
+        <item itemvalue="Go Test.TestAdvanceMap in GoInduction/gomap" />
+        <item itemvalue="Go Test.TestMapMap in GoInduction/gomap" />
         <item itemvalue="Go Test.TestSlieIn2 in GoInduction/gomap" />
         <item itemvalue="Go Test.TestArrayValue2Array in GoInduction/tool" />
-        <item itemvalue="Go Test.TestSileIn in GoInduction/gomap" />
-        <item itemvalue="Go Test.TestAdvanceMap in GoInduction/gomap" />
-        <item itemvalue="Go Test.TestJsonUnmarshal in GoInduction/tool" />
       </list>
     </recent_temporary>
   </component>
@@ -225,6 +225,21 @@
           <url>file://$PROJECT_DIR$/tool/mapstructureOperation.go</url>
           <line>57</line>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/gomap/advMap.go</url>
+          <line>175</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/tool/arrayMap_test.go</url>
+          <line>126</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/tool/arrayMap_test.go</url>
+          <line>124</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
