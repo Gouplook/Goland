@@ -20,12 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc52f206-916b-4616-a64a-584a8ad39e20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dbtool/goexcel.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dbtool/goexcel_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/excel1.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goroutine/gowait_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/goroutine/gowait_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +83,7 @@
       <recent name="$PROJECT_DIR$/tool/timeanddate" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build GoInduction">
+  <component name="RunManager" selected="Go Test.TestGoWait in GoInduction/goroutine">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$" />
@@ -143,16 +139,16 @@
       <pattern value="^\QTestExcelMain\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestMapMap in GoInduction/gomap" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGoWait in GoInduction/goroutine" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/gomap" />
+      <working_directory value="$PROJECT_DIR$/goroutine" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/gomap" />
+      <package value="GoInduction/goroutine" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestMapMap\E$" />
+      <pattern value="^\QTestGoWait\E$" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -168,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestGoWait in GoInduction/goroutine" />
         <item itemvalue="Go Build.go build GoInduction" />
         <item itemvalue="Go Test.TestExcelMain in GoInduction/dbtool" />
         <item itemvalue="Go Test.TestArrayRebuild in GoInduction/tool" />
         <item itemvalue="Go Test.TestAdvanceMap in GoInduction/gomap" />
-        <item itemvalue="Go Test.TestMapMap in GoInduction/gomap" />
       </list>
     </recent_temporary>
   </component>
@@ -255,12 +251,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/main.go</url>
-          <line>193</line>
+          <line>191</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/main.go</url>
-          <line>217</line>
+          <line>214</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>

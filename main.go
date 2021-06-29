@@ -159,7 +159,7 @@ type Msg struct {
 
 func Init() {
 	_ = orm.RegisterDriver("mysql", orm.DRMySQL)
-	_ = orm.RegisterDataBase("default", "mysql", "root:123456@tcp(127.0.0.1:3306)/test?charset=utf8mb4", 30)
+	_ = orm.RegisterDataBase("default", "mysql", "root:shutongadmin2459@tcp(192.168.1.246:3306)/jkd_public?charset=utf8", 30)
 	orm.RegisterModel(new(Msg))
 	err := orm.RunSyncdb("default", false, true)
 	log.Println(err)
@@ -183,8 +183,6 @@ func  main() {
 	cols := len(sheet.Cols)
 	sleet := make([][]string, cols)
 	oksleet := make([][]string, len(sheet.Rows)-1)
-	// sleet := make([][]rune, cols)
-	// oksleet := make([][]rune, len(sheet.Rows)-1)
 	log.Println("列数：", cols, "   行数：", len(sheet.Rows))
 
 	var line int
@@ -192,7 +190,6 @@ func  main() {
 	lname := []string{"BANK_CODE","LNAME"}
 
 	for _, title := range lname {
-
 		titleColIndex := findColByTitle(sheet, title)
 		if titleColIndex == -1 {
 			fmt.Println("列名不存在")
@@ -219,7 +216,6 @@ func  main() {
 				msg := Msg{}
 				msg.BankCode = v[0]
 				msg.BankName = v[1]
-
 
 				//插入数据表
 				o := orm.NewOrm()
