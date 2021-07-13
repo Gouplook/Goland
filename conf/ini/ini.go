@@ -1,11 +1,4 @@
-/*
- * @Author: your name
- * @Date: 2021-03-08 13:06:11
- * @LastEditTime: 2021-03-09 13:39:23
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /Goland/conf/ini/ini.go
- */
+
 /******************************************
 
 @Author :yinjinlin<yinjinlin_uplook@163.com>

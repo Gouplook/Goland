@@ -35,7 +35,7 @@ import (
 
 // 生成消息认证码
 func GenerateHamc(plainText,key []byte) []byte {
-	// 1.创建哈希接口, 需要指定使用的哈希算法, 和秘钥
+	// 1. 创建哈希接口, 需要指定使用的哈希算法, 和秘钥
 	hash := hmac.New(sha256.New,key)
 	// 2. 给哈希对象添加数据
 	hash.Write(plainText)

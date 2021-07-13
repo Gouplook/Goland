@@ -23,7 +23,7 @@ import (
 // 3： 将原始数据和签名一并发送给对方
 
 // 验签
-// data = 原始数据 + 数字签名
+// Data = 原始数据 + 数字签名
 // 数字签名, 需要使用 公钥 进行解密-----> 得到散列值
 
 // RSA签名 - (利用私钥进行签名）
@@ -33,10 +33,12 @@ func SignatureRSA(plainText []byte, fileName string) []byte {
 	if err != nil {
 		panic(err)
 	}
+
 	fileInfo, err := file.Stat()
 	if err != nil {
 		panic(err)
 	}
+
 
 	//2. 将私钥文件中的内容读出
 	buf := make([]byte, fileInfo.Size())
