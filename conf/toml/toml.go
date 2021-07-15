@@ -76,7 +76,6 @@ func ReadeFlie(filename string){
 	fmt.Println(byte)
 
 	str := string(byte)
-
 	fmt.Println("string :",str)
 
 

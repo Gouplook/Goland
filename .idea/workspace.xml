@@ -21,9 +21,19 @@
   <component name="ChangeListManager">
     <list default="true" id="fc52f206-916b-4616-a64a-584a8ad39e20" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cipher/digitalsignature/digitalsignature.go" beforeDir="false" afterPath="$PROJECT_DIR$/cipher/digitalsignature/digitalsignature.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/beegoconf/beegoconf.go" beforeDir="false" afterPath="$PROJECT_DIR$/conf/beegoconf/beegoconf.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf/ini/ini.go" beforeDir="false" afterPath="$PROJECT_DIR$/conf/ini/ini.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/toml/toml.go" beforeDir="false" afterPath="$PROJECT_DIR$/conf/toml/toml.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/fileStream.go" beforeDir="false" afterPath="$PROJECT_DIR$/file/fileStream.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/fileread.txt" beforeDir="false" afterPath="$PROJECT_DIR$/file/fileread.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gochannel/readchannel.go" beforeDir="false" afterPath="$PROJECT_DIR$/gochannel/readchannel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gofunc/function.go" beforeDir="false" afterPath="$PROJECT_DIR$/gofunc/function.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gomap/advMap.go" beforeDir="false" afterPath="$PROJECT_DIR$/gomap/advMap.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysqldb/base/converter.go" beforeDir="false" afterPath="$PROJECT_DIR$/mysqldb/base/converter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisoperation/redis.go" beforeDir="false" afterPath="$PROJECT_DIR$/redisoperation/redis.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisoperation/redis_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/redisoperation/redis_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registry/options.go" beforeDir="false" afterPath="$PROJECT_DIR$/registry/options.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +84,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -84,7 +94,7 @@
       <recent name="$PROJECT_DIR$/tool/timeanddate" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestStructToMap in GoInduction/tool">
+  <component name="RunManager" selected="Go Test.TestFileStream in GoInduction/file">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$" />
@@ -104,28 +114,28 @@
       <filePath value="$PROJECT_DIR$/main.go" />
       <method v="2" />
     </configuration>
-    <configuration name="TestArrayRebuild in GoInduction/tool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestBeeGoConf in GoInduction/conf/beegoconf" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/tool" />
+      <working_directory value="$PROJECT_DIR$/conf/beegoconf" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/tool" />
+      <package value="GoInduction/conf/beegoconf" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestArrayRebuild\E$" />
+      <pattern value="^\QTestBeeGoConf\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestExcelMain in GoInduction/dbtool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestFileStream in GoInduction/file" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/dbtool" />
+      <working_directory value="$PROJECT_DIR$/file" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/dbtool" />
+      <package value="GoInduction/file" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestExcelMain\E$" />
+      <pattern value="^\QTestFileStream\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestGoWait in GoInduction/goroutine" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -165,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestFileStream in GoInduction/file" />
+        <item itemvalue="Go Test.TestBeeGoConf in GoInduction/conf/beegoconf" />
         <item itemvalue="Go Test.TestStructToMap in GoInduction/tool" />
         <item itemvalue="Go Test.TestGoWait in GoInduction/goroutine" />
         <item itemvalue="Go Build.go build GoInduction" />
-        <item itemvalue="Go Test.TestExcelMain in GoInduction/dbtool" />
-        <item itemvalue="Go Test.TestArrayRebuild in GoInduction/tool" />
       </list>
     </recent_temporary>
   </component>
@@ -227,7 +237,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/gomap/advMap.go</url>
-          <line>175</line>
+          <line>184</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">

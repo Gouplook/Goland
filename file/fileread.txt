@@ -1,1 +1,2 @@
-要写入的内容1\r\n要写入的内容2\r\n\t要写入的内容3\r\n==写入这一行......func LimitReader(r Reader, n int64) Reader11209871func LimitReader(r Reader, n int64) Reader11209871大学之道，在明明德，在亲民，止于至善func LimitReader(r Reader, n int64) Reader11209871func LimitReader(r Reader, n int64) Reader11209871func LimitReader(r Reader, n int64) Reader11209871func LimitReader(r Reader, n int64) Reader11209871func LimitReader(r Reader, n int64) Reader11209871func LimitReader(r Reader, n int64) Reader11209871func LimitReader(r Reader, n int64) Reader11209871func LimitReader(r Reader, n int64) Reader11209871大学之道，在明明德，在亲民，止于至善func LimitReader(r Reader, n int64) Reader11209871func LimitReader(r Reader, n int64) Reader11209871
+要写入的内容1\r\n要写入的内容2\r\n\t要写入的内容3\r\n
+==写入这一行......

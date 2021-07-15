@@ -12,6 +12,7 @@ require (
 	github.com/gohouse/converter v0.0.3 // indirect
 	github.com/gomodule/redigo v2.0.0+incompatible // indirect
 	github.com/mitchellh/mapstructure v1.4.1 // indirect
+	github.com/satori/go.uuid v1.2.0 // indirect
 	github.com/shopspring/decimal v1.2.0 // indirect
 	github.com/tealeg/xlsx v1.0.5 // indirect
 	golang.org/x/net v0.0.0-20210525063256-abc453219eb5 // indirect

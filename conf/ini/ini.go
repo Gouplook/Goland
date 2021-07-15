@@ -52,10 +52,12 @@ func GoConfigReadConf() {
 	path = cfg.GetKeyComments("Section", "path")
 	path1, _ := cfg.GetValue("Section", "path")
 	dbType, _ := cfg.GetValue("db", "type")
+	// dbType, _  := cfg.GetValue()
 
 	fmt.Println(enabled)
 	fmt.Println(path)
 	fmt.Println("path1 = ", path1)
+	fmt.Println("")
 	fmt.Println("dbType= ", dbType)
 }
 

@@ -24,4 +24,6 @@ func BeeGoConf() {
 	redisHost := cg.String("db.maxconn")
 	fmt.Println(redisHost)
 
+
+
 }

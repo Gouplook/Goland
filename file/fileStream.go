@@ -27,7 +27,9 @@ func FileStream(name string){
 
 	// 向输出流中写入数据
 	file.Write([]byte("要写入的内容1\\r\\n要写入的内容2\\r\\n\\t要写入的内容3\\r\\n"))
+	file.Write([]byte("\n"))
 	file.WriteString("==写入这一行......")
+
 }
 
 

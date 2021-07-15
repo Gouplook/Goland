@@ -15,6 +15,7 @@ import (
 // 写数据
 func WriteData(intChan chan int) {
 	for i := 1; i <= 50; i++ {
+
 		//放入数据
 		intChan <- i
 		fmt.Println("writeData ", i)
