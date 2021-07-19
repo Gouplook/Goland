@@ -20,20 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc52f206-916b-4616-a64a-584a8ad39e20" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Englis.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gopdf/1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gopdf/2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gopdf/gopdf.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gopdf/gopdf_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/read.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/beegoconf/beegoconf.go" beforeDir="false" afterPath="$PROJECT_DIR$/conf/beegoconf/beegoconf.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/ini/ini.go" beforeDir="false" afterPath="$PROJECT_DIR$/conf/ini/ini.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/toml/toml.go" beforeDir="false" afterPath="$PROJECT_DIR$/conf/toml/toml.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/fileStream.go" beforeDir="false" afterPath="$PROJECT_DIR$/file/fileStream.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/fileread.txt" beforeDir="false" afterPath="$PROJECT_DIR$/file/fileread.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gochannel/readchannel.go" beforeDir="false" afterPath="$PROJECT_DIR$/gochannel/readchannel.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gofunc/function.go" beforeDir="false" afterPath="$PROJECT_DIR$/gofunc/function.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gomap/advMap.go" beforeDir="false" afterPath="$PROJECT_DIR$/gomap/advMap.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysqldb/base/converter.go" beforeDir="false" afterPath="$PROJECT_DIR$/mysqldb/base/converter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisoperation/redis.go" beforeDir="false" afterPath="$PROJECT_DIR$/redisoperation/redis.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisoperation/redis_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/redisoperation/redis_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registry/options.go" beforeDir="false" afterPath="$PROJECT_DIR$/registry/options.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/config.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +91,7 @@
       <recent name="$PROJECT_DIR$/tool/timeanddate" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestFileStream in GoInduction/file">
+  <component name="RunManager" selected="Go Test.TestPDF in GoInduction/gopdf">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$" />
@@ -114,16 +111,16 @@
       <filePath value="$PROJECT_DIR$/main.go" />
       <method v="2" />
     </configuration>
-    <configuration name="TestBeeGoConf in GoInduction/conf/beegoconf" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestBoby in GoInduction/gopdf" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/conf/beegoconf" />
+      <working_directory value="$PROJECT_DIR$/gopdf" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/conf/beegoconf" />
+      <package value="GoInduction/gopdf" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestBeeGoConf\E$" />
+      <pattern value="^\QTestBoby\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestFileStream in GoInduction/file" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -138,28 +135,28 @@
       <pattern value="^\QTestFileStream\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestGoWait in GoInduction/goroutine" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGeneratePdf in GoInduction/gopdf" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/goroutine" />
+      <working_directory value="$PROJECT_DIR$/gopdf" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/goroutine" />
+      <package value="GoInduction/gopdf" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestGoWait\E$" />
+      <pattern value="^\QTestGeneratePdf\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestStructToMap in GoInduction/tool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestPDF in GoInduction/gopdf" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/tool" />
+      <working_directory value="$PROJECT_DIR$/gopdf" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/tool" />
+      <package value="GoInduction/gopdf" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestStructToMap\E$" />
+      <pattern value="^\QTestPDF\E$" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -175,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestFileStream in GoInduction/file" />
-        <item itemvalue="Go Test.TestBeeGoConf in GoInduction/conf/beegoconf" />
-        <item itemvalue="Go Test.TestStructToMap in GoInduction/tool" />
-        <item itemvalue="Go Test.TestGoWait in GoInduction/goroutine" />
+        <item itemvalue="Go Test.TestPDF in GoInduction/gopdf" />
+        <item itemvalue="Go Test.TestBoby in GoInduction/gopdf" />
+        <item itemvalue="Go Test.TestGeneratePdf in GoInduction/gopdf" />
         <item itemvalue="Go Build.go build GoInduction" />
+        <item itemvalue="Go Test.TestFileStream in GoInduction/file" />
       </list>
     </recent_temporary>
   </component>

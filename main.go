@@ -130,6 +130,9 @@ func main() {
 	//fmt.Println(dis2)
 
 	// routers（注册service中的路由） -- logic（实现业务逻辑） -- model（数据模型） --- service(对应接口的）
+	fmt.Println(3000+2415+2655+3720+6825+7514+8820)
+	fmt.Println(869*17)
+	fmt.Println(900*17)
 
 }
 

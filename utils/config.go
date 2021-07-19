@@ -38,5 +38,7 @@ func (y *YamlConfig) GetConfig() *YamlConfig {
 	if err != nil {
 		fmt.Println(err.Error())
 	}
+
+
 	return y
 }
