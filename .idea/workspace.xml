@@ -20,17 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc52f206-916b-4616-a64a-584a8ad39e20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Englis.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gopdf/1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gopdf/2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gopdf/gopdf.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gopdf/gopdf_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/read.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gopdf/001.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gopdf/1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gopdf/gopdf.go" beforeDir="false" afterPath="$PROJECT_DIR$/gopdf/gopdf.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gopdf/gopdf_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gopdf/gopdf_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +85,7 @@
       <recent name="$PROJECT_DIR$/tool/timeanddate" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestPDF in GoInduction/gopdf">
+  <component name="RunManager" selected="Go Test.TestContract in GoInduction/gopdf">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$" />
@@ -123,16 +117,16 @@
       <pattern value="^\QTestBoby\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestFileStream in GoInduction/file" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestContract in GoInduction/gopdf" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/file" />
+      <working_directory value="$PROJECT_DIR$/gopdf" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/file" />
+      <package value="GoInduction/gopdf" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestFileStream\E$" />
+      <pattern value="^\QTestContract\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestGeneratePdf in GoInduction/gopdf" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -172,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestPDF in GoInduction/gopdf" />
+        <item itemvalue="Go Test.TestContract in GoInduction/gopdf" />
         <item itemvalue="Go Test.TestBoby in GoInduction/gopdf" />
+        <item itemvalue="Go Test.TestPDF in GoInduction/gopdf" />
         <item itemvalue="Go Test.TestGeneratePdf in GoInduction/gopdf" />
         <item itemvalue="Go Build.go build GoInduction" />
-        <item itemvalue="Go Test.TestFileStream in GoInduction/file" />
       </list>
     </recent_temporary>
   </component>

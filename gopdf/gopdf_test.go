@@ -17,3 +17,7 @@ func TestPDF(t *testing.T) {
 func TestBoby(t *testing.T) {
 	Boby()
 }
+
+func TestContract(t *testing.T) {
+	Contract()
+}
