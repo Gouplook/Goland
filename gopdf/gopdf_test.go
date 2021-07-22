@@ -21,3 +21,11 @@ func TestBoby(t *testing.T) {
 func TestContract(t *testing.T) {
 	Contract()
 }
+
+func TestExcel(t *testing.T) {
+	Excel()
+}
+
+func TestReplace(t *testing.T) {
+	Replace2()
+}
