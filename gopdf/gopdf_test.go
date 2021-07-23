@@ -26,6 +26,14 @@ func TestExcel(t *testing.T) {
 	Excel()
 }
 
+func TestHeTongSingle(t *testing.T) {
+	HeTongSingle()
+}
+
 func TestReplace(t *testing.T) {
 	Replace2()
+}
+
+func TestWeb(t *testing.T) {
+	Web()
 }
