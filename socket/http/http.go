@@ -11,11 +11,13 @@ import (
 	"bufio"
 	"encoding/json"
 	"fmt"
+	"github.com/axgle/mahonia"
 	"golang.org/x/net/html/charset"
 	"golang.org/x/text/transform"
 	"io"
 	"io/ioutil"
 	"net/http"
+	"os"
 )
 
 // ---------------------  链接 http -----------------------
@@ -23,6 +25,10 @@ type User struct {
 	Id   int    `json:"id"`
 	Name string `json:"name"`
 }
+
+
+
+
 
 func WebHttp() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
@@ -32,17 +38,30 @@ func WebHttp() {
 
 		//获取头部信息 get忽略大小写
 		//w.Header().Get("Content-type")
+		file, err := os.Open("0218.pdf")
+		if err != nil {
+			panic(err)
+		}
+		defer file.Close()
+
+		decoder := mahonia.NewDecoder("gbk")
+
+		//一次性读取所有文件
+		//by, _ := ioutil.ReadAll(file)
+		by, _ := ioutil.ReadAll(decoder.NewReader(file))
+		fmt.Println(string(by))
 
 		// 写入的几种方式
 		//fmt.Fprintf(w, "hello world HTML!")
-		//w.Write([]byte("hello world HTML!"))
-		//io.WriteString(w, "hello world HTML!")
-		p := User{Id: 123, Name: "Jim"}
-		_ = json.NewEncoder(w).Encode(p)
+		//textStr, _ := ioutil.ReadAll("./0218.pdf")
+		w.Write([]byte("HELL "))
+		//io.WriteString(w, string(textStr))
+		//p := User{Id: 123, Name: "Jim"}
+		//_ = json.NewEncoder(w).Encode(textStr)
 
 	})
 
-	http.ListenAndServe(":10086", nil)
+	http.ListenAndServe(":10011", nil)
 }
 
 // 利用结构体存放内容
