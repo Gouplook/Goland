@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="67ce08e8-3b1b-4176-9388-9322bcc91cff" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/goweb/0218.pdf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/goweb/gomain.go" afterDir="false" />
@@ -10,6 +11,11 @@
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gopdf/0016.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/gopdf/0016.pdf" afterDir="false" />
+=======
+    <list default="true" id="fc52f206-916b-4616-a64a-584a8ad39e20" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gopdf/0016.pdf" beforeDir="false" />
+>>>>>>> be8d6472f8e918219ace577a88713b1c0a0d1378
       <change beforePath="$PROJECT_DIR$/gopdf/003.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gopdf/004.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gopdf/005.pdf" beforeDir="false" />
@@ -17,8 +23,12 @@
       <change beforePath="$PROJECT_DIR$/gopdf/0216.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gopdf/0217.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gopdf/0218.pdf" beforeDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/gopdf/122.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gopdf/2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/gopdf/2.txt" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/gopdf/122.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/gopdf/122.pdf" afterDir="false" />
+>>>>>>> be8d6472f8e918219ace577a88713b1c0a0d1378
       <change beforePath="$PROJECT_DIR$/gopdf/gopdf.go" beforeDir="false" afterPath="$PROJECT_DIR$/gopdf/gopdf.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/socket/http/http.go" beforeDir="false" afterPath="$PROJECT_DIR$/socket/http/http.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/socket/http/http_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/socket/http/http_test.go" afterDir="false" />
@@ -68,6 +78,7 @@
       <recent name="E:\gocode\Goland\goweb" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Go Build.go build GoInduction/goweb">
     <configuration name="go build GoInduction/goweb" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Goland" />
@@ -79,6 +90,32 @@
       <method v="2" />
     </configuration>
     <configuration name="TestReplace in GoInduction/gopdf" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+=======
+  <component name="RunManager" selected="Go Test.TestExcel in GoInduction/gopdf">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="Goland" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <package value="GoInduction" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestBasicTime in GoInduction/tool/timeanddate" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Goland" />
+      <working_directory value="$PROJECT_DIR$/tool/timeanddate" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="GoInduction/tool/timeanddate" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestBasicTime\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestExcel in GoInduction/gopdf" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+>>>>>>> be8d6472f8e918219ace577a88713b1c0a0d1378
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$/gopdf" />
       <root_directory value="$PROJECT_DIR$" />
@@ -87,10 +124,17 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
+<<<<<<< HEAD
       <pattern value="^\QTestReplace\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestWebHttp in GoInduction/socket/http (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+=======
+      <pattern value="^\QTestExcel\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestHeTongSingle in GoInduction/gopdf" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+>>>>>>> be8d6472f8e918219ace577a88713b1c0a0d1378
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$/socket/http" />
       <root_directory value="$PROJECT_DIR$" />
@@ -99,15 +143,50 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
+<<<<<<< HEAD
       <pattern value="^\QTestWebHttp\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestWebHttp in GoInduction/socket/http" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+=======
+      <pattern value="^\QTestHeTongSingle\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestReplace in GoInduction/gopdf" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+>>>>>>> be8d6472f8e918219ace577a88713b1c0a0d1378
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$/socket/http" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
+<<<<<<< HEAD
       <package value="GoInduction/socket/http" />
+=======
+      <package value="GoInduction/gopdf" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestReplace\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestWeb in GoInduction/gopdf" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Goland" />
+      <working_directory value="$PROJECT_DIR$/gopdf" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="GoInduction/gopdf" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestWeb\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="Goland" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="DIRECTORY" />
+      <package value="GoInduction" />
+>>>>>>> be8d6472f8e918219ace577a88713b1c0a0d1378
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
@@ -116,10 +195,18 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="Go Build.go build GoInduction/goweb" />
         <item itemvalue="Go Test.TestReplace in GoInduction/gopdf" />
         <item itemvalue="Go Test.TestWebHttp in GoInduction/socket/http (1)" />
         <item itemvalue="Go Test.TestWebHttp in GoInduction/socket/http" />
+=======
+        <item itemvalue="Go Test.TestExcel in GoInduction/gopdf" />
+        <item itemvalue="Go Test.TestWeb in GoInduction/gopdf" />
+        <item itemvalue="Go Test.TestBasicTime in GoInduction/tool/timeanddate" />
+        <item itemvalue="Go Test.TestHeTongSingle in GoInduction/gopdf" />
+        <item itemvalue="Go Test.TestReplace in GoInduction/gopdf" />
+>>>>>>> be8d6472f8e918219ace577a88713b1c0a0d1378
       </list>
     </recent_temporary>
   </component>
@@ -155,11 +242,68 @@
           <line>501</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+<<<<<<< HEAD
+=======
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/dbtool/dbdriver.go</url>
+          <line>29</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/db/mysqldb/models/crudmodel_test.go</url>
+          <line>29</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/file/file_test.go</url>
+          <line>42</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/tool/mapstructureOperation.go</url>
+          <line>57</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/gomap/advMap.go</url>
+          <line>184</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/tool/arrayMap_test.go</url>
+          <line>126</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/tool/arrayMap_test.go</url>
+          <line>124</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/gopdf/gopdf.go</url>
+          <line>403</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/gopdf/gopdf.go</url>
+          <line>457</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/goproject/pkg/mod/github.com/jung-kurt/gofpdf@v1.16.2/fpdf.go</url>
+          <line>2530</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+>>>>>>> be8d6472f8e918219ace577a88713b1c0a0d1378
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="GoTestRunConfiguration">
+<<<<<<< HEAD
         <watch expression="len(cell.list)" language="go" />
+=======
+        <watch expression="colWd-cellGap*2" language="go" />
+>>>>>>> be8d6472f8e918219ace577a88713b1c0a0d1378
       </configuration>
     </watches-manager>
   </component>

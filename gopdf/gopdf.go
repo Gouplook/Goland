@@ -11,6 +11,10 @@ import (
 	"fmt"
 	"github.com/jung-kurt/gofpdf"
 	"io/ioutil"
+	"log"
+	"net/http"
+	"os"
+	"strconv"
 	"strings"
 )
 
@@ -361,6 +365,7 @@ func Contract() {
 
 }
 
+<<<<<<< HEAD
 func loremList() []string {
 	return []string{
 		"套餐AAAA",
@@ -369,15 +374,50 @@ func loremList() []string {
 		"30次",
 		"单项目BBB",
 		"40次",
-	}
+=======
+// "SingleLists":[{"SingleName":"木桶足浴","Num":0},{"SingleName":"理发","Num":0},{"SingleName":"精品足浴","Num":0}]
+
+type HeTongSingleLists struct {
+	SingleName string // 单项目名称
+	Num        int    // 单项目次数
 }
+
+func HeTongSingle() []string{
+	lists := make([]HeTongSingleLists,3)
+	lists[0].SingleName = "木桶足浴"
+	lists[0].Num = 22
+	lists[1].SingleName = "单BBBBB"
+	lists[1].Num = 33
+	lists[2].SingleName = "单CCCCCC"
+	lists[2].Num = 44
+
+	fmt.Println(lists)
+
+	slic := make([]string, 0)
+	var numStr string
+	for _,v := range lists {
+		numStr = strconv.Itoa(v.Num)
+		slic = append(slic,v.SingleName)
+		slic = append(slic,numStr)
+>>>>>>> be8d6472f8e918219ace577a88713b1c0a0d1378
+	}
+
+	return slic
+}
+
+
+
+func loremList() []string {
+	return HeTongSingle()
+}
+
+
 
 func Excel() {
 
 	const (
 		colCount = 2
 		colWd    = 60.0
-		// marginH  = 15.0
 		marginH = 45.0
 		lineHt  = 5.5
 		cellGap = 2.0
@@ -387,6 +427,7 @@ func Excel() {
 		str  string
 		list [][]byte
 		ht   float64
+
 	}
 
 	var (
@@ -397,7 +438,7 @@ func Excel() {
 	pdf := gofpdf.New("P", "mm", "A4", "")
 	pdf.AddUTF8Font("simfang", "", "simfang.ttf")
 	header := [colCount]string{"项目", "次数"}
-	alignList := [colCount]string{"L", "C"}
+	alignList := [colCount]string{"C", "C"}
 	strList := loremList()
 	pdf.SetMargins(marginH, 15, marginH)
 	pdf.SetFont("simfang", "", 10)
@@ -415,18 +456,18 @@ func Excel() {
 	y := pdf.GetY()
 	count := 0
 	// 表格行数
-	for rowJ := 0; rowJ < 2; rowJ++ {
+	for rowJ := 0; rowJ < 3; rowJ++ {
 		maxHt := lineHt
-		// 计算单元格高度
+		// hh := rowJ
+		// 计算单元格高度 (2列）
 		for colJ := 0; colJ < colCount; colJ++ {
 			count++
 			if count > len(strList) {
 				count = 1
 			}
-			cell.str = strings.Join(strList[colJ:count], " ")
+			// 木桶足浴
+			cell.str = strings.Join(strList[count-1:count], " ")
 			cell.list = pdf.SplitLines([]byte(cell.str), colWd-cellGap*2) // 60-10
-			f := len(cell.list)
-			fmt.Println(f)
 			cell.ht = float64(len(cell.list)) * lineHt
 			if cell.ht > maxHt {
 				maxHt = cell.ht
@@ -499,7 +540,11 @@ func Excel2(pdf *gofpdf.Fpdf, getY float64) {
 	y := pdf.GetY()
 	count := 0
 	// 表格行数
+<<<<<<< HEAD
 	for rowJ := 0; rowJ < 3; rowJ++ {
+=======
+	for rowJ := 0; rowJ < 2; rowJ++ {
+>>>>>>> be8d6472f8e918219ace577a88713b1c0a0d1378
 		maxHt := lineHt
 		// 计算单元格高度
 		for colJ := 0; colJ < colCount; colJ++ {
@@ -507,9 +552,15 @@ func Excel2(pdf *gofpdf.Fpdf, getY float64) {
 			if count > len(strList) {
 				count = 1
 			}
+<<<<<<< HEAD
 			cell.str = strings.Join(strList[count-1:count], " ")
 			//cell.list = pdf.SplitLines([]byte(cell.str), colWd-cellGap*2) // 60-10
 			cell.list = pdf.SplitText(cell.str, colWd-cellGap*2)
+=======
+			// 读去[]中的值
+			cell.str = strings.Join(strList[colJ:count], " ")
+			cell.list = pdf.SplitLines([]byte(cell.str), colWd-cellGap*2) // 60-10
+>>>>>>> be8d6472f8e918219ace577a88713b1c0a0d1378
 			cell.ht = float64(len(cell.list)) * lineHt
 			if cell.ht > maxHt {
 				maxHt = cell.ht
@@ -532,10 +583,6 @@ func Excel2(pdf *gofpdf.Fpdf, getY float64) {
 		y += maxHt + cellGap*2
 
 	}
-
-	// if err := pdf.OutputFileAndClose("122.pdf");err != nil {
-	// 	panic(err.Error())
-	// }
 
 }
 
@@ -609,7 +656,6 @@ func Replace2() {
 		str := string(textStr)
 
 		// 替换
-
 		out := strings.Replace(str, "PayRealPrice", "388", -1)
 		out = strings.Replace(out, "BuyCardDiscountDesc", "已经优惠", -1)
 		out = strings.Replace(out, "UserContactCall", "021-66669990", -1)
@@ -628,7 +674,7 @@ func Replace2() {
 	// 中间加表格
 	Excel2(pdf,pdf.GetY()-8)
 
-	chapterBody2("./4.txt",pdf.GetY()+10)
+	chapterBody2("./4.txt",pdf.GetY()+8)
 
 
 
@@ -636,5 +682,34 @@ func Replace2() {
 	if err != nil {
 		panic(err)
 	}
+
+}
+
+func read(path string) ([]byte,error)  {
+	return ioutil.ReadFile(path)
+}
+
+
+func Web(){
+	Replace2()
+	http.HandleFunc("/", func(writer http.ResponseWriter, request *http.Request) {
+		writer.Header().Set("Content-Type","application/pdf")
+		// fileContentDisposition := "attachment;filename=\"" + "00001.pdf" + "\""
+		// writer.Header().Set("Content-Disposition",fileContentDisposition)
+		content,err := read("0016.pdf")
+		if err != nil {
+			log.Println(err.Error())
+		}
+		writer.Write(content)
+	})
+	defer func() {
+		del := os.Remove("0016.pdf")
+		if del != nil {
+			fmt.Println(del)
+		}
+	}()
+	log.Fatal(http.ListenAndServe(":8090",nil))
+
+
 
 }
