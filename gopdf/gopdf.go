@@ -9,7 +9,6 @@ package gopdf
 
 import (
 	"fmt"
-	"github.com/jung-kurt/gofpdf"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -29,6 +28,7 @@ func PDF() {
 	// 	pdf.SetFont("Arial", "", 12)
 	// 	pdf.SetXY(0, float64(fontSize))
 	// 	pdf.Cell(40, 10, "Hello World")
+
 	// }
 
 	// 添加中文字体
@@ -364,6 +364,16 @@ func Contract() {
 
 }
 
+func loremList() []string {
+	return []string{
+		"套餐AAAA",
+		"20次",
+		"单项目AAAA",
+		"30次",
+		"单项目BBB",
+		"40次",
+	}
+}
 // "SingleLists":[{"SingleName":"木桶足浴","Num":0},{"SingleName":"理发","Num":0},{"SingleName":"精品足浴","Num":0}]
 
 type HeTongSingleLists struct {
@@ -388,6 +398,7 @@ func HeTongSingle() []string{
 		numStr = strconv.Itoa(v.Num)
 		slic = append(slic,v.SingleName)
 		slic = append(slic,numStr)
+>>>>>>> be8d6472f8e918219ace577a88713b1c0a0d1378
 	}
 
 	return slic
@@ -490,15 +501,15 @@ func Excel2(pdf *gofpdf.Fpdf, getY float64) {
 	const (
 		colCount = 2
 		colWd    = 60.0
-		// marginH  = 15.0
-		marginH = 20.0
+		marginH = 20.0  //
 		lineHt  = 5.0
 		cellGap = 2.0
 	)
 
 	type cellType struct {
 		str  string
-		list [][]byte
+		//list [][]byte
+		list []string
 		ht   float64
 	}
 
@@ -528,7 +539,11 @@ func Excel2(pdf *gofpdf.Fpdf, getY float64) {
 	y := pdf.GetY()
 	count := 0
 	// 表格行数
+<<<<<<< HEAD
+	for rowJ := 0; rowJ < 3; rowJ++ {
+=======
 	for rowJ := 0; rowJ < 2; rowJ++ {
+>>>>>>> be8d6472f8e918219ace577a88713b1c0a0d1378
 		maxHt := lineHt
 		// 计算单元格高度
 		for colJ := 0; colJ < colCount; colJ++ {
@@ -536,9 +551,15 @@ func Excel2(pdf *gofpdf.Fpdf, getY float64) {
 			if count > len(strList) {
 				count = 1
 			}
+<<<<<<< HEAD
+			cell.str = strings.Join(strList[count-1:count], " ")
+			//cell.list = pdf.SplitLines([]byte(cell.str), colWd-cellGap*2) // 60-10
+			cell.list = pdf.SplitText(cell.str, colWd-cellGap*2)
+=======
 			// 读去[]中的值
 			cell.str = strings.Join(strList[colJ:count], " ")
 			cell.list = pdf.SplitLines([]byte(cell.str), colWd-cellGap*2) // 60-10
+>>>>>>> be8d6472f8e918219ace577a88713b1c0a0d1378
 			cell.ht = float64(len(cell.list)) * lineHt
 			if cell.ht > maxHt {
 				maxHt = cell.ht
@@ -552,7 +573,7 @@ func Excel2(pdf *gofpdf.Fpdf, getY float64) {
 			cell = cellList[colJ]
 			cellY := y + cellGap + (maxHt-cell.ht)/2
 			for splitJ := 0; splitJ < len(cell.list); splitJ++ {
-				pdf.SetXY(x+cellGap, cellY)
+				pdf.SetXY(x+cellGap, cellY) // 60-10
 				pdf.CellFormat(colWd-cellGap*2, lineHt, string(cell.list[splitJ]), "", 0, alignList[colJ], false, 0, "")
 				cellY += lineHt
 			}
@@ -656,7 +677,7 @@ func Replace2() {
 
 
 
-	err := pdf.OutputFileAndClose("0016.pdf")
+	err := pdf.OutputFileAndClose("0021.pdf")
 	if err != nil {
 		panic(err)
 	}

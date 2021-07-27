@@ -13,7 +13,7 @@ import (
 
 func TestWebHttp(t *testing.T) {
 	// ---------------------  链接 http -----------------------
-	//WebHttp()
+	WebHttp()
 	//WebHttp2()
 	//WebHttp3()
 	//WebHttp4()
@@ -21,7 +21,7 @@ func TestWebHttp(t *testing.T) {
 
 	// --------------------- 请求  ------------------------
 	// Get()
-	Post()
+	//Post()
 	// ------------------- 处理编码 --------------------
 	//Encoding()
 

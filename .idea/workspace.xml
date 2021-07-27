@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="67ce08e8-3b1b-4176-9388-9322bcc91cff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/goweb/0218.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goweb/gomain.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goweb/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socket/http/0218.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gopdf/0016.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/gopdf/0016.pdf" afterDir="false" />
+=======
     <list default="true" id="fc52f206-916b-4616-a64a-584a8ad39e20" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gopdf/0016.pdf" beforeDir="false" />
+>>>>>>> be8d6472f8e918219ace577a88713b1c0a0d1378
       <change beforePath="$PROJECT_DIR$/gopdf/003.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gopdf/004.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gopdf/005.pdf" beforeDir="false" />
@@ -29,9 +23,15 @@
       <change beforePath="$PROJECT_DIR$/gopdf/0216.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gopdf/0217.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gopdf/0218.pdf" beforeDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/gopdf/122.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gopdf/2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/gopdf/2.txt" afterDir="false" />
+=======
       <change beforePath="$PROJECT_DIR$/gopdf/122.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/gopdf/122.pdf" afterDir="false" />
+>>>>>>> be8d6472f8e918219ace577a88713b1c0a0d1378
       <change beforePath="$PROJECT_DIR$/gopdf/gopdf.go" beforeDir="false" afterPath="$PROJECT_DIR$/gopdf/gopdf.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gopdf/gopdf_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gopdf/gopdf_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/http/http.go" beforeDir="false" afterPath="$PROJECT_DIR$/socket/http/http.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/http/http_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/socket/http/http_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,59 +42,59 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Go File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
-  <component name="GOROOT" url="file:///usr/local/Cellar/go/1.16.3/libexec" />
+  <component name="GOROOT" url="file://D:/gosdk" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/tool/advancedMap.go" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/gofunc/function.go" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/base/mysqlcrud.go" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/gofunc/function_test.go" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/gochannel/readchannel.go" root0="FORCE_HIGHLIGHTING" />
-  </component>
-  <component name="ProjectId" id="1kquGm8O42kyhKjs3yNnFpu6A4F" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1vfs6BrikaWOLHNTViwnVNj0W7f" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="configurable..is.expanded" value="false" />
-    <property name="configurable.GoLibrariesConfigurable.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/socket/http" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+>>>>>>> be9c1b4c3d7285b736262d943d1ad719fe882690
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/gopdf" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/dbtool" />
-      <recent name="$PROJECT_DIR$/gogorm" />
-      <recent name="$PROJECT_DIR$/tool/timeanddate" />
+      <recent name="E:\gocode\Goland\socket\http" />
+      <recent name="E:\gocode\Goland\goweb" />
     </key>
   </component>
+<<<<<<< HEAD
+  <component name="RunManager" selected="Go Build.go build GoInduction/goweb">
+    <configuration name="go build GoInduction/goweb" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Goland" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="GoInduction/goweb" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/goweb/gomain.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestReplace in GoInduction/gopdf" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+=======
   <component name="RunManager" selected="Go Test.TestExcel in GoInduction/gopdf">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Goland" />
@@ -119,6 +119,7 @@
       <method v="2" />
     </configuration>
     <configuration name="TestExcel in GoInduction/gopdf" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+>>>>>>> be8d6472f8e918219ace577a88713b1c0a0d1378
       <module name="Goland" />
       <working_directory value="$PROJECT_DIR$/gopdf" />
       <root_directory value="$PROJECT_DIR$" />
@@ -127,26 +128,43 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
+<<<<<<< HEAD
+      <pattern value="^\QTestReplace\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestWebHttp in GoInduction/socket/http (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+=======
       <pattern value="^\QTestExcel\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestHeTongSingle in GoInduction/gopdf" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+>>>>>>> be8d6472f8e918219ace577a88713b1c0a0d1378
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/gopdf" />
+      <working_directory value="$PROJECT_DIR$/socket/http" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="GoInduction/gopdf" />
+      <package value="GoInduction/socket/http" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
+<<<<<<< HEAD
+      <pattern value="^\QTestWebHttp\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestWebHttp in GoInduction/socket/http" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+=======
       <pattern value="^\QTestHeTongSingle\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestReplace in GoInduction/gopdf" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+>>>>>>> be8d6472f8e918219ace577a88713b1c0a0d1378
       <module name="Goland" />
-      <working_directory value="$PROJECT_DIR$/gopdf" />
+      <working_directory value="$PROJECT_DIR$/socket/http" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
+<<<<<<< HEAD
+      <package value="GoInduction/socket/http" />
+=======
       <package value="GoInduction/gopdf" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
@@ -172,18 +190,27 @@
       <go_parameters value="-i" />
       <kind value="DIRECTORY" />
       <package value="GoInduction" />
+>>>>>>> be8d6472f8e918219ace577a88713b1c0a0d1378
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
+      <pattern value="^\QTestWebHttp\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
+        <item itemvalue="Go Build.go build GoInduction/goweb" />
+        <item itemvalue="Go Test.TestReplace in GoInduction/gopdf" />
+        <item itemvalue="Go Test.TestWebHttp in GoInduction/socket/http (1)" />
+        <item itemvalue="Go Test.TestWebHttp in GoInduction/socket/http" />
+=======
         <item itemvalue="Go Test.TestExcel in GoInduction/gopdf" />
         <item itemvalue="Go Test.TestWeb in GoInduction/gopdf" />
         <item itemvalue="Go Test.TestBasicTime in GoInduction/tool/timeanddate" />
         <item itemvalue="Go Test.TestHeTongSingle in GoInduction/gopdf" />
         <item itemvalue="Go Test.TestReplace in GoInduction/gopdf" />
+>>>>>>> be8d6472f8e918219ace577a88713b1c0a0d1378
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +234,7 @@
     <integration-enabled>true</integration-enabled>
     <environment>
       <map>
-        <entry key="GOPROXY" value="https://goproxy.io,direct" />
+        <entry key="GOPROXY" value="https://goproxy.io" />
       </map>
     </environment>
   </component>
@@ -215,10 +242,12 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/cipher/sysmmertic/aesCipher_test.go</url>
-          <line>19</line>
+          <url>file://$PROJECT_DIR$/gopdf/gopdf.go</url>
+          <line>501</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+<<<<<<< HEAD
+=======
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/dbtool/dbdriver.go</url>
           <line>29</line>
@@ -269,11 +298,16 @@
           <line>2530</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
+>>>>>>> be8d6472f8e918219ace577a88713b1c0a0d1378
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="GoTestRunConfiguration">
+<<<<<<< HEAD
+        <watch expression="len(cell.list)" language="go" />
+=======
         <watch expression="colWd-cellGap*2" language="go" />
+>>>>>>> be8d6472f8e918219ace577a88713b1c0a0d1378
       </configuration>
     </watches-manager>
   </component>
