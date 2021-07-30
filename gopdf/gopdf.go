@@ -9,6 +9,7 @@ package gopdf
 
 import (
 	"fmt"
+	"github.com/jung-kurt/gofpdf"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -398,7 +399,6 @@ func HeTongSingle() []string{
 		numStr = strconv.Itoa(v.Num)
 		slic = append(slic,v.SingleName)
 		slic = append(slic,numStr)
->>>>>>> be8d6472f8e918219ace577a88713b1c0a0d1378
 	}
 
 	return slic
@@ -406,9 +406,9 @@ func HeTongSingle() []string{
 
 
 
-func loremList() []string {
-	return HeTongSingle()
-}
+// func loremList() []string {
+// 	return HeTongSingle()
+// }
 
 
 
@@ -539,11 +539,7 @@ func Excel2(pdf *gofpdf.Fpdf, getY float64) {
 	y := pdf.GetY()
 	count := 0
 	// 表格行数
-<<<<<<< HEAD
 	for rowJ := 0; rowJ < 3; rowJ++ {
-=======
-	for rowJ := 0; rowJ < 2; rowJ++ {
->>>>>>> be8d6472f8e918219ace577a88713b1c0a0d1378
 		maxHt := lineHt
 		// 计算单元格高度
 		for colJ := 0; colJ < colCount; colJ++ {
@@ -551,15 +547,9 @@ func Excel2(pdf *gofpdf.Fpdf, getY float64) {
 			if count > len(strList) {
 				count = 1
 			}
-<<<<<<< HEAD
-			cell.str = strings.Join(strList[count-1:count], " ")
+			cell.str = strings.Join(strList[count-1:count], "")
 			//cell.list = pdf.SplitLines([]byte(cell.str), colWd-cellGap*2) // 60-10
 			cell.list = pdf.SplitText(cell.str, colWd-cellGap*2)
-=======
-			// 读去[]中的值
-			cell.str = strings.Join(strList[colJ:count], " ")
-			cell.list = pdf.SplitLines([]byte(cell.str), colWd-cellGap*2) // 60-10
->>>>>>> be8d6472f8e918219ace577a88713b1c0a0d1378
 			cell.ht = float64(len(cell.list)) * lineHt
 			if cell.ht > maxHt {
 				maxHt = cell.ht
@@ -663,7 +653,7 @@ func Replace2() {
 		out = strings.Replace(out, "UserName", "张三", -1)
 		out = strings.Replace(out, "ShopName", "宝山店", -1)
 
-		// // 输出对齐文本
+		// 输出对齐文本
 		pdf.MultiCell(0, 8, out, "", "", false)
 		pdf.Ln(-1)
 	}
@@ -677,7 +667,7 @@ func Replace2() {
 
 
 
-	err := pdf.OutputFileAndClose("0021.pdf")
+	err := pdf.OutputFileAndClose("../pdf/002.pdf")
 	if err != nil {
 		panic(err)
 	}
@@ -712,3 +702,11 @@ func Web(){
 
 
 }
+
+//  生成pdf文件后将卡包和文件id关联起来（更新）
+// 卡包详情接口已经将文件地址给他们了
+
+// 卡包那里就是买卡成功后调用你生成PDF的方法，你反回一个fileid这边存起来就可以了，你可以看看我写的那个consumeTask
+
+// 1： 下单成功--> 调用生成pdf方法(命名：114_4.pdf)---> pdf上传到服务器,返回pdf文件Id，--> 更新广联表(RelationCardPackagePdfFile)
+//
