@@ -63,6 +63,8 @@ func JsonUnmarshal() {
 	if err != nil {
 		fmt.Println(err)
 	}
+
+	fmt.Println("")
 	fmt.Println(*g)
 	fmt.Println(g.Name)
 	fmt.Println(g.ProductID)
