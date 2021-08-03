@@ -14,6 +14,8 @@ import (
 	"net/http"
 )
 
+// 上传文件，postman需要选择文件类型
+
 func main() {
 	router := gin.Default()
 
