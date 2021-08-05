@@ -185,4 +185,8 @@ func AsyHash() {
 	str := hex.EncodeToString(res)
 
 	fmt.Printf("%s\n", str)
+
+
+
+
 }
