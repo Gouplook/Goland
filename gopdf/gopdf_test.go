@@ -17,3 +17,7 @@ func TestCreatePDF(t *testing.T) {
 func TestWeb(t *testing.T) {
 	Web()
 }
+
+func TestGOPdf(t *testing.T) {
+	GOPdf()
+}

@@ -213,8 +213,10 @@ func CreatePdf() {
 		out = strings.Replace(out, "UserName", "张三", -1)
 		out = strings.Replace(out, "ShopName", "宝山店", -1)
 
+		r := []rune(out)
 		// 输出对齐文本
-		pdf.MultiCell(0, 8, out, "", "", false)
+		// pdf.MultiCell(0, 8, out, "", "", false)
+		pdf.MultiCell(0, 8, string(r), "", "", false)
 		pdf.Ln(-1)
 	}
 
@@ -225,7 +227,7 @@ func CreatePdf() {
 	chapterBody2("./4.txt", pdf.GetY()+8)
 
 	// 读取文件时，注意文件路径问题
-	err := pdf.OutputFileAndClose("../pdf/002.pdf")
+	err := pdf.OutputFileAndClose("../pdf/12.pdf")
 	if err != nil {
 		panic(err)
 	}
@@ -260,5 +262,11 @@ func Web() {
 		}
 	}()
 	log.Fatal(http.ListenAndServe(":8090", nil))
+
+}
+
+
+func GOPdf(){
+
 
 }

@@ -108,6 +108,7 @@ func StructToMap() {
 	}
 	var m map[string]interface{}
 	_ = mapstructure.WeakDecode(p, &m)
+	fmt.Println("Main := ",p)
 	fmt.Println("m : ",m)
 	data, _ := json.Marshal(m)
 	fmt.Println(string(data))
