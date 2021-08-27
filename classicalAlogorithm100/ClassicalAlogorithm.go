@@ -235,6 +235,8 @@ func cycleNum_010(N int, k int) int {
 
 }
 
+// 11：
+
 func main() {
 	// 1 2 3 4 5 6
 	// x := palindrome_003("126")
