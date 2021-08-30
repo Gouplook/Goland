@@ -20,7 +20,6 @@ func formulaList9X9_001() {
 	for i := 0; i <= 9; i++ {
 		for j := 1; j <= i; j++ {
 			fmt.Printf("%d X %d =%2d ", i, j, i*j)
-
 		}
 		fmt.Println()
 	}
@@ -211,7 +210,6 @@ func factorial_009() {
 		}
 		// fmt.Println(i,"的阶乘是",m[i])
 	}
-
 	//
 	s := make([]int, 0)
 	for k, _ := range m {
@@ -231,11 +229,50 @@ func cycleNum_010(N int, k int) int {
 	if N == 1 {
 		return k
 	}
-	return (cycleNum_010(N-1,k)+k-1)%N+1
+	return (cycleNum_010(N-1, k)+k-1)%N + 1
+}
+
+// 11：编写一个函数就地反转一个整型slice中的元素
+func reversal_011(array []int) {
+
+	for i, j := 0, len(array)-1; i < j; i, j = i+1, j-1 {
+		array[i], array[j] = array[j], array[i]
+	}
+
+	for j := 0; j < len(array); j++ {
+		fmt.Printf("%d,", array[j])
+		// fmt.Println(array)
+	}
 
 }
 
-// 11：
+// 12 ： 斐波那契数列指的是这样一个数列 1, 1, 2, 3, 5, 8, 13, 21, 34, 55…
+// 这个数列从第3项开始，每一项都等于前两项之和
+
+func isFobonacc_012(n int) int {
+	if n <= 1 {
+		return 1
+	}
+
+	return isFobonacc_012(n-1) + isFobonacc_012(n-2)
+
+}
+
+// 13: 卖家将养的一缸金鱼分五次出售，
+//     第一次出售上一次卖出全部的一半加二分之一条；
+//     第二次卖出余下的三分之一加三分之一条；
+//     第三次卖出余下的四分之一加四分之一条；
+//     第四次卖出余下的五分之一加五分之一条；
+//     最后卖出余下的11条。问原来的鱼缸中共有几条金鱼?
+//     ((x/2 + 1) /3 + 1)/4 + 1)
+
+func salefish_013() {
+	res := 11
+	for j := 4; j >= 1; j-- {
+		res = (res*(j+1)+1)/j
+	}
+	fmt.Println(res)
+}// 14：
 
 func main() {
 	// 1 2 3 4 5 6
@@ -247,6 +284,15 @@ func main() {
 	// map_007()
 	// isMapValueEquality_008()
 	// factorial_009()
-	x := cycleNum_010(5,3)
-	fmt.Println(x)
+	// x := cycleNum_010(5,3)
+	// fmt.Println(x)
+
+	// slice := []int{1, 10, 48, 52}
+	// reversal_011(slice)
+	// for i := 0; i < 8; i++ {
+	// 	fmt.Printf(" %d,", isFobonacc_012(i))
+	// }
+
+	salefish_013()
+
 }
