@@ -402,7 +402,4 @@ func main() {
 	// fmt.Println("dele after :")
 	// listStudentNode(head)
 
-
-
-
 }
