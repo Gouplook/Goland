@@ -269,11 +269,82 @@ func isFobonacc_012(n int) int {
 func salefish_013() {
 	res := 11
 	for j := 4; j >= 1; j-- {
-		res = (res*(j+1)+1)/j
+		res = (res*(j+1) + 1) / j
 	}
 	fmt.Println(res)
-}// 14：
+}
 
+// 14：从数据库中筛选多条数据 存放[]map[string]interface{} 中，
+//     从[]map[string]interface{}中 筛选出key 信息 存放到map[string]interface{}
+//     在map[string]interface{} 找出需要的key信息，和在另一个数据查找出的数据进行比对。
+//     筛选出新的
+
+// 15： golang 实现单链表（增删改查）
+
+type studentNode struct {
+	no   int // 节点编号
+	name string
+	sex  string
+	age  int
+	next *studentNode
+}
+
+// list后面插入一个数据
+func insertStudentNode(head *studentNode, newNode *studentNode) {
+	temp := head
+
+	for {
+		if temp.next == nil {
+			break
+		}
+		temp = temp.next
+	}
+	temp.next = newNode
+}
+
+// 删除链表
+func delStudentNode(head *studentNode, id int) {
+
+	temp := head
+	flag := false
+
+	for {
+		if temp.next == nil {
+			break // 说明遍历到最后一个了
+		}
+		if temp.next.no == id { // 找到需要删除的节点
+			flag = true
+			break
+		}
+		temp = temp.next
+	}
+	if flag {
+		temp.next = temp.next.next
+	}else {
+		fmt.Println("删除的id不存在", id)
+	}
+
+}
+// 显示链表
+func listStudentNode (head *studentNode) {
+
+	temp := head
+	if temp.next == nil  {
+		fmt.Println("This is empty list...")
+		return
+	}
+
+	for {
+		fmt.Printf("[%d,%s,%d,%s]",temp.next.no, temp.next.name,temp.next.age,temp.next.sex)
+
+		temp  = temp.next
+		if temp.next == nil {
+			break // 表示list 遍历多结尾了。
+		}
+	}
+	fmt.Println()
+
+}
 func main() {
 	// 1 2 3 4 5 6
 	// x := palindrome_003("126")
@@ -293,6 +364,45 @@ func main() {
 	// 	fmt.Printf(" %d,", isFobonacc_012(i))
 	// }
 
-	salefish_013()
+	// salefish_013()
+
+	// head := &studentNode{}
+	// subLisa := &studentNode{
+	// 	no: 1,
+	// 	name: "lisa",
+	// 	sex: "W",
+	// 	age: 32,
+	// }
+	// subJim := &studentNode{
+	// 	no: 2,
+	// 	name: "Jim",
+	// 	sex: "M",
+	// 	age: 29,
+	// }
+	// subTom := &studentNode{
+	// 	no: 3,
+	// 	name: "Tom",
+	// 	sex: "W",
+	// 	age:19,
+	// }
+	// subJack := &studentNode{
+	// 	no:4,
+	// 	name: "Jack",
+	// 	sex: "M",
+	// 	age:45,
+	// }
+	//
+	// insertStudentNode(head,subLisa)
+	// insertStudentNode(head,subJim)
+	// insertStudentNode(head,subTom)
+	// insertStudentNode(head,subJack)
+	// fmt.Println("dele before :")
+	// listStudentNode(head)
+	// delStudentNode(head,2)
+	// fmt.Println("dele after :")
+	// listStudentNode(head)
+
+
+
 
 }
