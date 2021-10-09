@@ -187,6 +187,4 @@ func AsyHash() {
 	fmt.Printf("%s\n", str)
 
 
-
-
 }

@@ -22,9 +22,11 @@ import (
 //3. 声明为只读
 //var chanReade <- chan int
 
+
 func SelectChannel() {
 	//1.定义一个管道 10个数据int
 	intChan := make(chan int, 10)
+
 	for i := 0; i < 10; i++ {
 		intChan <- i
 	}
@@ -54,6 +56,7 @@ func SelectChannel() {
 			return
 		}
 	}
+
 }
 
 func CpuNum() {
@@ -62,6 +65,7 @@ func CpuNum() {
 
 	//可以自己设置使用多个cpu
 	runtime.GOMAXPROCS(cpuNum - 1)
+
 	fmt.Println("ok")
 }
 
@@ -78,7 +82,7 @@ var lock sync.Mutex
 func Factorial(n int) {
 	res := 1
 	for i := 1; i <= n; i++ {
-		res *= 1
+		res *= i
 	}
 	//加锁
 	lock.Lock()
@@ -121,3 +125,4 @@ func PrimeNum(intChan chan int, primeChan chan int, exitChan chan bool) {
 	//向 exitChan 写入true
 	exitChan <- true
 }
+

@@ -2,7 +2,7 @@
 
 @Author :yinjinlin<yinjinlin_uplook@163.com>
 @Time : 2020/12/18 14:35
-@Description: mysql数据的增删改查，你好
+@Description: mysql数据的增删改查
 
 *********************************************/
 package base
@@ -337,6 +337,7 @@ func (m *Model) Select() []map[string]interface{} {
 	if len(m.orderBy) > 0 {
 		for _, v := range m.orderBy {
 			orderBy += v + ","
+			//
 		}
 		orderBy = " ORDER BY " + strings.TrimRight(orderBy, ",")
 	}

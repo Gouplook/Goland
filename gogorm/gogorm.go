@@ -159,3 +159,5 @@ func AotiSql() {
 	db.Raw("select * from users where id = ?",3).Scan(&result)
 	fmt.Println(result)
 }
+
+// 上海敦和汽车装备有限公司
