@@ -27,8 +27,9 @@ require (
 	github.com/smartystreets/goconvey v1.6.4 // indirect
 	github.com/tealeg/xlsx v1.0.5
 	github.com/ugorji/go v1.2.6 // indirect
+	github.com/xuri/excelize/v2 v2.4.1 // indirect
 	golang.org/x/image v0.0.0-20210628002857-a66eb6448b8d // indirect
-	golang.org/x/net v0.0.0-20210525063256-abc453219eb5
+	golang.org/x/net v0.0.0-20210726213435-c6fcb2dbf985
 	golang.org/x/text v0.3.6
 	google.golang.org/protobuf v1.27.1 // indirect
 	gopkg.in/gcfg.v1 v1.2.3
