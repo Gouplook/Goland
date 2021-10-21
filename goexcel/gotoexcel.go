@@ -8,401 +8,161 @@
 package goexcel
 
 import (
-	"errors"
 	"fmt"
 	"github.com/tealeg/xlsx"
-	"github.com/xuri/excelize/v2"
-	"log"
-	"net/http"
-	"os"
-	"strconv"
 )
 
 // 思路：
 // 调用接口，传过来数据生产excel表格，根据选择的页面生产excel数据
 
-func CreatExcel() {
-	// categories := map[string]string{
-	// 	"A2": "Small", "A3": "Normal", "A4": "Large",
-	// 	"B1": "Apple", "C1": "Orange", "D1": "Pear"}
-	// values := map[string]int{
-	// 	"B2": 2, "C2": 3, "D2": 3, "B3": 5, "C3": 2, "D3": 4, "B4": 6, "C4": 7, "D4": 8}
+var (
+	OrderTypeRelation    = map[int]string{}
+	PayChannelRelation   = map[int]string{}
+	PayTypeRelation      = map[int]string{}
+	OrderChannelRelation = map[int]string{}
+)
 
-	excelTite := map[string]string{
-		"A1": "序号",
-		"B1": "订单编号",
-		"C1": "门店名称",
-		"D1": "订单类型",
-		"E1": "城市",
-		"F1": "总金额",
-		"G1": "支付渠道",
-		"H1": "支付方式",
-		"I1": "付款时间",
-		"J1": "支付手续费",
-		"K1": "存管比例",
-		"L1": "存管金额",
-		"M1": "保费",
-		"N1": "续保保费",
-		"O1": "平台手续费",
-		"P1": "商家应得金额",
-	}
-
-	expMap := []map[string]string{
-
-	}
-	// 新建工作薄
-	f := excelize.NewFile()
-	// f.SetColWidth("Sheet1","A","H",20)
-	// f.SetRowHeight("sheet1",1,10)
-	// for k, v := range categories {
-	// 	f.SetCellValue("Sheet1", k, v)
-	// }
-	// for k, v := range values {
-	// 	f.SetCellValue("Sheet1", k, v)
-	// }
-
-	// 设置单元格样式
-	// style,err := f.NewStyle()
-	// f.SetCellStyle()
-
-	for k, v := range excelTite {
-		f.SetCellValue("Sheet1", k, v)
-	}
-
-	// []map[sting]string{}
-	length := len(expMap)
-	for i := 0; i < length; i++ {
-		for k, v := range expMap[i] {
-			f.SetCellValue("Sheet1", k, v)
-		}
-	}
-
-	st, _ := f.CalcCellValue("sheet", "N1")
-	fmt.Println(st)
-
-	excelName := "Book2" + ".xlsx"
-
-	// Save spreadsheet by the given path.
-	if err := f.SaveAs(excelName); err != nil {
-		fmt.Println(err)
-	}
-
-	// 文件先生存，上传后就直接删除。
+// 后台财务订单列表-出参
+type GetAdminFinanceOrderListBase struct {
+	OrderSn              string // 订单编号
+	ShopId               int
+	ShopName             string  // 门店名称
+	CityId               int     // 城市ID
+	CityName             string  // 城市名称
+	OrderChannel         int     // 订单来源渠道：1-普通订单 2=店内码牌购卡 3=店内码牌支付
+	OrderType            int     // 订单类型 1=单项目订单 2=卡项订单  3=商品订单
+	TotalAmount          float64 // 订单总金额
+	PayChannel           int     // 支付渠道 1=原生支付 2=杉德支付 3=建行直连 4=平安银行
+	PayType              int     // 支付方式 1=支付宝直连 2=微信直连 3=现金 4=渠道支付
+	PayTimeStr           string  // 支付成功时间，格式：“2021/09/01 14:05:01”
+	PayFee               float64 // 支付手续费
+	DepositRatio         string  // 存管比例
+	DepositAmount        float64 // 存管金额
+	InsureAmount         float64 // 保费
+	RenewInsureAmount    float64 // 续保费用
+	ComServiceChargeRate string  // 综合服务费费率
+	PlatformAmount       float64 // 平台手续费
+	BusAmount            float64 // 商家应得金额
 
 }
 
-func CreteExcel2() {
-
-	// 新建工作薄
-	f := excelize.NewFile()
-	// title := map[string]string {
-	// 	// "A1": "序号",
-	// 	"B1": "订单编号",
-	// 	"C1": "门店名称",
-	// 	"D1": "订单类型",
-	// 	"E1": "城市",
-	// 	"F1": "总金额",
-	// 	"G1": "支付渠道",
-	// 	"H1": "支付方式",
-	// 	"I1": "付款时间",
-	// 	"J1": "支付手续费",
-	// 	"K1": "存管比例",
-	// 	"L1": "存管金额",
-	// 	"M1": "保费",
-	// 	"N1": "续保保费",
-	// 	"O1": "平台手续费",
-	// 	"P1": "商家应得金额",
-	//
-	// }
-
-	// title2 := []string{
-	// 	"订单编号",
-	// 	"门店名称",
-	// }
-
-	// for k,v := range title{
-	// 	f.SetCellValue("Sheet1",k, v)
-	// }
-
-	excelName := "Book5" + ".xlsx"
-
-	// Save spreadsheet by the given path.
-	if err := f.SaveAs(excelName); err != nil {
-		fmt.Println(err)
-	}
-
-}
-
-func Createexcel3() {
+func CreatePayOrderExcel(data []GetAdminFinanceOrderListBase) (fileName string) {
 	file := xlsx.NewFile()
-	xlsx.SetDefaultFont(16,"FangSong")
-
-
-	sheet, _ := file.AddSheet("Sheet1")
-	row := sheet.AddRow()
-	// row.SetHeightCM(1) //设置每行的高度
-	cell := row.AddCell()
-	cell.Value = "haha"
-	cell = row.AddCell()
-	cell.Value = "xixi"
-
-	err := file.Save("file3.xlsx")
-	if err != nil {
-		panic(err)
-	}
-}
-
-func Down(w http.ResponseWriter, r *http.Request) {
-	f := excelize.NewFile()
-	title := map[string]string{
-		"A1": "订单编号",
-		"B1": "门店名称",
-		"C1": "订单类型",
-		"D1": "城市",
-		"E1": "总金额",
-		"F1": "支付渠道",
-		"G1": "支付方式",
-		"H1": "付款时间",
-		"I1": "支付手续费",
-		"J1": "存管比例",
-		"K1": "存管金额",
-		"L1": "保费",
-		"M1": "续保保费",
-		"N1": "平台手续费",
-		"O1": "商家应得金额",
-	}
-
-	for k, v := range title {
-		f.SetCellValue("Sheet1", k, v)
-	}
-
-	if err := f.SaveAs("Books1224.xlsx"); err != nil {
-		fmt.Println(err)
-	}
-	//
-	w.Header().Set("Content-Type", "application/octet-stream")
-	w.Header().Set("Content-Disposition", "attachment; filename="+"Books1.xlsx")
-	w.Header().Set("Content-Transfer-Encoding", "binary")
-	_ = f.Write(w)
-}
-
-func CreateExecel4() {
-	http.HandleFunc("/", Down) //   设置访问路由
-	log.Fatal(http.ListenAndServe(":10090", nil))
-
-}
-
-func getShuju() (shuju Shuju) {
-	shuju.Lists = make([]ShujuBase, 0)
-	shuju.Lists = []ShujuBase{
-		{
-			OrderSn:   "S1245",
-			ShopId:    1,
-			ShopName:  "店面1",
-			CityId:    1,
-			CityName:  "北京",
-			PayChance: 1,
-		},
-		{
-			OrderSn:   "S1243",
-			ShopId:    1,
-			ShopName:  "店面2",
-			CityId:    1,
-			CityName:  "上海",
-			PayChance: 2,
-		},
-		{
-			OrderSn:   "S1244",
-			ShopId:    1,
-			ShopName:  "店面3",
-			CityId:    1,
-			CityName:  "广州",
-			PayChance: 1,
-		},
-	}
-
-	return
-}
-
-type ShujuBase struct {
-	OrderSn   string //
-	ShopId    int
-	ShopName  string //
-	CityId    int
-	CityName  string //
-	PayChance int
-}
-
-type Shuju struct {
-	Lists []ShujuBase
-}
-
-func Createexcel5() {
-	file := xlsx.NewFile()
+	// 设计表格字体
+	xlsx.SetDefaultFont(12, "FangSong")
 	sheet, err := file.AddSheet("Sheet1")
 	if err != nil {
 		fmt.Println(err.Error())
 		return
 	}
-	row := sheet.AddRow()
-	cell := row.AddCell()
-	cell.Value = "订单编号"
-	cell = row.AddCell()
-	cell.Value = "门店名称"
-	cell = row.AddCell()
-	cell.Value = "城市"
-	cell = row.AddCell()
-	cell.Value = "支付渠道"
-
-	shujuList := getShuju().Lists
-	payChance := "支付宝直连"
-
-	for _, v := range shujuList {
-		row = sheet.AddRow()
-		cell = row.AddCell()
-		cell.Value = v.OrderSn
-		cell = row.AddCell()
-		cell.Value = v.ShopName
-		cell = row.AddCell()
-		cell.Value = v.CityName
-		if v.PayChance == 1 {
-			payChance = "微信直连"
-		} else {
-			payChance = "支付宝直连"
-		}
-		cell = row.AddCell()
-		cell.Value = payChance
+	titles := []string{
+		"订单编号", "门店名称", "订单类型", "城市", "订单来源", "订单总金额", "支付渠道", "支付方式", "付款时间",
+		"代收商户银行手续费", "存管比例", "存管金额", "保费", "续保保费", "综合服务费费率", "综合服务费金额", "商家应得金额",
 	}
-
-	if err := file.Save("demo.xlsx"); err != nil {
-		fmt.Println(err.Error())
-		return
-	}
-
-}
-type  ExecelData  struct{
-	OrderSn   string //
-	ShopId    int
-	ShopName  string //
-	CityId    int
-	CityName  string //
-	PayChance int
-}
-
-
-func getExcelData(){
-
-}
-
-// func getExcelData()[]ExecelData{
-//
-// }
-
-type XlsxRow struct {
-	Row *xlsx.Row
-	Data []string
-}
-
-func newRow(row *xlsx.Row,data []string) *XlsxRow {
-	return &XlsxRow{
-		Row:row,
-		Data:data,
-	}
-}
-
-func (row *XlsxRow) SetRowTitle() error {
-	return generateRow(row.Row,row.Data)
-}
-func (row *XlsxRow) GenerateRow() error {
-	return generateRow(row.Row,row.Data)
-}
-
-func generateRow(row *xlsx.Row,rowStr []string) error {
-	if rowStr == nil {
-		return errors.New("no data to generate xlsx!")
-	}
-	for _,v := range rowStr {
-		cell := row.AddCell()
+	// 添加一行表头&赋值
+	titleRow := sheet.AddRow()
+	for _, v := range titles {
+		cell := titleRow.AddCell()
 		cell.SetString(v)
 	}
-	return nil
-}
+	for _, v := range data {
+		// 添加每一行的数值
+		rowCellValues := sheet.AddRow()
 
-func download(w http.ResponseWriter, file *xlsx.File){
-	w.Header().Set("Content-Type", "application/octet-stream")
-	w.Header().Set("Content-Disposition", "attachment; filename="+"Books1.xlsx")
-	w.Header().Set("Content-Transfer-Encoding", "binary")
-	_ = file.Write(w)
-}
+		// 订单编号
+		cell := rowCellValues.AddCell()
+		cell.SetString(v.OrderSn)
 
-func CreateExcel(page int, datas []ExecelData) {
-
-	file := xlsx.NewFile()
-	sheet, err := file.AddSheet("Sheet1")
-	if err != nil {
-		fmt.Println(err.Error())
-		return
-	}
-	title := make([]string,0)
-	title = append(title,"订单编号")
-	title = append(title,"门店名称")
-	title = append(title,"订单类型")
-	title = append(title,"城市")
-	title = append(title,"总金额")
-	title = append(title,"支付渠道")
-	title = append(title,"支付方式")
-	title = append(title,"支付手续费")
-	title = append(title,"存管比例")
-	title = append(title,"存管金额")
-	title = append(title,"保费")
-	title = append(title,"续保保费")
-	title = append(title,"平台手续费")
-	title = append(title,"商家应得金额")
-
-	titleRow := sheet.AddRow()
-
-	xlsRow := newRow(titleRow,title)
-	err = xlsRow.SetRowTitle()
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-
-
-	var payChance string
-	for _, v := range datas {
-		titleRow = sheet.AddRow()
-		cell := titleRow.AddCell()
-		cell.Value = v.OrderSn
-		cell = titleRow.AddCell()
-		cell.Value = v.ShopName
-		cell = titleRow.AddCell()
-		cell.Value = v.CityName
-		if v.PayChance == 1 {
-			payChance = "微信直连"
-		} else {
-			payChance = "支付宝直连"
+		// 门店名称
+		cell = rowCellValues.AddCell()
+		if v.ShopName == "" {
+			v.ShopName = "--"
 		}
-		cell = titleRow.AddCell()
-		cell.Value = payChance
-	}
+		cell.SetString(v.ShopName)
 
-	pageStr := strconv.Itoa(page)
-	name := "Books" + "_" + pageStr + ".xlsx"
-	err = file.Save(name)
+		// 订单类型 1=单项目订单 2=卡项订单  3=商品订单
+		cell = rowCellValues.AddCell()
+		value, ok := OrderTypeRelation[v.OrderType]
+		if !ok {
+			value = "--"
+		}
+		cell.SetString(value)
+
+		// 城市名称
+		cell = rowCellValues.AddCell()
+		if v.CityName == "" {
+			v.CityName = "--"
+		}
+		cell.SetString(v.CityName)
+
+		// 订单来源 1-普通订单 2=店内码牌购卡 3=店内码牌支付
+		cell = rowCellValues.AddCell()
+		value, ok = OrderChannelRelation[v.OrderChannel]
+		if !ok {
+			value = "--"
+		}
+		cell.SetString(value)
+
+		// 订单总金额
+		cell = rowCellValues.AddCell()
+		cell.SetFloat(v.TotalAmount)
+
+		// 支付渠道 1=原生支付 2=杉德支付 3=建行直连 4=平安银行 5=工商银行 6=宁波银行 7=pingpp 8=新大陆国通 9=银盛支付
+		cell = rowCellValues.AddCell()
+		value, ok = PayChannelRelation[v.PayChannel]
+		if !ok {
+			value = "--"
+		}
+		cell.SetString(value)
+
+		// 支付方式 1=支付宝直连 2=微信直连 3=现金 4=渠道支付
+		cell = rowCellValues.AddCell()
+		value, ok = PayTypeRelation[v.PayType]
+		if !ok {
+			value = "--"
+		}
+		cell.SetString(value)
+
+		// 支付成功时间，格式：“2021/09/01 14:05:01”
+		cell = rowCellValues.AddCell()
+		cell.SetString(v.PayTimeStr)
+
+		// 支付手续费
+		cell = rowCellValues.AddCell()
+		cell.SetFloat(v.PayFee)
+		// 存管比例
+		cell = rowCellValues.AddCell()
+		// cell.SetFloat(v.DepositRatio)
+		cell.SetString(v.DepositRatio)
+		// 存管金额
+		cell = rowCellValues.AddCell()
+		cell.SetFloat(v.DepositAmount)
+		// 保费
+		cell = rowCellValues.AddCell()
+		cell.SetFloat(v.InsureAmount)
+		// 续保费用
+		cell = rowCellValues.AddCell()
+		cell.SetFloat(v.RenewInsureAmount)
+
+		cell = rowCellValues.AddCell()
+		cell.SetString(v.ComServiceChargeRate)
+
+		// 综合服务费金额
+		cell = rowCellValues.AddCell()
+		cell.SetFloat(v.PlatformAmount)
+		// 商家应得金额
+		cell = rowCellValues.AddCell()
+		cell.SetFloat(v.BusAmount)
+	}
+	// page 表示页数
+	page := 1
+	// 保存文件
+	fileName = fmt.Sprintf("订单信息_%d.xls", page)
+	err = file.Save(fileName)
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
-
-	// 导出数据
-
-
-	// 下载完成以后 删除
-	defer func() {
-		os.Remove(name)
-	}()
-
+	return
 
 }
-
