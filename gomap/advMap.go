@@ -217,3 +217,22 @@ func MapSplitToStruct(){
 }
 
 
+
+type CardIcad struct {
+	CardId int
+	CardSn string
+	Name string
+}
+//
+func MapSplitToStruct2(reple CardIcad){
+	cMak := map[string]interface{}{}
+	cMak["CardId"] = 1002
+	cMak["CardSn"] = "JS0003"
+
+	fmt.Println("打印前：----",reple)
+	_ = mapstructure.WeakDecode(cMak, &reple)
+	fmt.Println("打印后：----",reple.CardSn)
+	fmt.Println("打印后：----",reple.CardId)
+}
+
+

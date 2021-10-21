@@ -22,6 +22,7 @@ require (
 	github.com/jung-kurt/gofpdf v1.16.2
 	github.com/mattn/go-isatty v0.0.13 // indirect
 	github.com/mitchellh/mapstructure v1.4.1
+	github.com/robfig/cron v1.2.0 // indirect
 	github.com/satori/go.uuid v1.2.0
 	github.com/shopspring/decimal v1.2.0
 	github.com/smartystreets/goconvey v1.6.4 // indirect

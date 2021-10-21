@@ -31,3 +31,8 @@ func TestSlieIn2(t *testing.T) {
 func TestMapMap(t *testing.T) {
 	MapMap2()
 }
+
+
+func TestMapSplitToStruct2(t *testing.T) {
+	MapSplitToStruct2(CardIcad{})
+}
