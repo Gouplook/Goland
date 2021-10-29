@@ -233,6 +233,10 @@ func MapSplitToStruct2(reple CardIcad){
 	_ = mapstructure.WeakDecode(cMak, &reple)
 	fmt.Println("打印后：----",reple.CardSn)
 	fmt.Println("打印后：----",reple.CardId)
+
+	fmt.Println(8505+4680+29490+2712+2415+2655 + 36000+19755+20745+6460+8980)
 }
+
+
 
 

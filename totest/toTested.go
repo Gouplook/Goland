@@ -61,6 +61,7 @@ func StringToStruct(reply ReplyConsumeDataConf){
 	// singleLogConf := singleLog[logModel.Field.F_conf_data].(string)
 	// 序列化成struct
 	// _ = json.Unmarshal([]byte(singleLogConf),&reply)
+	// singleLogConf := singleLog[logModel.Field.F_conf_data]
 }
 
 

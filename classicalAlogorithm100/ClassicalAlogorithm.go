@@ -25,7 +25,6 @@ func formulaList9X9_001() {
 	}
 	tc := time.Since(starTime) // 表示经过时间
 
-	// 耗时时间
 	fmt.Println("Time consuming: ", tc)
 }
 
@@ -40,6 +39,7 @@ func getMaximumCommonDivisor_002(a, b int) int {
 			b = b - a
 		}
 	}
+
 
 	return a
 
@@ -93,7 +93,9 @@ func lsomorphicNumber_005() {
 		if j%k == i {
 			fmt.Printf("%d是同构数，%d的平方是%d\n", i, i, j)
 		}
+		//
 	}
+
 }
 
 // 6：(1)根据工龄(整数)给员工涨工资(整数),工龄和基本工资通过键盘录入
@@ -131,7 +133,7 @@ func salary_006(salaryNum float64) {
 
 }
 
-// 7.（1）定义一个map存下面数据
+// 7.（1）定义一个map存放下面数据
 //       France 首都是 巴黎
 //       Italy 首都是 罗马
 // 		 Japan 首都是 东京
@@ -287,6 +289,7 @@ type studentNode struct {
 	sex  string
 	age  int
 	next *studentNode
+
 }
 
 // list后面插入一个数据

@@ -183,8 +183,7 @@ func AsyHash() {
 
 	// 4. 格式化为16进制形式
 	str := hex.EncodeToString(res)
-
+	src2 := hex.EncodeToString(res)
+	fmt.Println(src2)
 	fmt.Printf("%s\n", str)
-
-
 }
