@@ -9,6 +9,7 @@ package timeanddate
 import (
 	"fmt"
 	"regexp"
+	"strconv"
 	"time"
 )
 
@@ -140,3 +141,22 @@ func GetAge(date string) (age int) {
 	age = nowyear - year
 	return
 }
+
+
+// 获取年份中的月份。
+func YearMonth(year string)(start,end string) {
+	lastDate := time.Now()
+	// 判断选择的年份是否小于当前年份
+	if year < strconv.Itoa(lastDate.Year()) && year != "" {
+		start = year + "-" + "01"
+		end = year + "-" + "12"
+		return
+	}
+	// 默认参数
+	lastDate.AddDate(0,-1,0)
+	start = strconv.Itoa(lastDate.Year()) + "-" + "01"
+	end = lastDate.Format("2006-01")
+
+	return
+}
+// 思路：在数据库中更新数据

@@ -216,8 +216,6 @@ func MapSplitToStruct(){
 
 }
 
-
-
 type CardIcad struct {
 	CardId int
 	CardSn string

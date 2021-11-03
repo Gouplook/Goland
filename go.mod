@@ -18,6 +18,7 @@ require (
 	github.com/gohouse/converter v0.0.3
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/gomodule/redigo v2.0.0+incompatible
+	github.com/importcjj/sensitive v0.0.0-20200106142752-42d1c505be7b // indirect
 	github.com/json-iterator/go v1.1.11 // indirect
 	github.com/jung-kurt/gofpdf v1.16.2
 	github.com/mattn/go-isatty v0.0.13 // indirect
