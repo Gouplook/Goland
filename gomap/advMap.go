@@ -83,6 +83,7 @@ func AdvanceMap() {
 	maps2[1]["price"] = 201.0
 	maps2[1]["salesnum"] = 2003101
 
+
 	// 切片追加切片
 	maps = append(maps, maps2...)
 	fmt.Println("maps =", maps)

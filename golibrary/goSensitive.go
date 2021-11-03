@@ -23,18 +23,13 @@ func Filter(){
 	}
 	// filter.UpdateNoisePattern(`x`)
 
-	// 205+100+ 150 +320+50
-
 	// str := filter.FindAll("最低价")
 
 	// 验证内容是否ok，如果含有敏感词，则返回
 	b, vStr:= filter.Validate("史上最低价")
 	fmt.Println(b,vStr)
 
-	fmt.Println(205+100+150+320+50+100+150+1000)
-	fmt.Println(204+243 + 100.0+ 309 + 1000)
-
-
+	fmt.Println()
 	fmt.Println("")
 
 }
