@@ -90,13 +90,13 @@ func SaveImgFromUrl (imgUrl string)(reply ReplyFileInfo,err error) {
 	hash := strings.Replace(u.String(),"-","", -1)
 	filename := functions.GetFileNameByHash(hash)
 	path := filepath.Join("upload/image",filename)
-	// 创建一个目录
+	// 创建一个目录 给权限0777
 	err = os.MkdirAll(filepath.Dir(path),os.ModePerm)
 	if err != nil {
 		return
 	}
 	f,_ := os.OpenFile(path,os.O_WRONLY | os.O_CREATE,0644)
-	defer f.Close()
+	defer  f.Close()
 	// 保存文件
 	_, err = f.Write(imgByte)
 
