@@ -13,3 +13,8 @@ import "testing"
 func TestStructBase(t *testing.T) {
 	StructBase()
 }
+
+// 结构体与切片
+func TestStructAndSlice(t *testing.T) {
+	StructAndSlice()
+}

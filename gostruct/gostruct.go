@@ -33,3 +33,38 @@ func StructBase() {
 	fmt.Println(d1)
 	fmt.Println(*(d1.Ptr))
 }
+
+type Student struct {
+	id int
+	name string
+	age int
+	addr string
+}
+
+func StructAndSlice(){
+	var s []Student = []Student{
+		{
+			101,"zhangsan", 18,"beijing",
+		},
+		{
+			102,"lisi", 28,"beijing",
+		},
+	}
+
+
+	fmt.Println(s)
+
+}
+// 结构体与map
+func StructAndMap(){
+	m := make(map[int]Student)
+	m[1] = Student{
+		1011,
+		"wang",
+		20,
+		"shanghai",
+	}
+	fmt.Println(m[1])
+	fmt.Println(m[1].name)
+
+}
