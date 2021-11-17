@@ -63,7 +63,7 @@ func BasicTime() {
 	fmt.Println("localFroml: ", localFroml)
 	fmt.Println("nowForml: ", nowForml)
 	fmt.Println("strToTime: ", strToTime)
-	fmt.Println("stamp",stamp.Unix())
+	fmt.Println("stamp",stamp.Unix())  // 转化成int
 }
 
 // 获取当天时间段 ：2020-12-14 00:00:00~2020-12-14 23:59:59
@@ -159,4 +159,39 @@ func YearMonth(year string)(start,end string) {
 
 	return
 }
-// 思路：在数据库中更新数据
+
+// 当日有效 , 返回起终时间戳
+func DataEffects (date int ) (startTime, endTime int ){
+
+	loc,_  := time.LoadLocation("Local")
+	now := time.Now().Format("2006-01-02")
+	firstTime ,_ := time.ParseInLocation("2006-01-02",now,loc)
+	startTime = int(firstTime.Unix())
+	endTime = startTime+ (86400 *date)
+	return
+}
+
+// 次日生效
+func DataMorrowEffects (date int ) (startTime, endTime int ){
+
+	loc,_  := time.LoadLocation("Local")
+	tomorrow := time.Now().Unix()
+	tomorrow += 86400
+	now := time.Unix(tomorrow,0).Format("2006-01-02")
+	firstTime ,_ := time.ParseInLocation("2006-01-02",now,loc)
+	startTime = int(firstTime.Unix())
+	endTime = startTime+ (86400 *date)
+	return
+}
+
+
+// 判读时间是否在给定时间内 t为时间戳
+func DataAfter(t int) {
+	times := time.Now()
+	timeTime := time.Unix(int64(t),0)
+	// 判读t 传过来的时间是否在当前时间之后。
+	if times.After(timeTime) {
+		fmt.Println("在当前时间之后.....")
+	}
+}
+
