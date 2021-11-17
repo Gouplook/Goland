@@ -74,6 +74,7 @@ func MapToStruct() {
 
 		case "cat":
 			var cat Cat
+			// weakdecode 是Decode简化版
 			_ = mapstructure.WeakDecode(m, &cat)
 			fmt.Println("cat", cat)
 		}
@@ -107,6 +108,8 @@ func StructToMap() {
 	}
 	var m map[string]interface{}
 	_ = mapstructure.WeakDecode(p, &m)
+	fmt.Println("Main := ",p)
+	fmt.Println("m : ",m)
 	data, _ := json.Marshal(m)
 	fmt.Println(string(data))
 }

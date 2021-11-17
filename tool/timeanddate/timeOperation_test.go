@@ -55,3 +55,11 @@ func TestGetAge(t *testing.T) {
 	age := GetAge(str)
 	fmt.Println(age)
 }
+
+
+//
+func TestYearMonth(t *testing.T) {
+	strart,end := YearMonth("2021")
+	fmt.Println(strart)
+	fmt.Println(end)
+}

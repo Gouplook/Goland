@@ -42,6 +42,7 @@ type NeedToModelField struct {
 func (m *NeedToModel) Init(ormer ...orm.Ormer) *NeedToModel {
 	//tool.ReflectModel(&m.Field)
 	m.Model = base.NewMode(m.Field.Table, ormer...)
+	m.Model = base.NewMode(m.Field.Table,ormer...)
 	return m
 }
 

@@ -20,7 +20,7 @@ func Init() {
 	//func init() {
 	logs.Info("Init driver.go mysql start")
 
-	//"root:123456@tcp(127.0.0.1:3306)/macmysql?charset=utf8"
+	// "root:123456@tcp(127.0.0.1:3306)/macmysql?charset=utf8"
 	// 读取配置文件
 	// 读配置文件还有另外一种方法，利用key/value
 

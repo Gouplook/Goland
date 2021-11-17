@@ -83,6 +83,7 @@ func AdvanceMap() {
 	maps2[1]["price"] = 201.0
 	maps2[1]["salesnum"] = 2003101
 
+
 	// 切片追加切片
 	maps = append(maps, maps2...)
 	fmt.Println("maps =", maps)
@@ -201,6 +202,40 @@ func MapMap2(){
 	fmt.Println(mp)
 
 }
+
+// 待测试案例
+func MapSplitToStruct(){
+	// 获取数据
+	// cprrlMap  map[string]interface
+	// cprrlMap := cprrlM.GetById(rechargeId)
+
+	// 在cpprlMap后面追加数据，在另外一张表中查找数据
+	// cprrlMap["CardId"] = cprMap[cprM.Field.F_card_id]
+
+	// 数据组装后，转化为struc   reply 是结构体
+	// _ = mapstructure.WeakDecode(cpprlMap, reply)
+
+}
+
+type CardIcad struct {
+	CardId int
+	CardSn string
+	Name string
+}
+//
+func MapSplitToStruct2(reple CardIcad){
+	cMak := map[string]interface{}{}
+	cMak["CardId"] = 1002
+	cMak["CardSn"] = "JS0003"
+
+	fmt.Println("打印前：----",reple)
+	_ = mapstructure.WeakDecode(cMak, &reple)
+	fmt.Println("打印后：----",reple.CardSn)
+	fmt.Println("打印后：----",reple.CardId)
+
+	fmt.Println(8505+4680+29490+2712+2415+2655 + 36000+19755+20745+6460+8980)
+}
+
 
 
 

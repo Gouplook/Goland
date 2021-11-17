@@ -26,6 +26,5 @@ func main() {
 		c.String(http.StatusOK, fmt.Sprintf("'%s' uploaded!", file.Filename))
 	})
 
-
 	router.Run(":8082")
 }
