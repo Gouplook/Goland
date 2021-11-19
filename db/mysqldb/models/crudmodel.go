@@ -27,7 +27,7 @@ type NeedToModelField struct {
 	//F_created_id string `default:"created_id"`
 
 	Table     string `default:"table"` // 表名待处理
-	Id        int    `default:"id"`
+	Id        string    `default:"id"`
 	Email     string `default:"email"`
 	Password  string `default:"password"`
 	CreatedAt string `default:"created_at"`
@@ -80,6 +80,24 @@ func (m *NeedToModel) Find(where map[string]interface{}) map[string]interface{} 
 	}
 	return m.Model.Where(where).Find()
 }
+// 根据条件获取单条数据(这种条件查询
+func (m *NeedToModel)GetById(id int ,fileld ...[]string)map[string]interface{}{
+	if id <= 0 {
+		return map[string]interface{}{}
+	}
+	if len(fileld) > 0 {
+		m.Model.Field(fileld[0])
+	}
+	rs := m.Model.Where([]base.WhereItem{
+		{m.Field.Id,id},
+	}).Find()
+
+	return rs
+}
+
+
+
+
 
 // 基础查询（多条）
 func (m *NeedToModel) Select(where map[string]interface{}) []map[string]interface{} {
@@ -109,3 +127,5 @@ func (m *NeedToModel)GetByIds(ids []int) []map[string]interface{} {
 	}).Select()
 	return rs
 }
+
+

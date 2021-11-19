@@ -126,3 +126,10 @@ func TestArrayRebuild(t *testing.T) {
 
 	fmt.Println(rs)
 }
+
+func TestArrayValue2Array2(t *testing.T) {
+	ints := []int{1,2,3}
+
+	giveStr := ArrayString(",",ints)
+	fmt.Println(giveStr)
+}
