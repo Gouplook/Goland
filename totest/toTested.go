@@ -24,6 +24,7 @@ func MapSplitToStruct(){
 	// 数据组装后，转化为struc   reply 是结构体
 	// _ = mapstructure.WeakDecode(cpprlMap, reply)
 
+
 }
 
 type CardIcad struct {
@@ -73,9 +74,9 @@ type ArgsBatchSendCommonConsumeMsg struct {
 }
 //
 type ReplyBatchNewConsumeParams struct {
-	BusFundDeposSlice []ArgsBatchHandlerBusFundDepos  //资金存管
-	ConsumeMsgSlice   []ArgsBatchSendCommonConsumeMsg //消费确认短信
-	RelationLogIds    []int                           //卡包关联消费ids
+	BusFundDeposSlice []ArgsBatchHandlerBusFundDepos  // 资金存管
+	ConsumeMsgSlice   []ArgsBatchSendCommonConsumeMsg // 消费确认短信
+	RelationLogIds    []int                           // 卡包关联消费ids
 }
 
 // 结构体中含有切片结构体

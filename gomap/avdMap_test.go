@@ -8,7 +8,9 @@
 package gomap
 
 import (
+	"encoding/json"
 	"fmt"
+	"github.com/mitchellh/mapstructure"
 	"testing"
 )
 
@@ -63,4 +65,34 @@ func TestMapSplitToStruct2(t *testing.T) {
 	fmt.Println("3D", 20*1000) // 20000
 
 	fmt.Println()
+}
+
+
+type ABase struct {
+	RR string
+	B  []BBase
+}
+type BBase struct {
+	Name string
+	Age  int
+	C    []CBase
+}
+
+type CBase struct {
+	CC string
+}
+
+func TestName1(t *testing.T) {
+
+	bb := make([]map[string]interface{}, 0)
+	bb = append(bb, map[string]interface{}{
+		"Name": "xxx",
+		"Age":  10,
+		"C":    []map[string]interface{}{{"CC": "xxx"}, {"CC": "yyy"}},
+	})
+	a := ABase{}
+	mapstructure.WeakDecode(bb,&a.B)
+	bytes,_:=json.Marshal(a)
+	t.Log(string(bytes))
+
 }

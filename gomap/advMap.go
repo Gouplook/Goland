@@ -237,5 +237,3 @@ func MapSplitToStruct2(reple CardIcad){
 }
 
 
-
-
