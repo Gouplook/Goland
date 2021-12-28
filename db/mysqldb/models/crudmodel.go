@@ -95,10 +95,6 @@ func (m *NeedToModel)GetById(id int ,fileld ...[]string)map[string]interface{}{
 	return rs
 }
 
-
-
-
-
 // 基础查询（多条）
 func (m *NeedToModel) Select(where map[string]interface{}) []map[string]interface{} {
 	if len(where) == 0 {

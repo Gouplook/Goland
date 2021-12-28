@@ -160,9 +160,8 @@ func YearMonth(year string)(start,end string) {
 	return
 }
 
-// 当日有效 , 返回起终时间戳
+//  时间转化  当日有效 , 返回起终时间戳
 func DataEffects (date int ) (startTime, endTime int ){
-
 	loc,_  := time.LoadLocation("Local")
 	now := time.Now().Format("2006-01-02")
 	firstTime ,_ := time.ParseInLocation("2006-01-02",now,loc)

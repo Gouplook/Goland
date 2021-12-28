@@ -8,6 +8,7 @@
 package base
 
 import (
+	"GoInduction/functions"
 	"GoInduction/tool"
 	"errors"
 	"fmt"
@@ -267,6 +268,71 @@ func (m *Model) Update() (int, error) {
 	}
 	rowAffectedId, _ := sqlSource.RowsAffected()
 	return int(rowAffectedId), err
+}
+// 条件更新 - 批量更新 filed_key
+func (m *Model)UpdateCase(data []map[string]interface{}, filed_key string)(int,error) {
+
+	f := map[string]string{}
+	fp := map[string][]interface{}{}
+	where := []interface{}{}
+	whereStr := ""
+	for _, val := range data {
+		if _, ok := val[filed_key];ok {
+			continue
+		}
+		where = append(where,val[filed_key])
+		whereStr += "?"
+		for k,v := range val {
+			if k == filed_key {
+				continue
+			}
+			// 判断
+			if v1,ok := v.([]interface{});ok {
+				if len(v1) == 2 {
+					str := ""
+					m.arrayData(k,v1[0].(string),v1[1],&str,&[]interface{}{})
+					str = strings.TrimRight(str,",")
+					str = str[len(k+"="):]
+					f[k] += " when ? then " + str
+					fp[k] = append(fp[k], val[filed_key],v1[1])
+				}
+			}else {
+				f[k] += " when ? then ? "
+				fp[k] = append(fp[k],val[filed_key],v)
+			}
+		}
+
+	}
+	updateStr := ""
+	param := []interface{}{}
+	for k, v := range f {
+		updateStr += fmt.Sprintf("%s=case %s%s else %s end,", k, filed_key, v, k)
+		param = append(param, fp[k]...)
+	}
+
+	param = append(param, where...)
+
+	updateStr = strings.TrimRight(updateStr, ",")
+	where1, param1 := m.whereString()
+	param = append(param, param1...)
+	where1 = strings.Replace(where1, "WHERE", " and ", 1)
+
+	whereStr = strings.TrimRight(whereStr, ",")
+	updateStr = strings.TrimRight(updateStr, ",")
+	sql := fmt.Sprintf("UPDATE %s SET %s where %s in (%s) %s", m.table, updateStr, filed_key, whereStr, where1)
+	sqlSource, err := m.o.Raw(sql, param...).Exec()
+
+	m.sql = fmt.Sprintf("%s-`%s`", sql, functions.Implode("`, `", param))
+	if err != nil {
+		// 打印日志
+		// if kcgin.KcConfig.RunMode != kcgin.PROD {
+		// 	logs.Error("Sql:", sql, " Error,", err.Error())
+		// }
+		return 0, err
+	}
+	num, _ := sqlSource.RowsAffected()
+	return int(num), err
+
 }
 
 // 物理删除
