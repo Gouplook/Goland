@@ -52,6 +52,7 @@ func AdvanceMap() {
 	// maps[3]["card_id"] = 14
 	// maps[3]["price"] = 300.5
 	// maps[3]["salesnum"] = 1006
+	// 19900003-J-OP030L-00-00
 
 	fmt.Println("maps=====", maps)
 	var outStruct []CardBase
