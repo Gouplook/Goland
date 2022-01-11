@@ -23,7 +23,9 @@ func TestArrayKeys(t *testing.T) {
 	fmt.Println(slile)
 }
 func TestArrayString(t *testing.T) {
-	tagIds := []string{"1#", "2#", "#4"}
+	// tagIds := []string{"1#", "2#", "#4"}
+
+	tagIds :=[]int{1,2,6}
 	fmt.Println("tagIds: ", tagIds)
 	str := ArrayString(",", tagIds)
 	fmt.Println(str)
