@@ -57,7 +57,7 @@ type Good struct {
 
 func JsonUnmarshal() {
 	var data = `{"name":"Xiao mi 6","product_id":"10","number":"10000","price":"2499","is_on_sale":"true"}`
-	// 一般从数据查到的数据或网落之前传送过来的。
+	// 一般从数据查到的数据或网络之间传送过来的。
 	g := &Good{}
 	err := json.Unmarshal([]byte(data), g)
 	if err != nil {

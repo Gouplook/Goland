@@ -7,8 +7,18 @@
 
 package gopdf
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestHtmlToPdf(t *testing.T) {
 	HtmlToPdf()
+}
+
+func TestHtmlTo(t *testing.T) {
+	var i = 781
+	i = 012345
+	newStr := fmt.Sprintf("%011d",i)
+	fmt.Println(newStr)
 }
