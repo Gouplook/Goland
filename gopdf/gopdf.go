@@ -31,8 +31,16 @@ func loremList() []string {
 }
 
 type HeTongSingleLists struct {
+	SingleId   int
 	SingleName string // 单项目名称
-	Num        int    // 单项目次数
+	// 新加的
+	ServerTime       int     // 服务时长，单位分钟
+	SspId            int     // 规格id
+	SpecNames        string  // 规格组合名称
+	RealPrice        string  // 售价
+	Num              int     // 单项目次数
+	PeriodOfValidity int     // 有效期，单位天(身份卡没有该属性)
+	SingleDiscount   float64 // 单项目折扣
 }
 
 
