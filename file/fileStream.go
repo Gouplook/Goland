@@ -28,10 +28,10 @@ func FileStream(name string){
 	defer file.Close()
 
 	// 向输出流中写入数据
-	file.Write([]byte("要写入的内容1\\r\\n要写入的内容2\\r\\n\\t要写入的内容3\\r\\n"))
-	file.Write([]byte("\n"))
-	file.WriteString("==写入这一行......")
-	file.WriteAt([]byte("HHHHHHH"),2)   // 此方法与追加不用混用。
+	_ ,_ = file.Write([]byte("要写入的内容1\\r\\n要写入的内容2\\r\\n\\t要写入的内容3\\r\\n"))
+	_ ,_= file.Write([]byte("\n"))
+	_ ,_ = file.WriteString("==写入这一行......")
+	_ ,_ = file.WriteAt([]byte("HHHHHHH"),2)   // 此方法与追加不用混用。
 
 }
 
