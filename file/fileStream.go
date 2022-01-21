@@ -18,6 +18,7 @@ func FileStream(name string){
 	// 1：读取文件
 	// 构建字节切片的时候如果需要读取文件,不要使用os.Open,该方法获取的文件只能读取，无法写入
 	// name:文件名，flag:操作方， perm:文件权限
+	// fileName 文件
 	file, err := os.OpenFile(name,os.O_RDWR , 0777)
 
 	if err != nil {
