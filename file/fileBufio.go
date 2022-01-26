@@ -14,10 +14,11 @@ import (
 )
 
 func FileBufio(){
+	// 带有缓冲区的
 	file,_  := os.Open("./fileread.txt")
 	inputReader := bufio.NewReader(file)
 
-	defer file.Close()
+	defer  file.Close()
 
 	fmt.Println("Please enter some input:....")
 	// 按下回车键后停止

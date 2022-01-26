@@ -17,6 +17,9 @@ import (
 // 测试文件输出流
 func TestFileStream(t *testing.T) {
 	FileStream("fileread.txt")
+	fmt.Println(5 + 13)
+	fmt.Println("")
+	fmt.Println(300000*0.3*12 *0.2)
 }
 
 // 测试 io 文件读写
