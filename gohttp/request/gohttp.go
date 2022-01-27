@@ -64,7 +64,7 @@ func uploadFile(url string, params map[string]string, nameField,fileName string,
 	}
 
 	return content,nil
-	//
+
 
 
 }

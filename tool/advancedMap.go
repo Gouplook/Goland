@@ -149,11 +149,22 @@ func SileIn() {
 
 
 func SlieIn2(){
-	cardId := make([]int, 0)
-	cardId = []int{2}
-	cardId = []int{4,5}
-	fmt.Println(cardId)
+	// cardId := make([]int, 0)
+	// cardId = []int{2}
+	// cardId = []int{4,5}
+	// fmt.Println(cardId)
 
+	//
+	fmt.Println("Z = ",100000- 40 *550 - 40 *180- 5000 - 5000 -10000)
+	fmt.Println("Y = ",40000 - 40 *550)
+	fmt.Println("C = ",60000 - 40 *180 - 3500)
 
+	//  100 + 150（20+10+70）+ 30 + 70
+
+	// 1-5  18：00 - 20：00  2
+	// 1-11 18：00 - 21：00  3
+	// 1-12 18：00 - 19：00  1
+	// 1-14 18：00 - 19：00  1
+	// 1-18 18：00 - 19：00  1
 }
 
