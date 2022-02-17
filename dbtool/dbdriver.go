@@ -35,7 +35,6 @@ func Init() {
 	orm.RegisterDataBase("default", cfig.Type, dataSource)
 	// 注册mode
 	//orm.RegisterModel(new(model.User))
-	ofig
 	//orm.RegisterModel(new(models.NeedToModel))
 	// 生成表
 	// 第一个参数是数据库别名，第二个参数是是否强制更新
