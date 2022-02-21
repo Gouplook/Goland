@@ -40,7 +40,6 @@ func getMaximumCommonDivisor_002(a, b int) int {
 		}
 	}
 
-
 	return a
 
 }

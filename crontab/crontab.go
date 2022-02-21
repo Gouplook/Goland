@@ -21,7 +21,6 @@ func main(){
 	_ = c.AddFunc(spec,printf)
 	c.Start()
 	select {}
-
 }
 
 func printf(){

@@ -106,10 +106,46 @@ func Addupper() func(int) int {
 }
 
 
+func CeShi(){
+	// 19.25
+	// 63
+	// 12.25
+	// 36.75
+	// 15.75
+	// 8.75
+	// 19.25
+	// 38.5
+	// 38.5
+	// 14
+	// 14
+
+	// 17.5
+	// 29.75
+	// 15.75
+	// 14
+	// 14
+	// 12.25
+	// 17.5
+	// 38.5
+	// 38.5
+	// 7
+	// 7
+	fmt.Println("========")
+	var sum int
+	sum = 19.25+63+12.25+36.75+15.75+8.75+19.25+38.5+39.5+14+14
+	sum2 := 17.5+29.75+15.75+14+14+12.25+17.25+38.5+38.5+7+7
+	fmt.Println("sum=",sum)
+	fmt.Println("sum=",sum * 48)
+	fmt.Println("sum2=",sum2)
+	fmt.Println("sum2=",sum2*48)
+
+}
+
 
 func main() {
 
 	fmt.Println("78880====")
+	CeShi()
 	//fmt.Println(utils.Age)
 	//f := Addupper()
 	//fmt.Println(f(1))
@@ -132,10 +168,6 @@ func main() {
 	// routers（注册service中的路由） -- logic（实现业务逻辑） -- model（数据模型） --- service(对应接口的）
 	// []map[string]interface{}  --> map[string]interface{}
 
-	//  思路 ： 先筛选出来了[]map[string]interface{}
-	//  在从[]map 中抽取到rcard_id 信息组成一个新的map
-	//  在mp中根据key取出value的值。此时这个值是interface
-	//
 
 
 

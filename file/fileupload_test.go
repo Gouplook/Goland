@@ -8,6 +8,7 @@
 package file
 
 import (
+	"fmt"
 	"testing"
 )
 
@@ -26,4 +27,6 @@ func TestSaveImgFromUrl(t *testing.T) {
 	//
 	url := "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2Fa%2F583654178e0cf.jpg%3Fdown&refer=http%3A%2F%2Fpic1.win4000.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1616400817&t=9e12e9bd96e909505fc452402857254f"
 	SaveImgFromUrl(url)
+
+	fmt.Println()
 }

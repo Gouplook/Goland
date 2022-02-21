@@ -29,3 +29,4 @@ func GetFileName (name string)string{
 func Implode(separator string, array interface{}) (string) {
 	return strings.Replace(strings.Trim(fmt.Sprint(array), "[]"), " ", separator, -1)
 }
+

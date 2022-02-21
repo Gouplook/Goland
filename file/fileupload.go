@@ -35,7 +35,6 @@ type ReplyFileInfo struct {
 // 2：获取图片信息保存到数据库中
 func SaveImgFromUrl (imgUrl string)(reply ReplyFileInfo,err error) {
 	// 1: 检查是否是url地址  "http://"  "https://"
-
 	// 2: 下载图片  安全传输层协议（TLS）用于在两个通信应用程序之间提供保密性和数据完整性
 	tr := &http.Transport{
 		TLSClientConfig: &tls.Config{
