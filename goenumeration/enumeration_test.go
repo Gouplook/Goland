@@ -16,6 +16,7 @@ func TestFishType_String(t *testing.T) {
 	var f FishType = A
 
 	fmt.Println(f)
+	fmt.Println(f)
 
 	fmt.Println(A,B)
 
