@@ -90,6 +90,9 @@ func  GoExcel() {
 				msg := Msg{}
 				msg.BankCode = v[0]
 				msg.BankName = v[1]
+				msg.BankName = v[2]
+				msg.BankName = v[3]
+				msg.BankName = v[4]
 
 				//插入数据表
 				o := orm.NewOrm()
@@ -117,11 +120,12 @@ func findColByTitle(sheet *xlsx.Sheet, title string) int {
 	titleRow := sheet.Rows[0]
 	for titleIndex, col := range titleRow.Cells {
 		//
-
 		if col.String() == title {
 			return titleIndex
 		}
 	}
+	// 5 + 2 + 1
+	//
 
 	return -1
 }

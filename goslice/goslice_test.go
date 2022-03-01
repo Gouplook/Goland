@@ -7,8 +7,14 @@
 
 package goslice
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestIntSort(t *testing.T) {
-	IntSort()
+	// IntSort()
+
+	fmt.Println(7000/22.5/8*3)
+	// fmt.Println(7000/22.5/)
 }

@@ -7,12 +7,17 @@
 
 package goexcel
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 
 //
 func TestGoExcel(t *testing.T) {
-	GoExcel()
+	// GoExcel()
+
+	fmt.Println(8*140*22)
 }
 
 
