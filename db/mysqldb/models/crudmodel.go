@@ -95,7 +95,7 @@ func (m *NeedToModel) FindBetween(uid, start, end int) (data map[string]interfac
 }
 
 // 查找 以name开头匹配的 在id中筛选
-func (m *NeedToModel) FindLike(name string, id int)(data []map[string]interface{}){
+func (m *NeedToModel) FindLike(name string, ids []int)(data []map[string]interface{}){
 
 	if len(name) == 0 {
 		return make([]map[string]interface{},0)
@@ -103,7 +103,7 @@ func (m *NeedToModel) FindLike(name string, id int)(data []map[string]interface{
 
 	wh := []base.WhereItem{
 		{m.Field.Name,[]interface{}{"LIKE",name+"%"}},
-		{m.Field.Id,[]interface{}{"IN",id}},
+		{m.Field.Id,[]interface{}{"IN",ids}},
 	}
 
 	return m.Model.Where(wh).Select()
@@ -149,7 +149,7 @@ func (m *NeedToModel) GetByIds(ids []int) []map[string]interface{} {
 		return []map[string]interface{}{}
 	}
 	rs := m.Model.Where(map[string]interface{}{
-		//	m.Field.Id: []interface{}{"in",ids},
+			m.Field.Id: []interface{}{"in",ids},
 	}).Select()
 	return rs
 }

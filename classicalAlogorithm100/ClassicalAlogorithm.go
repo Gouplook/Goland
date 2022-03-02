@@ -106,7 +106,7 @@ func lsomorphicNumber_005() {
 // [0~1) +200
 // (3)如果用户输入的工龄为10，基本工资为3000，程序运行后打印格式"您目前工作了10年，基本工资为 3000元,
 // 应涨工资 5000元,涨后工资 8000元"
-func salary_006(salaryNum float64) {
+func Salary_006(salaryNum float64) {
 	baseSalary := 3000.0
 	var totalSalary float64
 
