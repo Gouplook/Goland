@@ -45,4 +45,7 @@ func TestNeedToModel_Insert(t *testing.T) {
 		fmt.Println("Insert failed .....")
 	}
 	fmt.Println("Insert success !")
+
+
+	// fmt.Println(42635+21500)
 }

@@ -20,29 +20,31 @@ type NeedToModel struct {
 
 // 表字段
 type NeedToModelField struct {
-	//T_table      string `default:"table"` // 表名待处理
-	//F_id         int    `default:"id"`
-	//F_email      string `default:"email"`
-	//F_password   string `default:"password"`
-	//F_created_id string `default:"created_id"`
+	// T_table      string `default:"table"` // 表名待处理
+	// F_id         int    `default:"id"`
+	// F_email      string `default:"email"`
+	// F_password   string `default:"password"`
+	// F_created_id string `default:"created_id"`
 
 	Table     string `default:"table"` // 表名待处理
-	Id        string    `default:"id"`
+	Id        string `default:"id"`
 	Email     string `default:"email"`
 	Password  string `default:"password"`
 	CreatedAt string `default:"created_at"`
+	Uid       string `default:"uid"`
+	Name      string `default:"name"`
 }
 
 // 初始化
-//func (m *NeedToModel) Init(ormer ...orm.Ormer) *NeedToModel {
+// func (m *NeedToModel) Init(ormer ...orm.Ormer) *NeedToModel {
 //	tool.ReflectModel(&m.Field)
 //	m.Model = base.NewMode(m.Field.T_table, ormer...)
 //	return m
-//}
+// }
 func (m *NeedToModel) Init(ormer ...orm.Ormer) *NeedToModel {
-	//tool.ReflectModel(&m.Field)
+	// tool.ReflectModel(&m.Field)
 	m.Model = base.NewMode(m.Field.Table, ormer...)
-	m.Model = base.NewMode(m.Field.Table,ormer...)
+	m.Model = base.NewMode(m.Field.Table, ormer...)
 	return m
 }
 
@@ -52,7 +54,7 @@ func (m *NeedToModel) Insert(data map[string]interface{}) int {
 	return result
 }
 
-//批量添加
+// 批量添加
 func (m *NeedToModel) InsertAll(data []map[string]interface{}) int {
 	if len(data) == 0 {
 		return 0
@@ -80,8 +82,36 @@ func (m *NeedToModel) Find(where map[string]interface{}) map[string]interface{} 
 	}
 	return m.Model.Where(where).Find()
 }
+
+// 查找(带范围）
+func (m *NeedToModel) FindBetween(uid, start, end int) (data map[string]interface{}) {
+	wh := []base.WhereItem{
+		{m.Field.Uid, uid},
+		{m.Field.CreatedAt, []interface{}{"between", []int{start, end}}},
+	}
+
+	return m.Model.Where(wh).Find()
+
+}
+
+// 查找 以name开头匹配的 在id中筛选
+func (m *NeedToModel) FindLike(name string, id int)(data []map[string]interface{}){
+
+	if len(name) == 0 {
+		return make([]map[string]interface{},0)
+	}
+
+	wh := []base.WhereItem{
+		{m.Field.Name,[]interface{}{"LIKE",name+"%"}},
+		{m.Field.Id,[]interface{}{"IN",id}},
+	}
+
+	return m.Model.Where(wh).Select()
+
+}
+
 // 根据条件获取单条数据(这种条件查询
-func (m *NeedToModel)GetById(id int ,fileld ...[]string)map[string]interface{}{
+func (m *NeedToModel) GetById(id int, fileld ...[]string) map[string]interface{} {
 	if id <= 0 {
 		return map[string]interface{}{}
 	}
@@ -89,7 +119,7 @@ func (m *NeedToModel)GetById(id int ,fileld ...[]string)map[string]interface{}{
 		m.Model.Field(fileld[0])
 	}
 	rs := m.Model.Where([]base.WhereItem{
-		{m.Field.Id,id},
+		{m.Field.Id, id},
 	}).Find()
 
 	return rs
@@ -114,14 +144,12 @@ func (m *NeedToModel) SelectByPage(where map[string]interface{}, start, limit in
 }
 
 // 根据[]int查数据
-func (m *NeedToModel)GetByIds(ids []int) []map[string]interface{} {
+func (m *NeedToModel) GetByIds(ids []int) []map[string]interface{} {
 	if len(ids) == 0 {
 		return []map[string]interface{}{}
 	}
 	rs := m.Model.Where(map[string]interface{}{
-	//	m.Field.Id: []interface{}{"in",ids},
+		//	m.Field.Id: []interface{}{"in",ids},
 	}).Select()
 	return rs
 }
-
-
