@@ -7,9 +7,13 @@
 
 package dbtool
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestExcelMain(t *testing.T) {
-	EXcelInit()
-	ExcelMain()
+	// EXcelInit()
+	// ExcelMain()
+	fmt.Println((592-60)*14+1500-5000)
 }

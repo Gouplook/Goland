@@ -281,7 +281,6 @@ func salefish_013() {
 //     筛选出新的
 
 // 15： golang 实现单链表（增删改查）
-
 type studentNode struct {
 	no   int // 节点编号
 	name string
@@ -349,59 +348,60 @@ func listStudentNode (head *studentNode) {
 }
 func main() {
 	// 1 2 3 4 5 6
-	// x := palindrome_003("126")
-	// fmt.Println(x)
-	// isDaffodilNumber(153)
-	// lsomorphicNumber_005()
+	x := palindrome_003("126")
+	fmt.Println(x)
+	isDaffodilNumber(153)
+	lsomorphicNumber_005()
 	// salary_006(40.5)
-	// map_007()
-	// isMapValueEquality_008()
-	// factorial_009()
+	map_007()
+	isMapValueEquality_008()
+	factorial_009()
 	// x := cycleNum_010(5,3)
-	// fmt.Println(x)
+	fmt.Println(x)
 
-	// slice := []int{1, 10, 48, 52}
-	// reversal_011(slice)
-	// for i := 0; i < 8; i++ {
-	// 	fmt.Printf(" %d,", isFobonacc_012(i))
-	// }
+	slice := []int{1, 10, 48, 52}
+	reversal_011(slice)
+	for i := 0; i < 8; i++ {
+		fmt.Printf(" %d,", isFobonacc_012(i))
+	}
 
-	// salefish_013()
+	salefish_013()
 
-	// head := &studentNode{}
-	// subLisa := &studentNode{
-	// 	no: 1,
-	// 	name: "lisa",
-	// 	sex: "W",
-	// 	age: 32,
-	// }
-	// subJim := &studentNode{
-	// 	no: 2,
-	// 	name: "Jim",
-	// 	sex: "M",
-	// 	age: 29,
-	// }
-	// subTom := &studentNode{
-	// 	no: 3,
-	// 	name: "Tom",
-	// 	sex: "W",
-	// 	age:19,
-	// }
-	// subJack := &studentNode{
-	// 	no:4,
-	// 	name: "Jack",
-	// 	sex: "M",
-	// 	age:45,
-	// }
-	//
-	// insertStudentNode(head,subLisa)
-	// insertStudentNode(head,subJim)
-	// insertStudentNode(head,subTom)
-	// insertStudentNode(head,subJack)
-	// fmt.Println("dele before :")
-	// listStudentNode(head)
-	// delStudentNode(head,2)
-	// fmt.Println("dele after :")
-	// listStudentNode(head)
+	head := &studentNode{}
+	subLisa := &studentNode{
+		no: 1,
+		name: "lisa",
+		sex: "W",
+		age: 32,
+	}
+	subJim := &studentNode{
+		no: 2,
+		name: "Jim",
+		sex: "M",
+		age: 29,
+	}
+	subTom := &studentNode{
+		no: 3,
+		name: "Tom",
+		sex: "W",
+		age:19,
+	}
+	subJack := &studentNode{
+		no:4,
+		name: "Jack",
+		sex: "M",
+		age:45,
+	}
+
+	insertStudentNode(head,subLisa)
+
+	insertStudentNode(head,subJim)
+	insertStudentNode(head,subTom)
+	insertStudentNode(head,subJack)
+	fmt.Println("dele before :")
+	listStudentNode(head)
+	delStudentNode(head,2)
+	fmt.Println("dele after :")
+	listStudentNode(head)
 
 }
