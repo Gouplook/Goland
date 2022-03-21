@@ -17,9 +17,8 @@ import (
 // 测试文件输出流
 func TestFileStream(t *testing.T) {
 	FileStream("fileread.txt")
-	fmt.Println(5 + 13)
-	fmt.Println("")
-	fmt.Println(300000*0.3*12 *0.2)
+	fmt.Println(13 + 7 + 10)
+	fmt.Println()
 }
 
 // 测试 io 文件读写
@@ -41,6 +40,7 @@ func TestIoFileCopy(t *testing.T) {
 	dstName := "fileread.txt"
 	srcName := "filewrite.txt"
 	IoFileCopy(dstName, srcName)
+	dstName = "filewrite.txt"
 }
 
 // 测试ioutil写文件

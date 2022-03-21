@@ -25,14 +25,18 @@ func WriteData(intChan chan int) {
 // 读数据
 func ReadData(intChan chan int, exitChan chan bool) {
 	for {
-		v, ok := <- intChan
+		v, ok := <-intChan
 		if !ok {
 			break
 		}
 		time.Sleep(time.Second)
 		fmt.Printf("readData 读到数据=%v\n", v)
+
 	}
 	//readData 读取完数据后，通知主线程
+	time.Sleep(time.Second)
+
 	exitChan <- true
+	intChan <- (5 + 3)
 	close(exitChan)
 }

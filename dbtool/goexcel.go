@@ -17,9 +17,9 @@ import (
 )
 
 type Kc_cnaps struct {
-	Id   int
+	Id       int
 	BankCode string
-	BankName   string
+	BankName string
 	// Ys   string
 	// Gg   string
 	// Ddh  string
@@ -36,7 +36,7 @@ func EXcelInit() {
 	_ = orm.RunSyncdb("default", false, true)
 }
 
-func  ExcelMain() {
+func ExcelMain() {
 	if len(os.Args) != 3 {
 		fmt.Println("Usage: xlsx pathname sheetname")
 		os.Exit(1)
@@ -52,6 +52,7 @@ func  ExcelMain() {
 	if sheet == nil {
 		fmt.Println("表单名不存在")
 		os.Exit(1)
+
 	}
 
 	cols := len(sheet.Cols)
@@ -66,7 +67,7 @@ func  ExcelMain() {
 	//}
 
 	// lname := []string{"客户名称", "品名", "颜色", "规格", "订单号", "消费者", "联系方式", "交货日期", "审核日期"}
-	lname := []string{"BANK_CODE","LNAME"}
+	lname := []string{"BANK_CODE", "LNAME"}
 
 	for _, title := range lname {
 		//title := getStdinInput("请输入列名：")

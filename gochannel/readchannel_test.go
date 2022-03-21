@@ -7,11 +7,14 @@
 *********************************************/
 package gochannel
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestReadData(t *testing.T) {
 	//创建两个管道
-	intChan := make(chan int,10)
+	intChan := make(chan int, 10)
 	exitChan := make(chan bool, 1)
 
 	go WriteData(intChan)
@@ -23,5 +26,7 @@ func TestReadData(t *testing.T) {
 			break
 		}
 	}
+
+	fmt.Println()
 
 }
