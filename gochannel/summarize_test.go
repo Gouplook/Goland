@@ -23,6 +23,7 @@ func TestSelectChannel(t *testing.T) {
 
 // 测试阶乘问题
 func TestFactorial(t *testing.T) {
+	// 开启携程gogroutine
 	for i := 1; i < 10; i++ {
 		go Factorial(i)
 	}
@@ -58,10 +59,9 @@ func TestPrimeNum(t *testing.T) {
 		close(primeChan)
 	}()
 
-
 	//遍历我们的 primeChan ,把结果取出
 	for {
-		res, ok := <- primeChan
+		res, ok := <-primeChan
 		if !ok {
 			break
 		}

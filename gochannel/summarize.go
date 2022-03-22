@@ -22,7 +22,6 @@ import (
 //3. 声明为只读
 //var chanReade <- chan int
 
-
 func SelectChannel() {
 	//1.定义一个管道 10个数据int
 	intChan := make(chan int, 10)
@@ -76,7 +75,7 @@ func CpuNum() {
 // 2. 我们启动的协程多个，统计的将结果放入到 map中
 // 3. map 应该做出一个全局的.
 
-var FactorialMap = make(map[int]int, 10)
+var FactorialMap = make(map[int]int, 100)
 var lock sync.Mutex
 
 func Factorial(n int) {
@@ -125,4 +124,3 @@ func PrimeNum(intChan chan int, primeChan chan int, exitChan chan bool) {
 	//向 exitChan 写入true
 	exitChan <- true
 }
-

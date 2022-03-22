@@ -35,15 +35,7 @@ func sStructBase() {
 	fmt.Println(*(d1.Ptr))
 	fmt.Println("Aollo")
 	fmt.Println(d1.maps)
-	var A, B int
-	var C float64
-	A = 2415 + 29490 + 2712 + 17205
-	B = (82000 + 81000) * 0.6
-	C = 10336 + 12835
 
-	fmt.Println("A=", A)
-	fmt.Println("B=", B)
-	fmt.Println("C=", C)
 }
 
 type Student struct {

@@ -15,7 +15,7 @@ import (
 type CardBase struct {
 	Name     string  // 名称
 	Price    float64 // 价格
-	CardId   int     `mapstructure:"card_id"`// 如需要加下划线的，必须自己定义t ag
+	CardId   int     `mapstructure:"card_id"` // 如需要加下划线的，必须自己定义tag
 	Clicks   int     // 点击量
 	SalesNum int     // 销量 mapstructure 默认映射是小写的
 }
@@ -27,13 +27,12 @@ type Card struct {
 
 // 定义一个map
 func AdvanceMap() {
-	maps := make([]map[string]interface{}, 0)
-
-	// maps[0] = make(map[string]interface{})
-	// maps[0]["name"] = "综合0"
-	// maps[0]["card_id"] = 11
-	// maps[0]["price"] = 100.0
-	// maps[0]["salesnum"] = 1003
+	maps := make([]map[string]interface{}, 1)
+	maps[0] = make(map[string]interface{})
+	maps[0]["name"] = "综合0"
+	maps[0]["card_id"] = 11
+	maps[0]["price"] = 100.0
+	maps[0]["salesnum"] = 1003
 
 	// maps[1] = make(map[string]interface{})
 	// maps[1]["name"] = "综合1"
@@ -67,7 +66,7 @@ func AdvanceMap() {
 	// 追加后的数据
 	fmt.Println("Append maps====", maps)
 
-	fmt.Println("maps[3][\"name\"]", maps[3]["name"])
+	//fmt.Println("maps[3][\"name\"]", maps[3]["name"])
 
 	maps2 := make([]map[string]interface{}, 2)
 	// 必须make，否则panic: assignment to entry in nil map
@@ -83,7 +82,6 @@ func AdvanceMap() {
 	maps2[1]["card_id"] = 201
 	maps2[1]["price"] = 201.0
 	maps2[1]["salesnum"] = 2003101
-
 
 	// 切片追加切片
 	maps = append(maps, maps2...)
@@ -102,8 +100,6 @@ func AdvanceMap() {
 
 		// fmt.Println(outStruct[k].Name)
 	}
-
-
 
 }
 
@@ -128,7 +124,7 @@ func AdvMapMap() {
 	}
 	maps["004"] = make(map[string]interface{})
 	maps["003"] = map[string]interface{}{
-		"Id":6,
+		"Id": 6,
 	}
 
 	fmt.Println(maps)
@@ -150,12 +146,11 @@ func SileIn() {
 	var slice []int
 	fmt.Println("slice =", slice)
 	slice1 := make([]int, 1)
-	fmt.Println("slice1 =", slice1)  // [0]
+	fmt.Println("slice1 =", slice1) // [0]
 	slice2 := make([]int, 0)
-	fmt.Println("slice2 =", slice2)  // []
+	fmt.Println("slice2 =", slice2) // []
 
 }
-
 
 // 不用append 就覆盖
 func SlieIn2() {
@@ -167,45 +162,41 @@ func SlieIn2() {
 
 }
 
-func MapMap(){
+func MapMap() {
 	mp := make(map[int]map[int]int)
-
 
 	mp[1][2] = 102
 	mp[2][5] = 205
 	mp[6][2] = 602
 	mp[6][2] = 703
 
-
 	fmt.Println(mp)
 
 }
 
-
-func MapMap2(){
+func MapMap2() {
 	// i, itemId
-	mp := make([]map[int]int,10)
-	 for i:= 0 ;i< 4;i++ {
+	mp := make([]map[int]int, 10)
+	for i := 0; i < 4; i++ {
 
-	 	itemId := 160+i
-	 	sspId := 200+2*i
+		itemId := 160 + i
+		sspId := 200 + 2*i
 		//mp[i] = make(map[int]int)
 
 		mp = append(mp, map[int]int{
-			i: i,
-			sspId: sspId,
+			i:      i,
+			sspId:  sspId,
 			itemId: itemId,
-
 		})
 
-	 }
+	}
 
 	fmt.Println(mp)
 
 }
 
 // 待测试案例
-func MapSplitToStruct(){
+func MapSplitToStruct() {
 	// 获取数据
 	// cprrlMap  map[string]interface
 	// cprrlMap := cprrlM.GetById(rechargeId)
@@ -221,20 +212,19 @@ func MapSplitToStruct(){
 type CardIcad struct {
 	CardId int
 	CardSn string
-	Name string
+	Name   string
 }
+
 //
-func MapSplitToStruct2(reple CardIcad){
+func MapSplitToStruct2(reple CardIcad) {
 	cMak := map[string]interface{}{}
 	cMak["CardId"] = 1002
 	cMak["CardSn"] = "JS0003"
 
-	fmt.Println("打印前：----",reple)
+	fmt.Println("打印前：----", reple)
 	_ = mapstructure.WeakDecode(cMak, &reple)
-	fmt.Println("打印后：----",reple.CardSn)
-	fmt.Println("打印后：----",reple.CardId)
+	fmt.Println("打印后：----", reple.CardSn)
+	fmt.Println("打印后：----", reple.CardId)
 
-	fmt.Println(8505+4680+29490+2712+2415+2655 + 36000+19755+20745+6460+8980)
+	fmt.Println(8505 + 4680 + 29490 + 2712 + 2415 + 2655 + 36000 + 19755 + 20745 + 6460 + 8980)
 }
-
-

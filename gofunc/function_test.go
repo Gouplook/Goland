@@ -26,16 +26,23 @@ func TestGenPalyer(t *testing.T) {
 // 斐波那契数列
 func TestFib(t *testing.T) {
 	f00 := Fib()
-	fmt.Println(f00(),f00(),f00(),f00())
+	fmt.Println(f00(), f00(), f00(), f00())
 }
 
-// 判断图片文件后缀,若没有加上jpg后缀
+// 判断图片文件后缀,若没有加上jpg后缀(使用闭包）
 func TestMakeSuffix(t *testing.T) {
 	ff := MakeSuffix(".jpg")
-
 
 	fmt.Println(ff("win"))
 	fmt.Println(ff("jack.jpg"))
 
 }
 
+// 匿名函数
+func TestAnonymous(t *testing.T) {
+	Anonymous(20, 60)
+}
+
+func TestRecvertest(t *testing.T) {
+	Recvertest()
+}
