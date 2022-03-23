@@ -11,7 +11,17 @@ import (
 	"fmt"
 	"sort"
 	"strings"
+	"unsafe"
 )
+
+//slice 底层结构
+type slice struct {
+	array unsafe.Pointer
+	len   int
+	cap   int
+}
+
+//如果切片的容量小于 1024 个元素，于是扩容的时候就翻倍增加容量
 
 func IntSort() {
 	var a = [...]int{1, 8, 38, 2, 348, 484}
