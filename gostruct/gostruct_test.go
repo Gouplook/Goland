@@ -13,12 +13,12 @@ import (
 
 // 结构体测试
 func TestStructBase(t *testing.T) {
-	sStructBase()
+	SStructBase()
 }
 
-// 结构体与切片
-func TestStructAndSlice(t *testing.T) {
-	sStructAndSlice()
-}
+//// 结构体与切片
+//func TestStructAndSlice(t *testing.T) {
+//	sStructAndSlice()
+//}
 
 // 继承

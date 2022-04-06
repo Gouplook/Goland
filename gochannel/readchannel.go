@@ -14,11 +14,12 @@ import (
 
 // 写数据
 func WriteData(intChan chan int) {
-	for i := 1; i <= 50; i++ {
-		//放入数据
-		intChan <- i
-		fmt.Println("writeData ", i)
-	}
+	i := 0
+	//for i := 1; i <= 10; i++ {
+	//放入数据
+	intChan <- i + 1
+	//fmt.Println("writeData ", )
+	//}
 	close(intChan) //关闭
 }
 
@@ -37,6 +38,6 @@ func ReadData(intChan chan int, exitChan chan bool) {
 	time.Sleep(time.Second)
 
 	exitChan <- true
-	intChan <- (5 + 3)
+
 	close(exitChan)
 }

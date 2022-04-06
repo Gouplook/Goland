@@ -24,14 +24,14 @@ func TestSelectChannel(t *testing.T) {
 // 测试阶乘问题
 func TestFactorial(t *testing.T) {
 	// 开启携程gogroutine
-	for i := 1; i < 10; i++ {
-		go Factorial(i)
-	}
-	lock.Lock()
-	for i, v := range FactorialMap {
-		fmt.Printf("map[%d]=%d\n", i, v)
-	}
-	lock.Unlock()
+	//for i := 1; i < 10; i++ {
+	//	go Factorial(i)
+	//}
+	//lock.Lock()
+	//for i, v := range FactorialMap {
+	//	fmt.Printf("map[%d]=%d\n", i, v)
+	//}
+	//lock.Unlock()
 
 }
 

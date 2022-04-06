@@ -10,7 +10,6 @@ package gochannel
 import (
 	"fmt"
 	"runtime"
-	"sync"
 	"time"
 )
 
@@ -35,10 +34,11 @@ func SelectChannel() {
 		stringChan <- "hello" + fmt.Sprintf("%d", i)
 	}
 
+	wrCH := make(chan int, 1)
 	// 传统的方法在遍历管道时，如果不关闭会阻塞而导致 deadlock
 	// 问题，在实际开发中，可能我们不好确定什么关闭该管道.
 	// 可以使用select 方式可以解决
-	// label:
+	//  select语句只能用于信道的读写操作
 	for {
 		select {
 		//注意: 这里，如果intChan一直没有关闭，不会一直阻塞而deadlock
@@ -49,6 +49,8 @@ func SelectChannel() {
 		case v := <-stringChan:
 			fmt.Printf("从stringChan读取的数据%s\n", v)
 			time.Sleep(time.Second)
+		case wrCH <- 9:
+			fmt.Printf("向wrch管道中写入数据......")
 		default:
 			fmt.Printf("都取不到了，不玩了, 程序员可以加入逻辑\n")
 			time.Sleep(time.Second)
@@ -66,27 +68,6 @@ func CpuNum() {
 	runtime.GOMAXPROCS(cpuNum - 1)
 
 	fmt.Println("ok")
-}
-
-// 需求：现在要计算 1-200 的各个数的阶乘，并且把各个数的阶乘放入到map中。
-// 最后显示出来。要求使用goroutine完成
-// 思路
-// 1. 编写一个函数，来计算各个数的阶乘，并放入到 map中.
-// 2. 我们启动的协程多个，统计的将结果放入到 map中
-// 3. map 应该做出一个全局的.
-
-var FactorialMap = make(map[int]int, 100)
-var lock sync.Mutex
-
-func Factorial(n int) {
-	res := 1
-	for i := 1; i <= n; i++ {
-		res *= i
-	}
-	//加锁
-	lock.Lock()
-	FactorialMap[n] = res
-	lock.Unlock()
 }
 
 // ------计算素数--------
