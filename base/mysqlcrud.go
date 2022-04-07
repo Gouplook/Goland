@@ -188,7 +188,7 @@ func (m *Model) Insert() (int, error) {
 }
 
 //批量添加
-func (m *Model) InsertAll(data []map[string]interface{})(int ,error) {
+func (m *Model) InsertAll(data []map[string]interface{}) (int, error) {
 	if len(data) == 0 {
 		return 0, nil
 	}
@@ -201,7 +201,7 @@ func (m *Model) InsertAll(data []map[string]interface{})(int ,error) {
 	colsName = strings.TrimRight(colsName, ",")
 	sql := fmt.Sprintf("INSERT INTO %s(%s) VALUES ", m.table, colsName)
 	//values := []interface{}{}
-	values := make([]interface{},0)
+	values := make([]interface{}, 0)
 	for _, v := range data {
 		colsValue += "("
 		for _, k := range keys {
@@ -269,36 +269,37 @@ func (m *Model) Update() (int, error) {
 	rowAffectedId, _ := sqlSource.RowsAffected()
 	return int(rowAffectedId), err
 }
+
 // 条件更新 - 批量更新 filed_key
-func (m *Model)UpdateCase(data []map[string]interface{}, filed_key string)(int,error) {
+func (m *Model) UpdateCase(data []map[string]interface{}, filed_key string) (int, error) {
 
 	f := map[string]string{}
 	fp := map[string][]interface{}{}
 	where := []interface{}{}
 	whereStr := ""
 	for _, val := range data {
-		if _, ok := val[filed_key];ok {
+		if _, ok := val[filed_key]; ok {
 			continue
 		}
-		where = append(where,val[filed_key])
+		where = append(where, val[filed_key])
 		whereStr += "?"
-		for k,v := range val {
+		for k, v := range val {
 			if k == filed_key {
 				continue
 			}
 			// 判断
-			if v1,ok := v.([]interface{});ok {
+			if v1, ok := v.([]interface{}); ok {
 				if len(v1) == 2 {
 					str := ""
-					m.arrayData(k,v1[0].(string),v1[1],&str,&[]interface{}{})
-					str = strings.TrimRight(str,",")
+					m.arrayData(k, v1[0].(string), v1[1], &str, &[]interface{}{})
+					str = strings.TrimRight(str, ",")
 					str = str[len(k+"="):]
 					f[k] += " when ? then " + str
-					fp[k] = append(fp[k], val[filed_key],v1[1])
+					fp[k] = append(fp[k], val[filed_key], v1[1])
 				}
-			}else {
+			} else {
 				f[k] += " when ? then ? "
-				fp[k] = append(fp[k],val[filed_key],v)
+				fp[k] = append(fp[k], val[filed_key], v)
 			}
 		}
 
@@ -667,4 +668,3 @@ func (m *Model) RollBack() *Model {
 	}
 	return m
 }
-

@@ -62,11 +62,12 @@ func MapToStruct() {
 			log.Fatal(err)
 		}
 
-	//	fmt.Println("m=",m)
+		//	fmt.Println("m=",m)
 		switch m["type"].(string) {
 		case "person":
 			var p Person
 			err = mapstructure.Decode(m, &p)
+
 			if err != nil {
 
 			}
@@ -108,8 +109,8 @@ func StructToMap() {
 	}
 	var m map[string]interface{}
 	_ = mapstructure.WeakDecode(p, &m)
-	fmt.Println("Main := ",p)
-	fmt.Println("m : ",m)
+	fmt.Println("Main := ", p)
+	fmt.Println("m : ", m)
 	data, _ := json.Marshal(m)
 	fmt.Println(string(data))
 }

@@ -30,8 +30,13 @@ func SStructBase() {
 
 	d1.Ptr = new(string)
 	*(d1.Ptr) = "ptrString"
+	var d2 Demo
+
+	d2.Slice = make([]int, 3)
+	d2.Slice = []int{1, 2}
 
 	fmt.Println(d1)
+	fmt.Println(d2)
 	fmt.Println(*(d1.Ptr))
 	fmt.Println("Aollo")
 	fmt.Println(d1.maps)

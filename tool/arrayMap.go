@@ -79,6 +79,7 @@ func ArrayRebuild(field string, maps []map[string]interface{}) map[string]interf
 // 思路：1： 先定义两个容器，mapData/keys 存放数据和存放key，
 //      2： 对key进行排序 sort.string
 //      3： 遍历key，将key中字段所对应的值，存放起来，return
+
 func SortsMap(field string, maps []map[string]interface{}) []map[string]interface{} {
 	var mapData = make(map[string]interface{}) // map make不需要指定大小
 	var keys = make([]string, 0)               // 切片make时，需要指定大小
@@ -104,12 +105,12 @@ func SortsMap(field string, maps []map[string]interface{}) []map[string]interfac
 	return remapData
 }
 
-
 //把数组转换为字符串
 //@param  string separator       转换分隔符
 //@param  interface{}  interface 待转换数据
 //@return string
 // []int{1,2,3} ---> str : 1,2,3  ,[]string也适用
+
 func ArrayString(separator string, array interface{}) (str string) {
 	str = strings.Replace(strings.Trim(fmt.Sprint(array), "[]"), " ", separator, -1)
 	return str

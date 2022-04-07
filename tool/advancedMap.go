@@ -9,7 +9,6 @@ package tool
 
 import (
 	"fmt"
-	"github.com/mitchellh/mapstructure"
 )
 
 type CardBase struct {
@@ -50,8 +49,8 @@ func AdvanceMap() {
 	maps[3] = make(map[string]interface{})
 	maps[3]["name"] = "综合3"
 	maps[3]["card_id"] = 14
-	maps[3]["price"]= 300.5
-	maps[3]["salesnum"]=1006
+	maps[3]["price"] = 300.5
+	maps[3]["salesnum"] = 1006
 
 	fmt.Println("maps=====", maps)
 	var outStruct []CardBase
@@ -63,9 +62,9 @@ func AdvanceMap() {
 		"salesnum": 1006,
 	})
 
-	fmt.Println("Append maps====",maps)
+	fmt.Println("Append maps====", maps)
 
-	fmt.Println("maps[3][\"name\"]",maps[3]["name"])
+	fmt.Println("maps[3][\"name\"]", maps[3]["name"])
 
 	maps2 := make([]map[string]interface{}, 2)
 	// 必须make，否则panic: assignment to entry in nil map
@@ -88,7 +87,7 @@ func AdvanceMap() {
 
 	// map 转换成结构体
 	fmt.Println("====map 转换成结构体====")
-	_ = mapstructure.WeakDecode(maps, &outStruct)
+	//_ = mapstructure.WeakDecode(maps, &outStruct)
 
 	for k, v := range outStruct {
 		fmt.Println("========key value =======")
@@ -103,7 +102,7 @@ func AdvanceMap() {
 }
 
 // 双map
-func AdvMapMap(){
+func AdvMapMap() {
 	// 第一种初始化
 	//maps := map[string]map[string]interface{}{}
 	// 第二种初始化
@@ -111,11 +110,11 @@ func AdvMapMap(){
 	maps = make(map[string]map[string]interface{})
 	maps["001"] = make(map[string]interface{})
 	maps["001"] = map[string]interface{}{
-		"name":"Linux",
+		"name": "Linux",
 	}
 	maps["002"] = make(map[string]interface{})
 	maps["002"] = map[string]interface{}{
-		"cardId":20,
+		"cardId": 20,
 	}
 	maps["003"] = make(map[string]interface{})
 	maps["003"] = map[string]interface{}{
@@ -147,17 +146,16 @@ func SileIn() {
 
 }
 
-
-func SlieIn2(){
+func SlieIn2() {
 	// cardId := make([]int, 0)
 	// cardId = []int{2}
 	// cardId = []int{4,5}
 	// fmt.Println(cardId)
 
 	//
-	fmt.Println("Z = ",100000- 40 *550 - 40 *180- 5000 - 5000 -10000)
-	fmt.Println("Y = ",40000 - 40 *550)
-	fmt.Println("C = ",60000 - 40 *180 - 3500)
+	fmt.Println("Z = ", 100000-40*550-40*180-5000-5000-10000)
+	fmt.Println("Y = ", 40000-40*550)
+	fmt.Println("C = ", 60000-40*180-3500)
 
 	//  100 + 150（20+10+70）+ 30 + 70
 
@@ -167,4 +165,3 @@ func SlieIn2(){
 	// 1-14 18：00 - 19：00  1
 	// 1-18 18：00 - 19：00  1
 }
-

@@ -51,3 +51,7 @@ func TestSyncMapRW(t *testing.T) {
 	wg.Wait()
 
 }
+
+// 先查询出来，[]int
+// 在根据两个切片进行对比
+

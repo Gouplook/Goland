@@ -11,6 +11,12 @@ import (
 //3：轻量级线程
 //4：调度由用户控制
 
+// go 锁的分类
+//1: 普通锁：sync.Mutex
+//2: 读写互斥锁：sync.RWMutex
+//3: 一次性锁 sync.Once
+//4: 原子锁 sync/atomic
+
 //MPG
 
 //
